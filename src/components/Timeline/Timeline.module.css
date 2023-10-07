@@ -1,0 +1,17 @@
+.span_links {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.span_links a {
+    padding: 2px 8px;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+    background-color: #fff;
+    color: blue;
+    text-decoration: none;
+
+}
