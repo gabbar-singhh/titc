@@ -6,8 +6,6 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
-import Link from "next/link";
-import Image from "next/image";
 import styles from "./Timeline.module.css";
 
 const Timeline = () => {
@@ -87,13 +85,6 @@ const Timeline = () => {
     },
   ];
 
-  // IMGAGES FOR CARD 7
-  const card_7 = [
-    {
-      url: "/assets/prep_me.webp",
-    },
-  ];
-
   // IMGAGES FOR CARD 8
   const card_8 = [
     {
@@ -128,7 +119,9 @@ const Timeline = () => {
   ];
 
   return (
-    <section style={{ color: "white" }}>
+    <section className={styles.timeline_main}>
+
+      <h3>SNEAK-PEAK INTO MY PROGRAMMING JOURNEY!</h3>
       <VerticalTimeline>
         {/* CARD 1 */}
         <VerticalTimelineElement
@@ -150,7 +143,7 @@ const Timeline = () => {
             I started learning to code
           </h3>
 
-          <h4 className="vertical-timeline-element-subtitle">JAVA</h4>
+          <h4 className="vertical-timeline-element-subtitle"></h4>
           <p>
             After watching "The Social Network" I found myself inspired to try
             coding. I watched a few YouTube videos and began reading Head First
