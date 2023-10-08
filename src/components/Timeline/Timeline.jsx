@@ -25,105 +25,105 @@ const Timeline = () => {
   // IMGAGES FOR CARD 1
   const card_1 = [
     {
-      url: "/assets/01-java.jpg",
+      url: "/assets/01-java.webp",
     },
     {
-      url: "/assets/02-java.jpg",
+      url: "/assets/02-java.webp",
     },
   ];
 
   // IMGAGES FOR CARD 2
   const card_2 = [
     {
-      url: "/assets/html_css_01.png",
+      url: "/assets/html_css_01.webp",
     },
     {
-      url: "/assets/html_css_02.png",
+      url: "/assets/html_css_02.webp",
     },
     {
-      url: "/assets/html_css_03.png",
+      url: "/assets/html_css_03.webp",
     },
   ];
 
   // IMGAGES FOR CARD 3
   const card_3 = [
     {
-      url: "/assets/tin_01.png",
+      url: "/assets/tin_01.webp",
     },
     {
-      url: "/assets/tin_02.png",
+      url: "/assets/tin_02.webp",
     },
     {
-      url: "/assets/tin_03.png",
+      url: "/assets/tin_03.webp",
     },
     {
-      url: "/assets/tin_04.png",
+      url: "/assets/tin_04.webp",
     },
   ];
 
   // IMGAGES FOR CARD 4
   const card_4 = [
     {
-      url: "/assets/clone_01.png",
+      url: "/assets/clone_01.webp",
     },
     {
-      url: "/assets/clone_02.png",
+      url: "/assets/clone_02.webp",
     },
   ];
 
   // IMGAGES FOR CARD 5
   const card_5 = [
     {
-      url: "/assets/resume_maker_01.png",
+      url: "/assets/resume_maker_01.webp",
     },
     {
-      url: "/assets/resume_maker_02.png",
+      url: "/assets/resume_maker_02.webp",
     },
     {
-      url: "/assets/resume_maker_03.png",
+      url: "/assets/resume_maker_03.webp",
     },
     {
-      url: "/assets/resume_maker_04.png",
+      url: "/assets/resume_maker_04.webp",
     },
   ];
 
   // IMGAGES FOR CARD 7
   const card_7 = [
     {
-      url: "/assets/prep_me.jpeg",
+      url: "/assets/prep_me.webp",
     },
   ];
 
   // IMGAGES FOR CARD 8
   const card_8 = [
     {
-      url: "/assets/gotup_01.png",
+      url: "/assets/gotup_01.webp",
     },
     {
-      url: "/assets/gotup_02.png",
+      url: "/assets/gotup_02.webp",
     },
   ];
 
   // IMGAGES FOR CARD 9
   const card_9 = [
     {
-      url: "/assets/linkfy_01.png",
+      url: "/assets/linkfy_01.webp",
     },
     {
-      url: "/assets/linkfy_02.png",
+      url: "/assets/linkfy_02.webp",
     },
     {
-      url: "/assets/linkfy_03.png",
+      url: "/assets/linkfy_03.webp",
     },
   ];
 
   // IMGAGES FOR CARD 10
   const card_10 = [
     {
-      url: "/assets/work_01.png",
+      url: "/assets/work_01.webp",
     },
     {
-      url: "/assets/work_02.png",
+      url: "/assets/work_02.webp",
     },
   ];
 
@@ -434,7 +434,7 @@ const Timeline = () => {
             score decent marks.
           </p>
           <br />
-          <img src="/assets/prep_me.jpeg" width={"100%"} />
+          <img src="/assets/prep_me.webp" width={"100%"} />
         </VerticalTimelineElement>
 
         {/* CARD 8 */}
@@ -577,8 +577,8 @@ const Timeline = () => {
             surprisingly good, although I was willing to work for free in the
             name of experience).
             <br />
-            <br />I wanted my own website to showcase what I've made and share
-            my articles. So, I created one using Next.js.
+            <br />I also wanted my own website to showcase what I've made and
+            share my articles. So, I created one using Next.js.
           </p>
           <br />
           <Slide>
@@ -601,6 +601,39 @@ const Timeline = () => {
               codexhimanshu.in
             </a>
           </span>
+        </VerticalTimelineElement>
+
+        {/* CARD 11 */}
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="Aug - Sep 2023"
+          iconStyle={{ background: "rgb(103 0 131)", color: "#fff" }}
+          contentStyle={{
+            background: "rgb(103 0 131)",
+            color: "#fff",
+          }}
+          contentArrowStyle={{
+            borderRight: "7px solid  rgb(103 0 131)",
+          }}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Got accepted into Buildspace!
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle"></h4>
+          <p>
+            I got accepted into Buildspace. Buildspace is a online program or
+            kinda school where you get to work on your idea for 6 weeks and get
+            a chance to win $250000. I decided to work on building a chrome
+            extension which will turn your boring default homepage, into a
+            productivity-focused homepage along with aesthetically pleasing UI.
+            Got 30 people signing up for that. Currently working on this, it
+            will be launched soon!
+            <br />
+            <br />I joined MIT WPU for my Bachelors. It's been 2 months and I
+            think it's a great college.
+          </p>
+          <br />
+          <img src="/assets/chromeland.webp" width={"100%"} />
         </VerticalTimelineElement>
 
         {/* ON-GOING */}
