@@ -119,7 +119,7 @@ const Timeline = () => {
   ];
 
   return (
-    <section className={styles.timeline_main}>
+    <section className={styles.timeline_main} id='my_journey'>
 
       <h3>SNEAK-PEAK INTO MY PROGRAMMING JOURNEY!</h3>
       <VerticalTimeline>

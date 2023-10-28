@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Timeline from "@/components/Timeline/Timeline";
+import WhyMe from "@/components/WhyMe/WhyMe";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +19,7 @@ export default function Home() {
         <p>is looking for!</p>
       </div>
       <Timeline />
+      <WhyMe />
     </main>
   );
 }

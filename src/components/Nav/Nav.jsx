@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Nav.module.css";
+import { Link } from "react-scroll";
 
 const Nav = () => {
   return (
@@ -8,8 +9,24 @@ const Nav = () => {
         <p className={styles.left_nav}>
           <ul>
             <li>about me</li>
-            <li>My Journey</li>
-            <li>why me?</li>
+            <li>
+              <Link to="my_journey"
+                spy={true}
+                smooth={true}
+                offset={-130}
+                duration={1000} >
+                My Journey
+              </Link>
+            </li>
+            <li>
+              <Link to="why_me"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={1000} >
+                why me?
+              </Link>
+            </li>
           </ul>
         </p>
         <p className={styles.right_nav}>HIMANSHU PAL</p>
