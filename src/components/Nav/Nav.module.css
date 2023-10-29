@@ -48,9 +48,3 @@
   justify-content: center;
   gap: 5px;
 }
-
-.right_nav img{
-  border-radius: 50%;
-  height: 50px;
-  width: auto;
-}

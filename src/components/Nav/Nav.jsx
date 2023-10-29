@@ -29,7 +29,6 @@ const Nav = () => {
           </ul>
         </p>
         <p className={styles.right_nav}>
-          {/* <img src="/assets/pfp_square.webp" alt="profile picture" /> */}
           HIMANSHU PAL
         </p>
       </div>

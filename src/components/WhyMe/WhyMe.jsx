@@ -50,8 +50,6 @@ const WhyMe = () => {
               <br />
               In conclusion, my passion for technology and my hunger to learn
               make me a prime candidate for the Google Developer Student Club.
-              <br />
-              <br />I would love to hear back from you 😊
             </p>
           </span>
         </div>

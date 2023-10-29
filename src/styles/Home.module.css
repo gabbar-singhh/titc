@@ -24,3 +24,40 @@
 .hun {
   color: red;
 }
+
+.final {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.4em;
+}
+
+.final p {
+  font-size: 1.8em;
+  color: #fff;
+}
+
+.final .cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.final .cta .btn {
+  border: 1px solid #fff;
+  background-color: #fff;
+  color: #232323;
+  font-size: 1em;
+  padding: 0.3em 0.8em;
+  border-radius: 0.25em;
+  font-weight: 500;
+  
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
