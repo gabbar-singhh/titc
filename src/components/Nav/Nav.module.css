@@ -41,3 +41,16 @@
   color: #888888;
   transition: all 500ms ease;
 }
+
+.right_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.right_nav img{
+  border-radius: 50%;
+  height: 50px;
+  width: auto;
+}

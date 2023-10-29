@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Timeline from "@/components/Timeline/Timeline";
 import WhyMe from "@/components/WhyMe/WhyMe";
+import Footer from "@/components/Footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +19,9 @@ export default function Home() {
         <p>Google Developer Student Club</p>
         <p>is looking for!</p>
       </div>
-      <Timeline />
       <WhyMe />
+      <Timeline />
+      <Footer />
     </main>
   );
 }

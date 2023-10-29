@@ -8,7 +8,15 @@ const Nav = () => {
       <div className={styles.nav_content}>
         <p className={styles.left_nav}>
           <ul>
-            <li>about me</li>
+            <li>
+              <Link to="why_me"
+                spy={true}
+                smooth={true}
+                offset={-180}
+                duration={1000} >
+                why me?
+              </Link>
+            </li>
             <li>
               <Link to="my_journey"
                 spy={true}
@@ -18,18 +26,12 @@ const Nav = () => {
                 My Journey
               </Link>
             </li>
-            <li>
-              <Link to="why_me"
-                spy={true}
-                smooth={true}
-                offset={50}
-                duration={1000} >
-                why me?
-              </Link>
-            </li>
           </ul>
         </p>
-        <p className={styles.right_nav}>HIMANSHU PAL</p>
+        <p className={styles.right_nav}>
+          {/* <img src="/assets/pfp_square.webp" alt="profile picture" /> */}
+          HIMANSHU PAL
+        </p>
       </div>
       <div className={styles.white_line}></div>
     </nav>
