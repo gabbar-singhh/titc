@@ -8,7 +8,7 @@
   color: aliceblue;
   font-size: 5rem;
   font-weight: 700;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 
   display: flex;
   flex-direction: column;
@@ -54,10 +54,37 @@
   padding: 0.3em 0.8em;
   border-radius: 0.25em;
   font-weight: 500;
-  
+
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 7px;
+}
+
+/* MEDIA QUERIES */
+/* SMALL MOBILE DEVICES OR FOR EXPREMENTING PEOPLE */
+@media screen and (min-width: 0px) and (max-width: 360px) {
+}
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+/* SMALL SCREEN AND LAPTOP (LIKE ME!! LOL🤣) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1390px) {
+  .main .container {
+    font-size: 4rem;
+  }
 }

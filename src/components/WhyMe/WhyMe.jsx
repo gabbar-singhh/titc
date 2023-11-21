@@ -7,7 +7,7 @@ const WhyMe = () => {
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <img
-            height={600}
+            // height={600} 
             width={"auto"}
             src="/assets/pfp.webp"
             alt="profile picture"
@@ -16,15 +16,13 @@ const WhyMe = () => {
           <span className={styles.text_box}>
             <h1>WHY ME?</h1>
             <p>
-              I'm Himanshu Pal, an 18-year-old with just a laptop. While I'm
+              I'm Himanshu Pal, an 18-year-old student. While I'm
               still in the process of figuring things out, I possess a{" "}
               <span className={styles.highlight}>
                 {" "}
                 deep passion for programming.
               </span>{" "}
-              I'm a self-taught web developer and also dabble in design. Beyond
-              programming, I find enjoyment in playing basketball & watching
-              anime and movies.
+              I'm a self-taught frontend developer.
             </p>
 
             <p>
@@ -37,21 +35,21 @@ const WhyMe = () => {
                 discipline{" "}
               </span>{" "}
               are ingrained in me. What sets me apart is not just my technical
-              skills but also my ability to learn and adapt. As a self-taught
-              web developer, I've always been{" "}
+              skills but also my ability to learn and adapt. As a developer, I've always been{" "}
               <span className={styles.highlight}>
                 {" "}
                 figuring out most of the stuff{" "}
               </span>{" "}
-              on my own, Googling, ChatGPT'ing etc. I understand the hunger to
+              on my own, Googling, ChatGPT'ing etc, I really understand the hunger to
               learn, which are core principles that the Google Developer Student
               Club upholds.
               <br />
               <br />
-              In conclusion, my passion for technology and my hunger to learn
+              In conclusion, my <span className={styles.highlight}>passion for technology </span> and my hunger to learn
               make me a prime candidate for the Google Developer Student Club.
             </p>
           </span>
+
         </div>
       </div>
     </section>

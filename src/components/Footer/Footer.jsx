@@ -5,7 +5,7 @@ import Link from "next/link";
 const Footer = () => {
 
     const URL = {
-        LINKEDIN: 'https://www.linkedin.com/in/himanshup1308/',
+        LINKEDIN: 'https://www.linkedin.com/in/himanshufs/',
         GITHUB: 'https://github.com/gabbar-singhh/'
     }
     return (

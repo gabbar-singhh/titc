@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50vw;
+  width: 60vw;
 }
 
 .container {
@@ -31,19 +31,30 @@
 
 .container img {
   border-radius: 3px;
+  height: 400px;
 }
 
 .container .text_box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1em;
 }
 
 .container .text_box p {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 400;
 }
 
 .highlight {
   color: red;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1390px) {
+  .wrapper {
+    width: 70vw;
+  }
 }

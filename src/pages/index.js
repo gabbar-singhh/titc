@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const URL = {
-    LINKEDIN: "https://www.linkedin.com/in/himanshup1308/",
+    LINKEDIN: "https://www.linkedin.com/in/himanshufs/",
     WHATSAPP: "https://wa.me/+917701973093",
     EMAIL:
       "https://mail.google.com/mail/?view=cm&fs=1&to=himanshup1308@gmail.com",

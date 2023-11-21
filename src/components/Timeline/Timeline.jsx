@@ -119,13 +119,12 @@ const Timeline = () => {
   ];
 
   return (
-    <section className={styles.timeline_main} id='my_journey'>
-
+    <section className={styles.timeline_main} id="my_journey">
       <h3>SNEAK-PEAK INTO MY PROGRAMMING JOURNEY!</h3>
       <VerticalTimeline>
         {/* CARD 1 */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className={`${styles.card_title}  vertical-timeline-element--work`}
           contentStyle={{
             background: "rgb(33, 150, 243)",
             color: "#fff",
@@ -169,7 +168,7 @@ const Timeline = () => {
 
         {/* CARD 2 */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className={`${styles.card_title}  vertical-timeline-element--work`}
           date="May 2021"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           contentStyle={{
@@ -213,7 +212,7 @@ const Timeline = () => {
 
         {/* CARD 3 */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className={`${styles.card_title}  vertical-timeline-element--work`}
           date="Jun - Jul 2021"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           contentStyle={{
@@ -262,7 +261,7 @@ const Timeline = () => {
 
         {/* CARD 4 */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--work"
+          className={`${styles.card_title}  vertical-timeline-element--work`}
           date="Aug 2021"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           contentStyle={{
@@ -305,7 +304,7 @@ const Timeline = () => {
 
         {/* CARD 5 */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
+          className={`${styles.card_title}  vertical-timeline-element--work`}
           date="Sep 2021"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           contentStyle={{
@@ -367,7 +366,7 @@ const Timeline = () => {
 
         {/* CARD 6 */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
+          className={`${styles.card_title}  vertical-timeline-element--work`}
           date="Oct - Nov 2021"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           contentStyle={{
@@ -403,7 +402,7 @@ const Timeline = () => {
 
         {/* CARD 7 */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
+          className={`${styles.card_title}  vertical-timeline-element--work`}
           date="Dec 2021 - Mar 2023"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           contentStyle={{
@@ -432,7 +431,7 @@ const Timeline = () => {
 
         {/* CARD 8 */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
+          className={`${styles.card_title}  vertical-timeline-element--work`}
           date="Apr 2023"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           contentStyle={{
@@ -481,7 +480,7 @@ const Timeline = () => {
 
         {/* CARD 9 */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
+          className={`${styles.card_title}  vertical-timeline-element--work`}
           date="May 2023"
           iconStyle={{ background: "rgb(103 0 131)", color: "#fff" }}
           contentStyle={{
@@ -535,7 +534,7 @@ const Timeline = () => {
 
         {/* CARD 10 */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
+          className={`${styles.card_title}  vertical-timeline-element--work`}
           date="Jun - Jul 2023"
           iconStyle={{ background: "rgb(103 0 131)", color: "#fff" }}
           contentStyle={{
@@ -598,7 +597,7 @@ const Timeline = () => {
 
         {/* CARD 11 */}
         <VerticalTimelineElement
-          className="vertical-timeline-element--education"
+          className={`${styles.card_title}  vertical-timeline-element--work`}
           date="Aug - Sep 2023"
           iconStyle={{ background: "rgb(103 0 131)", color: "#fff" }}
           contentStyle={{

@@ -48,3 +48,9 @@
   justify-content: center;
   gap: 5px;
 }
+
+@media screen and (min-width: 1201px) and (max-width: 1390px) {
+  .nav_content {
+    font-size: 1em;
+  }
+}

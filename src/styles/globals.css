@@ -71,3 +71,24 @@ body {
 .BubbleEff:hover::before {
   transform: translate3d(600%, -50%, 0) scale3d(15, 15, 15);
 }
+
+/* MEDIA QUERIES */
+/* SMALL MOBILE DEVICES OR FOR EXPREMENTING PEOPLE */
+@media screen and (min-width: 0px) and (max-width: 360px) {}
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {}
+
+/* SMALL SCREEN AND LAPTOP (LIKE ME!! LOL🤣) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+/* EXTRA LARGE SCREENS & TV */
+@media screen and (min-width: 1201px) {
+  
+}
