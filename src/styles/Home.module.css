@@ -65,22 +65,75 @@
 /* MEDIA QUERIES */
 /* SMALL MOBILE DEVICES OR FOR EXPREMENTING PEOPLE */
 @media screen and (min-width: 0px) and (max-width: 360px) {
+  .main .container {
+    font-size: 1.8rem;
+    margin-top: 3em;
+    margin-bottom: 0;
+    height: 8em;
+
+    padding: 0 0.5em;
+  }
+
+  .final p {
+  font-size: 14px;
+  }
+
+.final .cta .btn {
+  font-size: 8px;
+}
 }
 
 /* AVERAGE MOBILE DEVICES  */
 @media screen and (min-width: 360px) and (max-width: 480px) {
+  
+  .main .container {
+    font-size: 2.5rem;
+    margin-top: 3em;
+    height: 8em;
+
+    padding: 0 0.5em;
+  }
+
+  .final p {
+  font-size: 1em;
+  }
+
+.final .cta .btn {
+  font-size: 10px;
+}
 }
 
 /* IPADS AND TABLETS  */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .main .container {
+    font-size: 2rem;
+    margin-top: 3em;
+    height: 8em;
+  }
+
+  .final p {
+  font-size: 1em;
+  }
+
+.final .cta .btn {
+  font-size: 10px;
+}
 }
 
 /* SMALL SCREEN AND LAPTOP (LIKE ME!! LOL🤣) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .main .container {
+    font-size: 3.5rem;
+    margin-top: 1em;
+    height: 8em;
+  }
 }
 
 /* DESKTOP AND LARGE SCREEN */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
+  .main .container {
+    font-size: 3.5rem;
+  }
 }
 
 @media screen and (min-width: 1201px) and (max-width: 1390px) {

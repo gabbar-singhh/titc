@@ -121,7 +121,7 @@ const Timeline = () => {
   return (
     <section className={styles.timeline_main} id="my_journey">
       <h3>SNEAK-PEAK INTO MY PROGRAMMING JOURNEY!</h3>
-      <VerticalTimeline>
+      <VerticalTimeline layout="2-columns" className={styles.verticalTimeline_container}>
         {/* CARD 1 */}
         <VerticalTimelineElement
           className={`${styles.card_title}  vertical-timeline-element--work`}
@@ -142,7 +142,7 @@ const Timeline = () => {
             I started learning to code
           </h3>
 
-          <h4 className="vertical-timeline-element-subtitle"></h4>
+          <h4 className={`vertical-timeline-element-subtitle`}></h4>
           <p>
             After watching "The Social Network" I found myself inspired to try
             coding. I watched a few YouTube videos and began reading Head First
@@ -168,6 +168,7 @@ const Timeline = () => {
 
         {/* CARD 2 */}
         <VerticalTimelineElement
+        position="right"
           className={`${styles.card_title}  vertical-timeline-element--work`}
           date="May 2021"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}

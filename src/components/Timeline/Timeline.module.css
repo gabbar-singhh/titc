@@ -28,8 +28,90 @@
     text-decoration: none;
 }
 
-@media screen and (min-width: 1201px) and (max-width: 1390px) {
+@media screen and (min-width: 0px) and (max-width: 360px) {
+    .timeline_main h3 {
+        font-size: 1em;
+    }
+
+    .timeline_main h3:first-child {
+        text-align: center;
+    }
+
+    .verticalTimeline_container {
+        width: 90vw;
+    }
+
     .card_title {
-      font-size: 12px;
+        font-size: 14px;
+    }
+
+    .card_title p {
+        font-size: 12px;
     }
   }
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .timeline_main h3 {
+        font-size: 1em;
+    }
+
+    .timeline_main h3:first-child {
+        text-align: center;
+    }
+
+    .verticalTimeline_container {
+        width: 90vw;
+    }
+
+    .card_title {
+        font-size: 14px;
+    }
+
+    .card_title p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .timeline_main h3 {
+        font-size: 1em;
+    }
+
+    .verticalTimeline_container {
+        width: 350px;
+    }
+
+    .card_title {
+        font-size: 13px;
+    }
+
+    .card_title p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .verticalTimeline_container {
+        width: 500px;
+    }
+
+    .card_title {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .verticalTimeline_container {
+        width: 550px;
+    }
+
+    .card_title {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1390px) {
+    .card_title {
+        font-size: 12px;
+    }
+}
