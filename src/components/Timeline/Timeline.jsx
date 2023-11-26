@@ -121,7 +121,10 @@ const Timeline = () => {
   return (
     <section className={styles.timeline_main} id="my_journey">
       <h3>SNEAK-PEAK INTO MY PROGRAMMING JOURNEY!</h3>
-      <VerticalTimeline layout="2-columns" className={styles.verticalTimeline_container}>
+      <VerticalTimeline
+        layout="2-columns"
+        className={styles.verticalTimeline_container}
+      >
         {/* CARD 1 */}
         <VerticalTimelineElement
           className={`${styles.card_title}  vertical-timeline-element--work`}
@@ -168,7 +171,7 @@ const Timeline = () => {
 
         {/* CARD 2 */}
         <VerticalTimelineElement
-        position="right"
+          position="right"
           className={`${styles.card_title}  vertical-timeline-element--work`}
           date="May 2021"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
@@ -384,11 +387,11 @@ const Timeline = () => {
           <h4 className="vertical-timeline-element-subtitle"></h4>
           <p>
             At that point, I had created a few things and felt a bit like Mark
-            Zuckerberg, haha lol. So, I decided to create a portfolio website to
+            Zuckerberg, lol. So, I decided to create a portfolio website to
             showcase my work. The website looked decent, and I was satisfied
-            with it at the time. I also learned MySQL, Git, and Github. I kind
-            of liked Github; it helped me keep my project files organized, and
-            it's like a time machine where I can go back to the beginning.
+            with it, at the time. I also learned MySQL, Git, and Github. I kind
+            of liked Git; it helped me keep my project files organized, and
+            it's like a time machine where I can go back anywhere in the history of project.
           </p>
           <br />
           <span className={styles.span_links}>
@@ -419,9 +422,9 @@ const Timeline = () => {
           </h3>
           <h4 className="vertical-timeline-element-subtitle"></h4>
           <p>
-            Took a year off to explore coding. During high school, my parents
+            Took a year off from coding. During high school, my parents
             wanted me to concentrate solely on my studies. I prepared for the
-            National Defence Academy entrance exam, but unfortunately, I didn't
+            NDA entrance exam, but unfortunately, I didn't
             pass it.
             <br />I also completed my 12th-grade CBSE board exams and managed to
             score decent marks.
@@ -494,18 +497,16 @@ const Timeline = () => {
         >
           <h3 className="vertical-timeline-element-title">Building Linkfy</h3>
           <h4 className="vertical-timeline-element-subtitle"></h4>
+
           <p>
-            Linkfy is a web app that makes sharing easier by shortening long
-            URLs. I created it using Next.js and Firebase as the back-end. I
-            built it in just 10 days as part of the popular{" "}
-            <i>#10DayWebBuild </i> challenge on Twitter.It was a fantastic
-            experience, though it got quite hectic. I even made some new
-            developer friends on Twitter.
+            Linkfy is a web app that shortens URLs and helps by sharing clean
+            URLs. I built it using Next.js and Firebase as a backend. It was
+            made in exactly 10 days as a part of the famous #10DayWebBuild
+            challenge on Twitter. It became quite hectic, but I had fun and made
+            a few friends on Twitter.
             <br />
-            <br />I began writing articles on Medium.com to help myself. These
-            articles cover what I've learned while building small projects. It's
-            those little details that matter but can be easy to forget, leaving
-            you to search on Google all over again.
+            <br />
+            Also, I began writing articles on Medium to help myself. I write tutorials on difficulties I faced during building or, in general, so that the next time I won't have to search on Google all over again.
           </p>
           <br />
           <Slide>
@@ -547,31 +548,19 @@ const Timeline = () => {
           }}
         >
           <h3 className="vertical-timeline-element-title">
-            I started working for a company
+            Got an Internship at a StartUp
           </h3>
           <h4 className="vertical-timeline-element-subtitle"></h4>
           <p>
-            I attended a Startup & Networking Meetup in Pune out of
-            curiosity.Later, I joined their WhatsApp group. About a month later,
-            I decided to seek an internship. I reached out startups & founders
-            within a 15km radius sent them cold emails. NO REPLY!
+            Got this internship by reaching out through a WhatsApp gc! <br /> I
+            was looking for a way to gain practical experience, so I dropped a
+            text asking for a web-dev internship in a Startup & Networking
+            Meetup group I'm a part of. A few people reached out; however, all
+            of them rejected me on the call, saying I'm just a kid. Two people
+            called me in for an in-person interview, and one of them agreed to
+            hire me as an intern.
             <br />
-            <br />
-            I felt demotivated. But I gathered the courage to drop a message in
-            the Startup & Networking Meetup group where I had been added a month
-            earlier. To my surprise, a CEO replied within an hour. We had a
-            candid conversation, and he suggested meeting in person. I agreed.
-            <br />
-            <br />
-            The next day, I met him at their office. I was both excited and
-            nervous. He's a CEO, and I'm just a high school student. I met their
-            team, and they asked me many questions. I found their team
-            impressive. We also discussed the internship stipend (which was
-            surprisingly good, although I was willing to work for free in the
-            name of experience).
-            <br />
-            <br />I also wanted my own website to showcase what I've made and
-            share my articles. So, I created one using Next.js.
+            <br />I worked there for 2 months—what a crazy experience it was! 🤯
           </p>
           <br />
           <Slide>
@@ -614,16 +603,12 @@ const Timeline = () => {
           </h3>
           <h4 className="vertical-timeline-element-subtitle"></h4>
           <p>
-            I got accepted into Buildspace. Buildspace is a online program or
-            kinda school where you get to work on your idea for 6 weeks and get
-            a chance to win $250000. I decided to work on building a chrome
-            extension which will turn your boring default homepage, into a
-            productivity-focused homepage along with aesthetically pleasing UI.
-            Got 30 people signing up for that. Currently working on this, it
-            will be launched soon!
-            <br />
-            <br />I joined MIT WPU for my Bachelors. It's been 2 months and I
-            think it's a great college.
+            I got accepted into Buildspace. It is a online program where you get
+            to work on your idea for 6 weeks and get a chance to win $250000. I
+            decided to work on building a chrome extension which will turn your
+            boring default homepage, into a productivity-focused homepage along
+            with pleasing UI. 30 people signed-up for waitlist. Currently
+            working on this, it will be launched soon!
           </p>
           <br />
           <img src="/assets/chromeland.webp" width={"100%"} />

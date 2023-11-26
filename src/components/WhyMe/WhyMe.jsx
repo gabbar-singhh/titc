@@ -28,10 +28,10 @@ const WhyMe = () => {
             <p>
               I believe I'm a perfect fit for the Google Developer Student Club
               because of my strong enthusiasm for programming and my dedication
-              to self-improvement.
+              to improving myself.
               <span className={styles.highlight}>
                 {" "}
-                Being an army brat, values of hard work, dedication, and
+                Being an army brat, values of hard work and
                 discipline{" "}
               </span>{" "}
               are ingrained in me. What sets me apart is not just my technical
@@ -46,7 +46,7 @@ const WhyMe = () => {
               <br />
               <br />
               In conclusion, my <span className={styles.highlight}>passion for technology </span> and my hunger to learn
-              make me a prime candidate for the Google Developer Student Club.
+              make me a prime candidate for the Google Developer Student Club!
             </p>
           </span>
 
