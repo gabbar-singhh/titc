@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Nav.module.css";
 import { Link } from "react-scroll";
 
@@ -32,7 +32,14 @@ const Nav = () => {
             </li>
           </ul>
         </div>
-        <p className={styles.right_nav}>HIMANSHU PAL</p>
+        <p
+          className={styles.right_nav}
+          onClick={() => {
+            window.open("https://codexhimanshu.in/");
+          }}
+        >
+          HIMANSHU PAL
+        </p>
       </section>
       <div className={styles.white_line}></div>
     </nav>

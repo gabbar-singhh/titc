@@ -184,7 +184,7 @@ const Timeline = () => {
           }}
         >
           <h3 className="vertical-timeline-element-title">
-            How I got into web development?
+            I got into web development
           </h3>
           <h4 className="vertical-timeline-element-subtitle"></h4>
           <p>
@@ -319,31 +319,25 @@ const Timeline = () => {
             borderRight: "7px solid  rgb(233, 30, 99)",
           }}
         >
-          <h3 className="vertical-timeline-element-title">Resume Maker </h3>
+          <h3 className="vertical-timeline-element-title">Resume Maker App</h3>
           <h4 className="vertical-timeline-element-subtitle"></h4>
           <p>
-            I used to be quite active on LinkedIn. One day, I stumbled upon a
-            post where someone was struggling to create a resume. That sparked
-            an idea: 'Could I create a website to help people make resumes?'
-            After some quick research, I decided to give it a try.
+            I stumbled upon a linkedin post where someone was struggling to create a resume. That sparked an idea, "Could I create a website to help people make resumes?" I decided to give it a try.
             <br />
             <br />
-            I wasn't very skilled, but I was determined. I found a resume
+            I wasn't very skilled enough, but I found a resume
             template through a Google search, wrote some basic HTML and CSS, and
-            even added a few free 3D illustrations to make it look good. Users
+            even added a few illustrations to make it look good. Users
             could visit the landing page, click 'create a new resume,' enter
             their personal details, and with the help of JavaScript, those
-            details would dynamically appear in the design I had created. The
-            final resume was displayed. Everything seemed fine, but there was
-            one challenge left: enabling users to download the final resume.
+            details would dynamically appear in the design tempplate I had created.
+            And final resume is displayed. With a download button.
             <br />
             <br />
-            After a bit more research on YouTube and Google, I discovered a
-            solution—an HTML-to-PDF library called 'html2pdf.' I implemented it
-            to allow users to download their resumes to their devices. The
-            entire project took about 4-5 days, and I couldn't believe how well
+            I researched and got to know about a library 'html2pdf' which allowed to download html as a pdf. I integerated it asap to download the final resume.
+            The entire project took about 4-5 days, and I couldn't believe how well
             it turned out. Looking back, the design might seems childish, but I
-            was proud of what I had accomplished.
+            am proud of what I built.
           </p>
           <br />
           <Slide>

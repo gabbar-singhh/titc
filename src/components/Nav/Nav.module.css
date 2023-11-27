@@ -49,6 +49,12 @@
   gap: 5px;
 }
 
+.right_nav:hover{
+  cursor: pointer;
+  color: #888888;
+  transition: all 500ms ease;
+}
+
 @media screen and (min-width: 0px) and (max-width: 360px) {
   .nav_content{
     font-size: 10px;
