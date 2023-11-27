@@ -15,6 +15,8 @@ export default function Home() {
     WHATSAPP: "https://wa.me/+917701973093",
     EMAIL:
       "https://mail.google.com/mail/?view=cm&fs=1&to=himanshup1308@gmail.com",
+    RESUME:
+      "https://drive.google.com/file/d/1I4jQAeGj0Od2LctN43Lud8g2uI9UyJu2/view?usp=sharing",
   };
 
   return (
@@ -65,6 +67,18 @@ export default function Home() {
                 height={20}
                 width={20}
                 alt="linkedin icon"
+              />
+            </div>
+          </Link>
+
+          <Link href={URL.RESUME} target="_blank">
+            <div className={`${styles.btn} BubbleEff`}>
+              <span> Resume</span>
+              <Image
+                src={"/icons/resumeIcons.png"}
+                height={20}
+                width={22}
+                alt="resume icon"
               />
             </div>
           </Link>
