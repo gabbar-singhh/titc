@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>I AM THAT HUNGRY GUY GDSC NEEDS!</title>
+        <title>I AM HUNGRY!</title>
         <meta name="description" content="timeline based resume of Himanshu" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/icons/favicon.webp" />
