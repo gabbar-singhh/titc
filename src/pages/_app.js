@@ -18,6 +18,9 @@ export default function App({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@700&display=swap"
           rel="stylesheet"
         />
+
+        <meta property="og:title" content="Timeline based resume of Himanshu" />
+        <meta property="og:image" content="https://ahrefs.com/blog/wp-content/uploads/2020/01/fb-open-graph-1.jpg" />
       </Head>
       <Nav />
       <Component {...pageProps} />
