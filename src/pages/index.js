@@ -16,7 +16,7 @@ export default function Home() {
     EMAIL:
       "https://mail.google.com/mail/?view=cm&fs=1&to=himanshup1308@gmail.com",
     RESUME:
-      "https://drive.google.com/file/d/1I4jQAeGj0Od2LctN43Lud8g2uI9UyJu2/view?usp=sharing",
+      "https://drive.google.com/file/d/13hGl07TWUUNDna5vN_zjXSGVczURJ6p9/view?usp=sharing",
   };
 
   return (
