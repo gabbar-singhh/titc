@@ -4,8 +4,26 @@ import Link from "next/link";
 
 const FooterSection = () => {
   const openMapLocationHandler = () => {
-      window.open("https://maps.app.goo.gl/qmfShD2kHS1kBMhZA", "_blank");
+    window.open("https://maps.app.goo.gl/qmfShD2kHS1kBMhZA", "_blank");
+  };
 
+  const footerServicesClickHandler = () => {
+    window.open("/services", "_self");
+  };
+
+  const footerProductClickHandler = () => {
+    window.open("/product", "_self");
+  };
+
+  const footerAboutClickHandler = () => {
+    window.open("/about_us", "_self");
+  };
+
+  const openWhatsAppHandler = () => {
+    const phoneNumber = "918208896517";
+    const message = encodeURIComponent("hello, I need your help.");
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(url, "_blank", "noopener,noreferrer");
   };
   return (
     <footer className={styles.main}>
@@ -21,22 +39,22 @@ const FooterSection = () => {
 
           <ul>
             <li>
-              <Link href={"/"}>
+              <Link href={"https://www.instagram.com/"} target="_blank">
                 <img src="/icons/instagram.svg" alt="instagram logo" />
               </Link>
             </li>
             <li>
-              <Link href={"/"}>
+              <Link href={"https://www.facebook.com/"} target="_blank">
                 <img src="/icons/facebook.svg" alt="facebook logo" />
               </Link>
             </li>
             <li>
-              <Link href={"/"}>
+              <Link href={"https://www.linkedin.com/"} target="_blank">
                 <img src="/icons/linkedin.svg" alt="linkedin logo" />
               </Link>
             </li>
             <li>
-              <Link href={"/"}>
+              <Link href={"https://www.tiktok.com/"} target="_blank">
                 <img src="/icons/tiktok.svg" alt="tiktok logo" />
               </Link>
             </li>
@@ -45,7 +63,7 @@ const FooterSection = () => {
 
         <div className={styles.right_container}>
           <div className={styles.col_services}>
-            <h3>
+            <h3 onClick={footerServicesClickHandler}>
               Services
               <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
             </h3>
@@ -56,11 +74,11 @@ const FooterSection = () => {
               <li>shipping</li>
             </ul>
 
-            <h3>
+            <h3 onClick={footerProductClickHandler}>
               Products
               <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
             </h3>
-            <h3>
+            <h3 onClick={footerAboutClickHandler}>
               About Us
               <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
             </h3>
@@ -85,7 +103,7 @@ const FooterSection = () => {
                 <img src="/icons/wechat.svg" alt="wechat logo" />
                 WeChat
               </li>
-              <li className={styles.whatsapp_btn}>
+              <li className={styles.whatsapp_btn} onClick={openWhatsAppHandler}>
                 <img src="/icons/whatsapp.svg" alt="whatsapp logo" />
                 WhatsApp
               </li>

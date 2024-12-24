@@ -19,7 +19,7 @@ const ContactUsSection = () => {
         </p>
 
         <ul className={styles.contact_options}>
-          <li>
+          <li className={styles.first_li}>
             <img src="/icons/call_icon.svg" alt="call icon" />
             <p>+86 13538501419 , +91 8208896517</p>
           </li>
@@ -87,9 +87,7 @@ const ContactUsSection = () => {
             </span>
           </div>
 
-          <div className={`${styles.form_submit}`}>
-           send message
-            </div>
+          <div className={`${styles.form_submit}`}>send message</div>
         </div>
       </div>
     </section>

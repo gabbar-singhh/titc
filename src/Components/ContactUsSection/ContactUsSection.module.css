@@ -35,6 +35,12 @@
     gap: 1rem;
 }
 
+.contact_options .first_li p:hover {
+    text-decoration: none;
+    color: #dfdfdf;
+    cursor: default;
+}
+
 .contact_options li {
     display: flex;
     align-items: center;

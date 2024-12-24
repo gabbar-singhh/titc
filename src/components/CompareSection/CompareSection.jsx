@@ -2,6 +2,9 @@ import React from "react";
 import styles from "./CompareSection.module.css";
 
 const CompareSection = () => {
+  const getstartedClickHandler = ()=>{
+    window.open ('/contact', "_self")
+  }
   return (
     <section className={styles.main}>
       <h2>Why Choose Us Over Others?</h2>
@@ -16,7 +19,7 @@ const CompareSection = () => {
               the best products and reduce the risk of poor-quality goods in
               your market.
             </p>
-            <div>
+            <div onClick={getstartedClickHandler}>
               get started{" "}
               <img src="/icons/arrow_next.svg" height={20} alt="arrow icon" />
             </div>
@@ -42,7 +45,7 @@ const CompareSection = () => {
               competitive prices, saving you time and resources while giving you
               a competitive edge in the market.
             </p>
-            <div>
+            <div onClick={getstartedClickHandler}>
               get started{" "}
               <img src="/icons/arrow_next.svg" height={20} alt="arrow icon" />
             </div>
@@ -57,7 +60,7 @@ const CompareSection = () => {
               understand international work can be tricky, but we make sure your
               products arrive on time, keeping your business running smoothly.
             </p>
-            <div>
+            <div onClick={getstartedClickHandler}>
               get started{" "}
               <img src="/icons/arrow_next.svg" height={20} alt="arrow icon" />
             </div>

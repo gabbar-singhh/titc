@@ -2,6 +2,9 @@ import React from "react";
 import styles from "./StatsSection.module.css";
 
 const StatsSection = () => {
+  const contactUsClickHandler = ()=>{
+    window.open ('/contact', "_self")
+  }
   return (
     <section className={styles.stats_main}>
       <h2 className={styles.heading}>see why customers 💟 us</h2>
@@ -30,7 +33,7 @@ const StatsSection = () => {
           <p>trusted suppliers</p>
         </li>
       </ul>
-      <div className={`${styles.stats_cta}`}>
+      <div className={`${styles.stats_cta}`} onClick={contactUsClickHandler}>
         contact us
         <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
       </div>
