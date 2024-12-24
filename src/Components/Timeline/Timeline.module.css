@@ -1,0 +1,145 @@
+.timeline_main {
+    margin: 96px 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline_container{
+    width: 1100px;
+}
+
+.timeline_main h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 3.2rem;
+    font-weight: 700;
+    color: #1D3557;
+    text-transform: capitalize;
+}
+
+.timeline_element img {
+    margin-bottom: 0.8rem;
+    background-color: #d7d7d724;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.timeline_element h3 {
+    color: var(--creamy-white);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.timeline_element p {
+    color: var(--creamy-white);
+
+    font-size: 1rem;
+    line-height: 135%;
+    color: #d6d6d6;
+    margin-top: 0.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.timeline_element_date {
+    color: var(--accent) !important;
+    font-size: 1.1rem !important;
+    text-transform: capitalize;
+    font-weight: 700 !important;
+}
+
+.timeline_element_icon {
+    background-color: var(--accent);
+    box-shadow: 0 0 0 4px #937449, inset 0 2px 0 rgba(0, 0, 0, .08), 0 3px 0 4px rgba(0, 0, 0, .05);
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 360px) {
+    .timeline_main h3 {
+        font-size: 1em;
+    }
+
+    .timeline_main h3:first-child {
+        text-align: center;
+    }
+
+    .verticalTimeline_container {
+        width: 90vw;
+    }
+
+    .card_title {
+        font-size: 14px;
+    }
+
+    .card_title p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .timeline_main h3 {
+        font-size: 1em;
+    }
+
+    .timeline_main h3:first-child {
+        text-align: center;
+    }
+
+    .verticalTimeline_container {
+        width: 90vw;
+    }
+
+    .card_title {
+        font-size: 14px;
+    }
+
+    .card_title p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .timeline_main h3 {
+        font-size: 1em;
+    }
+
+    .verticalTimeline_container {
+        width: 350px;
+    }
+
+    .card_title {
+        font-size: 13px;
+    }
+
+    .card_title p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .verticalTimeline_container {
+        width: 500px;
+    }
+
+    .card_title {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .verticalTimeline_container {
+        width: 550px;
+    }
+
+    .card_title {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1390px) {
+    .card_title {
+        font-size: 12px;
+    }
+}

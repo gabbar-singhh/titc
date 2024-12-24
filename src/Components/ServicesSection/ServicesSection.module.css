@@ -1,0 +1,82 @@
+.main {
+    background-color: var(--blue);
+    padding: 72px;
+}
+
+.main h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--creamy-white);
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+
+.container {}
+
+.container span {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.container .card {
+    width: 256px;
+    background-color: var(--creamy-white);
+    text-align: center;
+    padding: 2.4rem 2.4rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+    border: 1.5px solid rgb(234 234 229);
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+.container .card:hover {
+    background-color: #fdf5e2;
+    -webkit-box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);
+    -moz-box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);
+    box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);
+    transform: scale(1.01);
+}
+
+.card .card_icon {
+    height: 28px;
+    width: 28px;
+    fill: var(--blue);
+    background-color: rgb(30 53 87 / 4%);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+.card h3 {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 135%;
+    color: var(--neutral-black);
+    margin-bottom: 1.2rem;
+    text-align: left;
+}
+
+.card .learn_more {
+    font-size: 14px;
+    color: var(--blue);
+    color: #626262;
+    font-weight: 600;
+    transition: all 400ms ease-in-out;
+}
+
+.card .learn_more:hover {
+    color: #828282;
+}
