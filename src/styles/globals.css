@@ -1,40 +1,121 @@
-:root {}
+:root {
+  --blue: #1D3557;
+  --creamy-white: #F4F1EA;
+  --accent: #AF8E60;
+  --neutral-black: #333333;
+}
 
 * {
-  box-sizing: border-box;
+  margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #f8f5ed;
+  backdrop-filter: blur(8px);
+  cursor: default;
+
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   margin: 0;
 }
 
-html,
-body {
-  background-color: #000;
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
-body {
-  padding: 0;
-  font-family: 'Roboto', sans-serif;
-  cursor: default;
+.shine_eff {
+  z-index: 1;
+  position: relative;
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  padding: 0.5em 1em;
+  outline: none;
+  border: none;
+  background-color: hsl(236, 32%, 26%);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.shine_eff::after {
+  content: '';
+  z-index: -1;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  position: absolute;
+  top: -50%;
+  bottom: -50%;
+  width: 1.25em;
+  transform: translate3d(-625%, 0, 0) rotate(35deg);
+}
+
+.shine_eff:hover::after {
+  transition: transform 0.45s ease-in-out;
+  transform: translate3d(450%, 0, 0) rotate(35deg);
 }
 
 
-/* CUSTOM SCROLL CSS */
-::-webkit-scrollbar {
-  width: 0;
+@font-face {
+  font-family: 'BriemHand';
+  src: url('/fonts/BriemHand-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 6px;
+@font-face {
+  font-family: 'BriemHand';
+  src: url('/fonts/BriemHand-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+@font-face {
+  font-family: 'BriemHand';
+  src: url('/fonts/BriemHand-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BriemHand';
+  src: url('/fonts/BriemHand-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BriemHand';
+  src: url('/fonts/BriemHand-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* scroll bar css */
+/* SCROLL CSS */
+body::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+body::-webkit-scrollbar-track {
+  padding: 2em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--accent);
+  border-radius: 0.5em;
 }
 
 
-/* BUBBLE EFFECT */
-.BubbleEff {
+.bubble_eff {
   z-index: 1;
   position: relative;
   font-size: inherit;
@@ -48,7 +129,7 @@ body {
   transition: color 0.4s ease-in-out;
 }
 
-.BubbleEff::before {
+.bubble_eff::before {
   content: '';
   z-index: -1;
   position: absolute;
@@ -57,38 +138,17 @@ body {
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  background-color: #afafaf;
+  background-color: var(--blue);
   transform-origin: center;
   transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
   transition: transform 0.45s ease-in-out;
 }
 
-.BubbleEff:hover {
+.bubble_eff:hover {
   cursor: pointer;
   color: #161616;
 }
 
-.BubbleEff:hover::before {
-  transform: translate3d(600%, -50%, 0) scale3d(15, 15, 15);
-}
-
-/* MEDIA QUERIES */
-/* SMALL MOBILE DEVICES OR FOR EXPREMENTING PEOPLE */
-@media screen and (min-width: 0px) and (max-width: 360px) {}
-
-/* AVERAGE MOBILE DEVICES  */
-@media screen and (min-width: 360px) and (max-width: 480px) {}
-
-/* IPADS AND TABLETS  */
-@media screen and (min-width: 481px) and (max-width: 768px) {}
-
-/* SMALL SCREEN AND LAPTOP (LIKE ME!! LOL🤣) */
-@media screen and (min-width: 769px) and (max-width: 1024px) {}
-
-/* DESKTOP AND LARGE SCREEN */
-@media screen and (min-width: 1025px) and (max-width: 1200px) {}
-
-/* EXTRA LARGE SCREENS & TV */
-@media screen and (min-width: 1201px) {
-  
+.bubble_eff:hover::before {
+  transform: translate3d(275%, -50%, 0) scale3d(15, 15, 15);
 }

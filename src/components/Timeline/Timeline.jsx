@@ -7,6 +7,8 @@ import "react-vertical-timeline-component/style.min.css";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import styles from "./Timeline.module.css";
+// import step1 from "@/icons/step1.png"
+import step1 from "../../../public/icons/step1.svg";
 
 const Timeline = () => {
   // CUSTOMIZATION FOR PHOTO SLIDE FRAME!
@@ -17,602 +19,182 @@ const Timeline = () => {
     justifyContent: "center",
     backgroundSize: "cover",
     width: "auto",
-    height: "250px",
+    height: "200px",
   };
-
-  // IMGAGES FOR CARD 1
-  const card_1 = [
-    {
-      url: "/assets/01-java.webp",
-    },
-    {
-      url: "/assets/02-java.webp",
-    },
-  ];
-
-  // IMGAGES FOR CARD 2
-  const card_2 = [
-    {
-      url: "/assets/html_css_01.webp",
-    },
-    {
-      url: "/assets/html_css_02.webp",
-    },
-    {
-      url: "/assets/html_css_03.webp",
-    },
-  ];
-
-  // IMGAGES FOR CARD 3
-  const card_3 = [
-    {
-      url: "/assets/tin_01.webp",
-    },
-    {
-      url: "/assets/tin_02.webp",
-    },
-    {
-      url: "/assets/tin_03.webp",
-    },
-    {
-      url: "/assets/tin_04.webp",
-    },
-  ];
-
-  // IMGAGES FOR CARD 4
-  const card_4 = [
-    {
-      url: "/assets/clone_01.webp",
-    },
-    {
-      url: "/assets/clone_02.webp",
-    },
-  ];
-
-  // IMGAGES FOR CARD 5
-  const card_5 = [
-    {
-      url: "/assets/resume_maker_01.webp",
-    },
-    {
-      url: "/assets/resume_maker_02.webp",
-    },
-    {
-      url: "/assets/resume_maker_03.webp",
-    },
-    {
-      url: "/assets/resume_maker_04.webp",
-    },
-  ];
-
-  // IMGAGES FOR CARD 8
-  const card_8 = [
-    {
-      url: "/assets/gotup_01.webp",
-    },
-    {
-      url: "/assets/gotup_02.webp",
-    },
-  ];
-
-  // IMGAGES FOR CARD 9
-  const card_9 = [
-    {
-      url: "/assets/linkfy_01.webp",
-    },
-    {
-      url: "/assets/linkfy_02.webp",
-    },
-    {
-      url: "/assets/linkfy_03.webp",
-    },
-  ];
-
-  // IMGAGES FOR CARD 10
-  const card_10 = [
-    {
-      url: "/assets/work_01.webp",
-    },
-    {
-      url: "/assets/work_02.webp",
-    },
-  ];
 
   return (
     <section className={styles.timeline_main} id="my_journey">
-      <h3>SNEAK-PEAK INTO MY PROGRAMMING JOURNEY!</h3>
-      <VerticalTimeline
-        layout="2-columns"
-        className={styles.verticalTimeline_container}
-      >
-        {/* CARD 1 */}
-        <VerticalTimelineElement
-          className={`${styles.card_title}  vertical-timeline-element--work`}
-          contentStyle={{
-            background: "rgb(33, 150, 243)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{
-            borderRight: "7px solid  rgb(33, 150, 243)",
-          }}
-          date="Mar - May 2021"
-          iconStyle={{
-            background: "rgb(33, 150, 243)",
-            color: "#fff",
-          }}
+      <h2>5 Step Process of our Business</h2>
+
+      <div className={styles.timeline_container}>
+        <VerticalTimeline
+          layout="2-columns"
+          lineColor="#1D3557"
+          className={styles.verticalTimeline_container}
         >
-          <h3 className="vertical-timeline-element-title">
-            I started learning to code
-          </h3>
+          <VerticalTimelineElement
+            className={`${styles.timeline_element}  vertical-timeline-element--work`}
+            contentStyle={{
+              background: "#1D3557",
+              color: "#fff",
+            }}
+            contentArrowStyle={{
+              borderRight: "7px solid #1D3557",
+            }}
+            dateClassName={styles.timeline_element_date}
+            iconClassName={styles.timeline_element_icon}
+            date="Step 1"
+          >
+            <img
+              src="/icons/step1.svg"
+              height={42}
+              width={42}
+              alt="form icon"
+            />
+            <h3 className="vertical-timeline-element-title">Inquiry</h3>
+            <p>
+              Understand the buyer's needs by gathering details about the
+              product, quantity, specifications, and delivery requirements.
+            </p>
+          </VerticalTimelineElement>
 
-          <h4 className={`vertical-timeline-element-subtitle`}></h4>
-          <p>
-            After watching "The Social Network" I found myself inspired to try
-            coding. I watched a few YouTube videos and began reading Head First
-            Java. Learning the basics hooked me instantly, and I enjoyed writing
-            code and creating small programs with loops.
-          </p>
-          <br />
-          <Slide>
-            {card_1.map((slideImage, index) => (
-              <div key={index}>
-                <div
-                  style={{
-                    ...divStyle,
-                    backgroundImage: `url(${slideImage.url})`,
-                  }}
-                >
-                  <span style={spanStyle}>{slideImage.caption}</span>
-                </div>
-              </div>
-            ))}
-          </Slide>
-        </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className={`${styles.timeline_element}  vertical-timeline-element--work`}
+            contentStyle={{
+              background: "#1D3557",
+              color: "#fff",
+            }}
+            contentArrowStyle={{
+              borderRight: "7px solid #1D3557",
+            }}
+            dateClassName={styles.timeline_element_date}
+            iconClassName={styles.timeline_element_icon}
+            date="Step 2"
+          >
+            <img
+              src="/icons/step2.svg"
+              alt="search icon"
+              height={42}
+              width={42}
+            />
+            <h3 className="vertical-timeline-element-title">
+              Sourcing & Finding the right manufacturer
+            </h3>
+            <p>
+              Search for reliable manufacturers who can meet the product
+              quality, quantity, and price expectations within deadlines.
+            </p>
+          </VerticalTimelineElement>
 
-        {/* CARD 2 */}
-        <VerticalTimelineElement
-          position="right"
-          className={`${styles.card_title}  vertical-timeline-element--work`}
-          date="May 2021"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentStyle={{
-            background: "rgb(33, 150, 243)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{
-            borderRight: "7px solid  rgb(33, 150, 243)",
-          }}
-        >
-          <h3 className="vertical-timeline-element-title">
-            I got into web development
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-            I used to watch a ton of coding videos on YouTube where people were
-            building amazing things with HTML, CSS, and JavaScript—like websites
-            and mini web apps. The desire to create something similar sparked in
-            me. After some research, I stumbled upon the world of web-dev.
-            <br />
-            <br />I started my journey by learning HTML and CSS, and later on,
-            JavaScript from CodeWithHarry's YouTube channel. HTML seemed
-            relatively straightforward, but I struggled with CSS.
-          </p>
-          <br />
-          <Slide>
-            {card_2.map((slideImage, index) => (
-              <div key={index}>
-                <div
-                  style={{
-                    ...divStyle,
-                    backgroundImage: `url(${slideImage.url})`,
-                  }}
-                >
-                  <span style={spanStyle}>{slideImage.caption}</span>
-                </div>
-              </div>
-            ))}
-          </Slide>
-        </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className={`${styles.timeline_element}  vertical-timeline-element--work`}
+            contentStyle={{
+              background: "#1D3557",
+              color: "#fff",
+            }}
+            contentArrowStyle={{
+              borderRight: "7px solid #1D3557",
+            }}
+            dateClassName={styles.timeline_element_date}
+            iconClassName={styles.timeline_element_icon}
+            date="Step 3"
+          >
+            <img
+              src="/icons/step3.svg"
+              alt="handshake icon"
+              height={42}
+              width={42}
+            />
+            <h3 className="vertical-timeline-element-title">
+              Dealing & Negotiations
+            </h3>
+            <p>
+              Discuss terms like pricing, delivery timelines, payment methods,
+              and other conditions to finalize a mutually beneficial agreement.
+            </p>
+          </VerticalTimelineElement>
 
-        {/* CARD 3 */}
-        <VerticalTimelineElement
-          className={`${styles.card_title}  vertical-timeline-element--work`}
-          date="Jun - Jul 2021"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentStyle={{
-            background: "rgb(33, 150, 243)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{
-            borderRight: "7px solid  rgb(33, 150, 243)",
-          }}
-        >
-          <h3 className="vertical-timeline-element-title">
-            I decided to build some fun stuff
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-            I learned HTML, CSS, and the basics of JavaScript. Also worked
-            little with bootstrap. Then, I began tinkering with my newfound
-            knowledge. I created a simple dictionary web app—pretty lame, but at
-            the time, I found it fascinating. It would send a request to a free
-            API and return the meaning as a JSON object, which I displayed on
-            the page using a 'for' loop.
-            <br />
-            <br />
-            I created a digital clock which would also show a quote, and in
-            every 15 mins the quote would change using setInterval function
-            which would call the API again. Similarly I also created a stopwatch
-            and a notes-app.
-            <br />
-          </p>
-          <br />
-          <Slide>
-            {card_3.map((slideImage, index) => (
-              <div key={index}>
-                <div
-                  style={{
-                    ...divStyle,
-                    backgroundImage: `url(${slideImage.url})`,
-                  }}
-                >
-                  <span style={spanStyle}>{slideImage.caption}</span>
-                </div>
-              </div>
-            ))}
-          </Slide>
-        </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className={`${styles.timeline_element}  vertical-timeline-element--work`}
+            contentStyle={{
+              background: "#1D3557",
+              color: "#fff",
+            }}
+            contentArrowStyle={{
+              borderRight: "7px solid #1D3557",
+            }}
+            dateClassName={styles.timeline_element_date}
+            iconClassName={styles.timeline_element_icon}
+            date="Step 4"
+          >
+            <img
+              src="/icons/step4.svg"
+              alt="credit card icon"
+              height={42}
+              width={42}
+            />
+            <h3 className="vertical-timeline-element-title">Vendor Payments</h3>
+            <p>
+              Process payments securely to the chosen vendor after confirming
+              all terms and conditions are clearly agreed upon.
+            </p>
+          </VerticalTimelineElement>
 
-        {/* CARD 4 */}
-        <VerticalTimelineElement
-          className={`${styles.card_title}  vertical-timeline-element--work`}
-          date="Aug 2021"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentStyle={{
-            background: "rgb(33, 150, 243)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{
-            borderRight: "7px solid  rgb(33, 150, 243)",
-          }}
-        >
-          <h3 className="vertical-timeline-element-title">
-            I kept writing CSS
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-            I wasn't great at CSS; I remember that clearly. I wanted to design
-            pretty websites. I watched a YouTube video where they copied designs
-            from big companies like Amazon and Netflix. I tried it with Uber and
-            Starbucks sites. They weren't perfect, and they lacked
-            responsiveness, but I felt really happy and confident. I enjoyed
-            building things. Also used chrome dev, it felt like cheating to use
-            inspect elements 😂
-          </p>
-          <br />
-          <Slide>
-            {card_4.map((slideImage, index) => (
-              <div key={index}>
-                <div
-                  style={{
-                    ...divStyle,
-                    backgroundImage: `url(${slideImage.url})`,
-                  }}
-                >
-                  <span style={spanStyle}>{slideImage.caption}</span>
-                </div>
-              </div>
-            ))}
-          </Slide>
-        </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className={`${styles.timeline_element}  vertical-timeline-element--work`}
+            contentStyle={{
+              background: "#1D3557",
+              color: "#fff",
+            }}
+            contentArrowStyle={{
+              borderRight: "7px solid #1D3557",
+            }}
+            dateClassName={styles.timeline_element_date}
+            iconClassName={styles.timeline_element_icon}
+            date="Step 5"
+          >
+            <img
+              src="/icons/step5.svg"
+              alt="check icon"
+              height={42}
+              width={42}
+            />
+            <h3 className="vertical-timeline-element-title">
+              Goods Inspection
+            </h3>
+            <p>
+              Thoroughly check the products for quality, specifications, and
+              compliance before they are approved for shipment.
+            </p>
+          </VerticalTimelineElement>
 
-        {/* CARD 5 */}
-        <VerticalTimelineElement
-          className={`${styles.card_title}  vertical-timeline-element--work`}
-          date="Sep 2021"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          contentStyle={{
-            background: "rgb(233, 30, 99)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{
-            borderRight: "7px solid  rgb(233, 30, 99)",
-          }}
-        >
-          <h3 className="vertical-timeline-element-title">Resume Maker App</h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-            I stumbled upon a linkedin post where someone was struggling to create a resume. That sparked an idea, "Could I create a website to help people make resumes?" I decided to give it a try.
-            <br />
-            <br />
-            I wasn't very skilled enough, but I found a resume
-            template through a Google search, wrote some basic HTML and CSS, and
-            even added a few illustrations to make it look good. Users
-            could visit the landing page, click 'create a new resume,' enter
-            their personal details, and with the help of JavaScript, those
-            details would dynamically appear in the design tempplate I had created.
-            And final resume is displayed. With a download button.
-            <br />
-            <br />
-            I researched and got to know about a library 'html2pdf' which allowed to download html as a pdf. I integerated it asap to download the final resume.
-            The entire project took about 4-5 days, and I couldn't believe how well
-            it turned out. Looking back, the design might seems childish, but I
-            am proud of what I built.
-          </p>
-          <br />
-          <Slide>
-            {card_5.map((slideImage, index) => (
-              <div key={index}>
-                <div
-                  style={{
-                    ...divStyle,
-                    backgroundImage: `url(${slideImage.url})`,
-                  }}
-                >
-                  <span style={spanStyle}>{slideImage.caption}</span>
-                </div>
-              </div>
-            ))}
-          </Slide>
-          <br />
-          <span className={styles.span_links}>
-            <a href="https://snap-resume.vercel.app/" target="_blank">
-              snap-resume.vercel.app
-            </a>
-          </span>
-        </VerticalTimelineElement>
-
-        {/* CARD 6 */}
-        <VerticalTimelineElement
-          className={`${styles.card_title}  vertical-timeline-element--work`}
-          date="Oct - Nov 2021"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          contentStyle={{
-            background: "rgb(233, 30, 99)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{
-            borderRight: "7px solid  rgb(233, 30, 99)",
-          }}
-        >
-          <h3 className="vertical-timeline-element-title">
-            I added few more things!
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-            At that point, I had created a few things and felt a bit like Mark
-            Zuckerberg, lol. So, I decided to create a portfolio website to
-            showcase my work. The website looked decent, and I was satisfied
-            with it, at the time. I also learned MySQL, Git, and Github. I kind
-            of liked Git; it helped me keep my project files organized, and
-            it's like a time machine where I can go back anywhere in the history of project.
-          </p>
-          <br />
-          <span className={styles.span_links}>
-            <a href="https://portfolio-himanshu.netlify.app/" target="_blank">
-              portfolio-himanshu.netlify.app
-            </a>
-            <a href="https://github.com/gabbar-singhh/" target="_blank">
-              github.com/gabbar-singhh
-            </a>
-          </span>
-        </VerticalTimelineElement>
-
-        {/* CARD 7 */}
-        <VerticalTimelineElement
-          className={`${styles.card_title}  vertical-timeline-element--work`}
-          date="Dec 2021 - Mar 2023"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          contentStyle={{
-            background: "rgb(233, 30, 99)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{
-            borderRight: "7px solid  rgb(233, 30, 99)",
-          }}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Left coding for a year
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-            Took a year off from coding. During high school, my parents
-            wanted me to concentrate solely on my studies. I prepared for the
-            NDA entrance exam, but unfortunately, I didn't
-            pass it.
-            <br />I also completed my 12th-grade CBSE board exams and managed to
-            score decent marks.
-          </p>
-          <br />
-          <img src="/assets/prep_me.webp" width={"100%"} />
-        </VerticalTimelineElement>
-
-        {/* CARD 8 */}
-        <VerticalTimelineElement
-          className={`${styles.card_title}  vertical-timeline-element--work`}
-          date="Apr 2023"
-          iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          contentStyle={{
-            background: "rgb(233, 30, 99)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{
-            borderRight: "7px solid  rgb(233, 30, 99)",
-          }}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Getting back to Code!
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-            I got back into programming, revisited the fundamentals of CSS and
-            JavaScript, and began exploring NPM and Next.js. I built two simple
-            websites to refresh my knowledge and enhance my design skills, which
-            I learned from watching YouTube videos.
-          </p>
-          <br />
-          <Slide>
-            {card_8.map((slideImage, index) => (
-              <div key={index}>
-                <div
-                  style={{
-                    ...divStyle,
-                    backgroundImage: `url(${slideImage.url})`,
-                  }}
-                >
-                  <span style={spanStyle}>{slideImage.caption}</span>
-                </div>
-              </div>
-            ))}
-          </Slide>
-          <br />
-          <span className={styles.span_links}>
-            <a href="https://polyverse.netlify.app/" target="_blank">
-              polyverse.netlify.app
-            </a>
-            <a href="https://get-protonn.netlify.app/" target="_blank">
-              get-protonn.netlify.app
-            </a>
-          </span>
-        </VerticalTimelineElement>
-
-        {/* CARD 9 */}
-        <VerticalTimelineElement
-          className={`${styles.card_title}  vertical-timeline-element--work`}
-          date="May 2023"
-          iconStyle={{ background: "rgb(103 0 131)", color: "#fff" }}
-          contentStyle={{
-            background: "rgb(103 0 131)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{
-            borderRight: "7px solid  rgb(103 0 131)",
-          }}
-        >
-          <h3 className="vertical-timeline-element-title">Building Linkfy</h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-
-          <p>
-            Linkfy is a web app that shortens URLs and helps by sharing clean
-            URLs. I built it using Next.js and Firebase as a backend. It was
-            made in exactly 10 days as a part of the famous #10DayWebBuild
-            challenge on Twitter. It became quite hectic, but I had fun and made
-            a few friends on Twitter.
-            <br />
-            <br />
-            Also, I began writing articles on Medium to help myself. I write tutorials on difficulties I faced during building or, in general, so that the next time I won't have to search on Google all over again.
-          </p>
-          <br />
-          <Slide>
-            {card_9.map((slideImage, index) => (
-              <div key={index}>
-                <div
-                  style={{
-                    ...divStyle,
-                    backgroundImage: `url(${slideImage.url})`,
-                  }}
-                >
-                  <span style={spanStyle}>{slideImage.caption}</span>
-                </div>
-              </div>
-            ))}
-          </Slide>
-          <br />
-          <span className={styles.span_links}>
-            <a href="https://linkfy.vercel.app/" target="_blank">
-              linkfy.vercel.app
-            </a>
-            <a href="https://medium.com/@garadiya0" target="_blank">
-              medium.com/@garadiya0
-            </a>
-          </span>
-        </VerticalTimelineElement>
-
-        {/* CARD 10 */}
-        <VerticalTimelineElement
-          className={`${styles.card_title}  vertical-timeline-element--work`}
-          date="Jun - Jul 2023"
-          iconStyle={{ background: "rgb(103 0 131)", color: "#fff" }}
-          contentStyle={{
-            background: "rgb(103 0 131)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{
-            borderRight: "7px solid  rgb(103 0 131)",
-          }}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Got an Internship at a StartUp
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-            Got this internship by reaching out through a WhatsApp gc! <br /> I
-            was looking for a way to gain practical experience, so I dropped a
-            text asking for a web-dev internship in a Startup & Networking
-            Meetup group I'm a part of. A few people reached out; however, all
-            of them rejected me on the call, saying I'm just a kid. Two people
-            called me in for an in-person interview, and one of them agreed to
-            hire me as an intern.
-            <br />
-            <br />I worked there for 2 months—what a crazy experience it was! 🤯
-          </p>
-          <br />
-          <Slide>
-            {card_10.map((slideImage, index) => (
-              <div key={index}>
-                <div
-                  style={{
-                    ...divStyle,
-                    backgroundImage: `url(${slideImage.url})`,
-                  }}
-                >
-                  <span style={spanStyle}>{slideImage.caption}</span>
-                </div>
-              </div>
-            ))}
-          </Slide>
-          <br />
-          <span className={styles.span_links}>
-            <a href="https://codexhimanshu.in/" target="_blank">
-              codexhimanshu.in
-            </a>
-          </span>
-        </VerticalTimelineElement>
-
-        {/* CARD 11 */}
-        <VerticalTimelineElement
-          className={`${styles.card_title}  vertical-timeline-element--work`}
-          date="Aug - Sep 2023"
-          iconStyle={{ background: "rgb(103 0 131)", color: "#fff" }}
-          contentStyle={{
-            background: "rgb(103 0 131)",
-            color: "#fff",
-          }}
-          contentArrowStyle={{
-            borderRight: "7px solid  rgb(103 0 131)",
-          }}
-        >
-          <h3 className="vertical-timeline-element-title">
-            Got accepted into Buildspace!
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle"></h4>
-          <p>
-            I got accepted into Buildspace. It is a online program where you get
-            to work on your idea for 6 weeks and get a chance to win $250000. I
-            decided to work on building a chrome extension which will turn your
-            boring default homepage, into a productivity-focused homepage along
-            with pleasing UI. 30 people signed-up for waitlist. Currently
-            working on this, it will be launched soon!
-          </p>
-          <br />
-          <img src="/assets/chromeland.webp" width={"100%"} />
-        </VerticalTimelineElement>
-
-        {/* ON-GOING */}
-        <VerticalTimelineElement
-          iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
-        />
-      </VerticalTimeline>
+          <VerticalTimelineElement
+            className={`${styles.timeline_element}  vertical-timeline-element--work`}
+            contentStyle={{
+              background: "#1D3557",
+              color: "#fff",
+            }}
+            contentArrowStyle={{
+              borderRight: "7px solid #1D3557",
+            }}
+            dateClassName={styles.timeline_element_date}
+            iconClassName={styles.timeline_element_icon}
+            date="Step 6"
+          >
+            <img
+              src="/icons/step6.svg"
+              alt="airplane icon"
+              height={42}
+              width={42}
+            />
+            <h3 className="vertical-timeline-element-title">Shipping</h3>
+            <p>
+              Arrange safe and timely delivery of the goods to the buyer’s
+              location, ensuring proper documentation and logistics.
+            </p>
+          </VerticalTimelineElement>
+        </VerticalTimeline>
+      </div>
     </section>
   );
 };
