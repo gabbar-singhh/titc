@@ -3,12 +3,13 @@
     padding: 72px;
 
     display: flex;
-    align-items: center;
     justify-content: center;
     gap: 3.6rem;
 }
 
-.contact_left {}
+.contact_left {
+    margin-top: 4.2rem;
+}
 
 .contact_left .heading {
     color: var(--creamy-white);
@@ -31,7 +32,7 @@
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .contact_options li {
