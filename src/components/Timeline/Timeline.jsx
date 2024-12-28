@@ -7,8 +7,6 @@ import "react-vertical-timeline-component/style.min.css";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import styles from "./Timeline.module.css";
-// import step1 from "@/icons/step1.png"
-import step1 from "../../../public/icons/step1.svg";
 
 const Timeline = () => {
   // CUSTOMIZATION FOR PHOTO SLIDE FRAME!
@@ -23,6 +21,7 @@ const Timeline = () => {
   };
 
   return (
+
     <section className={styles.timeline_main} id="my_journey">
       <h2>5 Step Process of our Business</h2>
 
@@ -196,6 +195,8 @@ const Timeline = () => {
         </VerticalTimeline>
       </div>
     </section>
+
+   
   );
 };
 

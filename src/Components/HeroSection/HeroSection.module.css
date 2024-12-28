@@ -8,13 +8,17 @@
 
     background: rgb(29, 53, 87);
     background: linear-gradient(0deg, rgba(29, 53, 87, 0.45) 0%, rgba(244, 241, 234, 1) 100%);
-
 }
 
 .hero_main h1 {
     text-align: center;
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     color: var(--neutral-black);
+    background-color: #fff;
+    padding: 0px 10px;
+    margin-bottom: 0.7rem;
+    background-color: #1e35571f;
+    border-radius: 2px;
 }
 
 .hero_main h1 span {}
@@ -24,14 +28,14 @@
     width: 650px;
     line-height: 135%;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #626262;
     line-height: 135%;
     text-align: center;
 
 }
 
-.hero_main div {
+.hero_main .cta {
     margin-top: 2.4rem;
     color: var(--creamy-white);
     background-color: var(--accent);
@@ -49,8 +53,7 @@
 
 }
 
-
-.hero_main div:hover {
+.hero_main .cta:hover {
     color: var(--creamy-white);
     background-color: #af8e60ba;
 }

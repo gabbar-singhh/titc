@@ -27,7 +27,7 @@ const NavigationBar = () => {
             <li>about us</li>
           </Link>{" "}
           <Link href={"/contact"}>
-            <li className={`${styles.cta_contact} shine_eff`}>
+            <li className={`${styles.cta_contact}`}>
               contact
               <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
             </li>

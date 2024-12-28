@@ -14,6 +14,9 @@
     font-weight: 700;
     color: var(--blue);
 }
+.main h2 span {
+
+}
 
 .card_container {
     display: flex;
@@ -40,11 +43,16 @@
 }
 
 .card .content h3 {
+    margin-top: 1rem;
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--blue);
     margin-bottom: 0.4rem;
+
+    position: relative;
 }
+
+
 
 .card .content p {
     font-size: 1rem;
@@ -82,4 +90,7 @@
 .card .img {
     height: 248px;
     width: auto;
+    background-color: #eaeae5;
+    padding: 36px 36px;
+    border-radius: 16px;
 }

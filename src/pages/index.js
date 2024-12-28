@@ -13,19 +13,25 @@ export default function Home() {
     <>
       <Head>
         <title>Thadani International Trading</title>
-        <meta name="description" content="We help you source quality goods from China and ship them to your country" />
+        <meta
+          name="description"
+          content="We help you source quality goods from China and ship them to your country"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet"/>
       </Head>
       <section className={`${styles.main}`}>
-      <HeroSection/>
-      <CompareSection/>
-      <ServicesSection/>
-      <Timeline/>
-      <StatsSection/>
-      <ContactUsSection/>
-      <FooterSection/>
-
+        <HeroSection />
+        <CompareSection />
+        <ServicesSection />
+        <Timeline />
+        <StatsSection />
+        <ContactUsSection/>
+        <FooterSection />
       </section>
     </>
   );

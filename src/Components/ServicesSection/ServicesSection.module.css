@@ -1,11 +1,54 @@
 .main {
     background-color: var(--blue);
-    padding: 72px;
+    padding: 104px 0;
+  position: relative;
 }
 
-.main h2 {
+.custom_shape_divider_top_1735330510 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom_shape_divider_top_1735330510 svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 19px;
+}
+
+.custom_shape_divider_top_1735330510 .shape_fill {
+    fill: #FFFFFF;
+}
+/*  */
+
+.custom_shape_divider_bottom_1735330233 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom_shape_divider_bottom_1735330233 svg {
+    position: relative;
+    display: block;
+    width: calc(123% + 1.3px);
+    height: 77px;
+}
+
+.custom_shape_divider_bottom_1735330233 .shape_fill {
+    fill: #f7f5ed;
+}
+
+.container h2 {
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 700;
     color: var(--creamy-white);
     text-align: center;
     margin-bottom: 3.2rem;
@@ -34,7 +77,7 @@
     gap: 0.5rem;
     border: 1.5px solid rgb(234 234 229);
     cursor: pointer;
-    transition: all 500ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 .container .card:hover {

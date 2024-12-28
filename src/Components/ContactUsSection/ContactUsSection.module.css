@@ -75,7 +75,7 @@
 
 .form_container {
     background-color: var(--creamy-white);
-    padding: 3.2rem 1.6rem;
+    padding: 3.2rem 1.6rem 2.4rem 1.6rem;
     border-radius: 4px;
     border: 2px solid var(--accent);
     box-shadow: 0 0 0px 3px #af8e605e;
@@ -171,13 +171,28 @@
     color: #9f9f9f;
 }
 
+.row_4 {
+    margin-top: 0.5rem;
+}
+
+.row_4 .error_message {
+    color: #ba0000;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
 .form_submit {
     color: var(--creamy-white);
     background-color: var(--accent);
     border: 1px solid #af8e6021;
     box-shadow: 4px 4px 6px 0px #dbdad8;
 
-    margin-top: 2.8rem;
+    margin-top: 1.4rem;
     font-weight: 500;
     padding: 10px 24px;
     border-radius: 4px;
@@ -187,6 +202,14 @@
     text-transform: capitalize;
     cursor: pointer;
     transition: all 400ms ease-in-out;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.disabled_btn {
+    background-color: #b7b7b7;
 }
 
 .form_submit:hover {

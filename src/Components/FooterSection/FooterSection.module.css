@@ -241,9 +241,9 @@
     font-size: 14px;
     line-height: 135%;
     font-weight: 400;
-    color: var(--neutral-black);
+    color: var(--creamy-white);
     padding: 10px;
     text-align: center;
-    background-color: #ffefce;
+background-color: var(--accent);
     border-top: 1px solid #af8e603b;
 }
