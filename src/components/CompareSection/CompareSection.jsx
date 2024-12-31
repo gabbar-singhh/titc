@@ -1,11 +1,42 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./CompareSection.module.css";
 import { Fade } from "react-awesome-reveal";
 
 const CompareSection = () => {
+  const [imageLoaded1, setImageLoaded1] = useState(false);
+  const [imageLoaded2, setImageLoaded2] = useState(false);
+  const [imageLoaded3, setImageLoaded3] = useState(false);
+
   const getstartedClickHandler = () => {
     window.open("/contact", "_self");
   };
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded1(true);
+    };
+
+    img.src = "/img/compareSection/1.webp";
+  }, ["/img/compareSection/1.webp"]);
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded2(true);
+    };
+
+    img.src = "/img/compareSection/2.webp";
+  }, ["/img/compareSection/2.webp"]);
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded2(true);
+    };
+
+    img.src = "/img/compareSection/3.webp";
+  }, ["/img/compareSection/3.webp"]);
   return (
     <section className={styles.main}>
       <div className={styles.bottom_wave}></div>
@@ -34,20 +65,37 @@ const CompareSection = () => {
                 />
               </div>
             </span>
-            <img
-              src="/img/compareSection/1.png"
-              className={styles.img}
-              alt="shipment box img"
-            />
+            {imageLoaded1 ? (
+              <img
+                src="/img/compareSection/1.webp"
+                className={styles.img}
+                alt="shipment box img"
+              />
+            ) : (
+              <img
+                src="/img/compareSection/1_blur.webp"
+                className={styles.img}
+                alt="shipment box img"
+              />
+            )}
           </div>
         </Fade>
         <Fade direction="up" triggerOnce>
           <div className={`${styles.card} ${styles.card_02}`}>
-            <img
-              src="/img/compareSection/2.png"
-              className={styles.img}
-              alt="china network img"
-            />
+            {imageLoaded2 ? (
+              <img
+                src="/img/compareSection/2.webp"
+                className={styles.img}
+                alt="china network img"
+              />
+            ) : (
+              <img
+                src="/img/compareSection/2_blur.webp"
+                className={styles.img}
+                alt="china network img"
+              />
+            )}
+
             <span className={styles.content}>
               <h3>Access to Supplier Network</h3>
               <p>
@@ -86,11 +134,19 @@ const CompareSection = () => {
                 />
               </div>
             </span>
-            <img
-              src="/img/compareSection/3.png"
-              className={styles.img}
-              alt="credit card img"
-            />
+            {imageLoaded3 ? (
+              <img
+                src="/img/compareSection/3.webp"
+                className={styles.img}
+                alt="credit card img"
+              />
+            ) : (
+              <img
+                src="/img/compareSection/3_blur.webp"
+                className={styles.img}
+                alt="credit card img"
+              />
+            )}
           </div>
         </Fade>
       </div>

@@ -1,20 +1,27 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Head from "next/head";
 import styles from "@/styles/About.module.css";
-import Link from "next/link";
 import FooterSection from "@/Components/FooterSection/FooterSection";
 import { Fade } from "react-awesome-reveal";
-import { TypeAnimation } from "react-type-animation";
-import SmallCTASection from "@/Components/SmallCTASection/SmallCTASection";
-import ContactUsSection from "@/Components/ContactUsSection/ContactUsSection";
 
 const about_us = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
   const openWhatsAppHandler = () => {
     const phoneNumber = "918208896517";
     const message = encodeURIComponent("hello, I need your help.");
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+
+    img.src = "/img/placeholder.webp";
+  }, ["/img/placeholder.webp"]);
   return (
     <>
       <Head>
@@ -115,7 +122,11 @@ const about_us = () => {
                 </span>
 
                 <div className={styles.photo_duo}>
-                  <img src="/img/placeholder.png" alt="" />
+                  {imageLoaded ? (
+                    <img src="/img/placeholder.webp" alt="" />
+                  ) : (
+                    <img src="/img/placeholder_blur.webp" />
+                  )}
                   <p className={styles.name}>
                     Mr. Kayyush Thadani <br />
                     <span>Founder @Thadani International Trading </span>

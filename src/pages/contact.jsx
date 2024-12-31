@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import styles from "@/styles/Contact.module.css";
 import FooterSection from "@/Components/FooterSection/FooterSection";
@@ -11,6 +11,9 @@ const contact = () => {
   const [showLoading, setShowLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("default");
   const [showErrorVal, setShowErrorVal] = useState(false);
+
+  const [imageLoaded, setImageLoaded] = useState(false);
+
 
   const [formData, setFormData] = useState({
     username: "",
@@ -112,6 +115,15 @@ const contact = () => {
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+
+    img.src = "/img/man_calling.webp";
+  }, ["/img/man_calling.webp"]);
   return (
     <>
       <Head>
@@ -148,10 +160,15 @@ const contact = () => {
 
             <div className={styles.rightSide}>
               <Fade triggerOnce duration={1000}>
-                <img
-                  src="/img/man_calling.png"
+
+                {imageLoaded?  <img
+                  src="/img/man_calling.webp"
                   alt="man in formals on a call"
-                />
+                />:  <img
+                src="/img/man_calling_blur.webp"
+                alt="man in formals on a call"
+              />}
+               
               </Fade>
             </div>
           </span>

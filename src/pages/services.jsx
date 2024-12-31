@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import Head from "next/head";
 import styles from "@/styles/Services.module.css";
 import ContactUsSection from "@/Components/ContactUsSection/ContactUsSection";
@@ -7,12 +7,53 @@ import { TypeAnimation } from "react-type-animation";
 import { Fade } from "react-awesome-reveal";
 
 const services = () => {
+  const [imageLoaded1, setImageLoaded1] = useState(false);
+  const [imageLoaded2, setImageLoaded2] = useState(false);
+  const [imageLoaded3, setImageLoaded3] = useState(false);
+  const [imageLoaded4, setImageLoaded4] = useState(false);
+
   const openWhatsAppHandler = () => {
     const phoneNumber = "918208896517";
     const message = encodeURIComponent("hello, I need your help.");
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded1(true);
+    };
+
+    img.src = "/img/services/sourcing.webp";
+  }, ["/img/services/sourcing.webp"]);
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded2(true);
+    };
+
+    img.src = "/img/services/trading.webp";
+  }, ["/img/services/trading.webp"]);
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded3(true);
+    };
+
+    img.src = "/img/services/vendor.webp";
+  }, ["/img/services/vendor.webp"]);
+
+  useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded4(true);
+    };
+
+    img.src = "/img/services/shipping.webp";
+  }, ["/img/services/shipping.webp"]);
   return (
     <>
       <Head>
@@ -120,18 +161,35 @@ const services = () => {
                 </li>
               </ul>
             </span>
-            <img
-              className={styles.right_img}
-              src="/img/services/sourcing.png"
-              alt="china network img"
-            />
+            {imageLoaded1 ? (
+              <img
+                className={styles.right_img}
+                src="/img/services/sourcing.webp"
+                alt="china network img"
+              />
+            ) : (
+              <img
+                className={styles.right_img}
+                src="/img/services/sourcing_blur.webp"
+                alt="china network img"
+              />
+            )}
           </div>
           <div className={`${styles.services} ${styles.service_2}`}>
-            <img
-              className={styles.right_img}
-              src="/img/services/trading.png"
-              alt="china network img"
-            />
+            {imageLoaded2 ? (
+              <img
+                className={styles.right_img}
+                src="/img/services/trading.webp"
+                alt="china network img"
+              />
+            ) : (
+              <img
+                className={styles.right_img}
+                src="/img/services/trading_blur.webp"
+                alt="china network img"
+              />
+            )}
+
             <span className={styles.content}>
               <img
                 src="/icons/trading_white.svg"
@@ -211,18 +269,35 @@ const services = () => {
                 </li>
               </ul>
             </span>
-            <img
-              className={styles.right_img}
-              src="/img/services/vendor.png"
-              alt=""
-            />
+            {imageLoaded3 ? (
+              <img
+                className={styles.right_img}
+                src="/img/services/vendor.webp"
+                alt=""
+              />
+            ) : (
+              <img
+                className={styles.right_img}
+                src="/img/services/vendor_blur.webp"
+                alt=""
+              />
+            )}
           </div>
           <div className={`${styles.services} ${styles.service_4}`}>
-            <img
-              className={styles.right_img}
-              src="/img/services/shipping.png"
-              alt="china network img"
-            />
+            {imageLoaded4 ? (
+              <img
+                className={styles.right_img}
+                src="/img/services/shipping.webp"
+                alt="china network img"
+              />
+            ) : (
+              <img
+                className={styles.right_img}
+                src="/img/services/shipping_blur.webp"
+                alt="china network img"
+              />
+            )}
+
             <span className={styles.content}>
               <img
                 src="/icons/shipping_white.svg"

@@ -74,21 +74,21 @@ const product = () => {
             <section className={styles.rightSide}>
               <div>
                 <img
-                  src="/img/montage/1.png"
+                  src="/img/montage/1.webp"
                   alt="white cup in yellow bg"
                 />
               </div>
 
               <div>
                 <img
-                  src="/img/montage/2.png"
+                  src="/img/montage/2.webp"
                   alt="Alt text for the image"
                 />
               </div>
 
               <div>
                 <img
-                  src="/img/montage/5.png"
+                  src="/img/montage/5.webp"
                   alt="china woman yellow dress"
                 />
               </div>
@@ -97,7 +97,7 @@ const product = () => {
 
               <div>
                 <img
-                  src="/img/montage/6.png"
+                  src="/img/montage/6.webp"
                   alt="Alt text for the image"
                 />
               </div>
@@ -106,7 +106,7 @@ const product = () => {
 
               <div>
                 <img
-                  src="/img/montage/8.png"
+                  src="/img/montage/8.webp"
                   alt="Alt text for the image"
                 />
               </div>
@@ -116,21 +116,21 @@ const product = () => {
 
               <div>
                 <img
-                  src="/img/montage/3.png"
+                  src="/img/montage/3.webp"
                   alt="Alt text for the image"
                 />
               </div>
 
               <div>
                 <img
-                  src="/img/montage/4.png"
+                  src="/img/montage/4.webp"
                   alt="brown package in white bg"
                 />
               </div>
 
               <div>
                 <img
-                  src="/img/montage/7.png"
+                  src="/img/montage/7.webp"
                   alt="Alt text for the image"
                 />
               </div>
