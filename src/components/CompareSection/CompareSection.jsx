@@ -8,8 +8,11 @@ const CompareSection = () => {
   };
   return (
     <section className={styles.main}>
+      <div className={styles.bottom_wave}></div>
       <Fade direction="up" triggerOnce>
-        <h2>What Makes Us <span>Your Perfect Patner?</span></h2>
+        <h2>
+          What Makes Us <span>Your Perfect Patner?</span>
+        </h2>
       </Fade>
       <div className={styles.card_container}>
         <Fade direction="up" triggerOnce>
@@ -32,7 +35,7 @@ const CompareSection = () => {
               </div>
             </span>
             <img
-              src="/img/li1.png"
+              src="/img/compareSection/1.png"
               className={styles.img}
               alt="shipment box img"
             />
@@ -41,7 +44,7 @@ const CompareSection = () => {
         <Fade direction="up" triggerOnce>
           <div className={`${styles.card} ${styles.card_02}`}>
             <img
-              src="/img/li2.png"
+              src="/img/compareSection/2.png"
               className={styles.img}
               alt="china network img"
             />
@@ -84,7 +87,7 @@ const CompareSection = () => {
               </div>
             </span>
             <img
-              src="/img/li3.png"
+              src="/img/compareSection/3.png"
               className={styles.img}
               alt="credit card img"
             />

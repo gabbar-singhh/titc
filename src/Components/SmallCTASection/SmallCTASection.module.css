@@ -1,0 +1,50 @@
+.main {
+    background-color: #f7f5ed;
+    padding: 148px;
+    text-align: center;
+
+    background-image: url('/img/white_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main .heading {
+    margin-bottom: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.main .desc {
+    font-size: 1.2rem;
+    line-height: 135%;
+    letter-spacing: -0.1px;
+    color: #626262;
+    font-weight: 500;
+}
+
+.main .cta {
+    margin-top: 3.2rem;
+    color: var(--creamy-white);
+    background-color: var(--accent);
+    padding: 16px 24px;
+    border-radius: 4rem;
+    font-weight: 600;
+    transition: all 400ms ease-in-out;
+    color: #fff;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.main .cta:hover {
+    color: var(--creamy-white);
+    background-color: #af8e60ba;
+}

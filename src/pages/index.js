@@ -18,11 +18,14 @@ export default function Home() {
           content="We help you source quality goods from China and ship them to your country"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
 
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <section className={`${styles.main}`}>
         <HeroSection />
@@ -30,7 +33,7 @@ export default function Home() {
         <ServicesSection />
         <Timeline />
         <StatsSection />
-        <ContactUsSection/>
+        <ContactUsSection />
         <FooterSection />
       </section>
     </>

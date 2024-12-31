@@ -1,32 +1,123 @@
 .main {
+    background-color: var(--creamy-white);
+}
 
-    margin: 96px 0;
-    color: var(--neutral-black);
+.hero_services {
+    height: 90vh;
+    background-color: var(--blue);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    gap: 1.2rem;
+    position: relative;
+    background: linear-gradient(0deg, #15263e 0%, rgb(247 245 237) 100%);
+}
+
+.hero_services span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_services p {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--creamy-white);
+    background-color: #af8e6096;
+    border-radius: 1rem;
+    padding: 3px 12px;
+    box-shadow: 0 0 0px 2px #af8e605e;
+    border: 1px solid var(--accent);
+    margin-bottom: 0.2rem;
+
+
+}
+
+.hero_services h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 125%;
+    text-transform: capitalize;
+}
+
+.hero_services .cta {
+    margin-top: 3.6rem;
+    color: var(--creamy-white);
+    background-color: var(--accent);
+    padding: 16px 24px;
+    border-radius: 4rem;
+    font-weight: 600;
+    transition: all 400ms ease-in-out;
+    color: #fff;
+    cursor: pointer;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.hero_services .cta:hover {
+    color: var(--creamy-white);
+    background-color: #af8e60ba;
+}
+
+.custom_shape_divider_bottom_1735337911 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom_shape_divider_bottom_1735337911 svg {
+    position: relative;
+    display: block;
+    width: calc(106% + 1.3px);
+    height: 31px;
+}
+
+.custom_shape_divider_bottom_1735337911 .shape_fill {
+    fill: var(--creamy-white);
+
 }
 
 .main h2 {
-    margin-bottom: 3.2rem;
+    margin-top: 96px;
     font-size: 1.6rem;
+    text-transform: capitalize;
     font-weight: 700;
     color: var(--blue);
+    text-align: center;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    gap: 96px;
 }
 
 .services {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: center;
     gap: 2.8rem;
+    height: 90vh;
+    position: sticky;
+    top: 0;
+}
+
+.service_1,
+.service_3 {
+    background-color: var(--creamy-white);
+}
+
+.service_2,
+.service_4 {
+    background-color: var(--blue);
 }
 
 .services .content {
@@ -34,16 +125,36 @@
     margin-top: 1rem;
 }
 
+.service_1 .card_icon,
+.service_3 .card_icon {
+    height: 24px;
+    width: 24px;
+    fill: var(--blue);
+    background-color: rgb(30 53 87 / 4%);
+    padding: 10px;
+    border-radius: 12px;
+}
+
+
+.service_2 .card_icon,
+.service_4 .card_icon {
+    height: 24px;
+    width: 24px;
+    background-color: rgb(56 76 104);
+    padding: 10px;
+    border-radius: 12px;
+}
+
 .services h3 {
     text-transform: uppercase;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     font-weight: 700;
     color: var(--blue);
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.8rem;
 }
 
 .services p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 135%;
     letter-spacing: -0.1px;
     color: #626262;
@@ -52,7 +163,7 @@
 
 .services ul {
     list-style-type: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 135%;
     letter-spacing: -0.1px;
     color: #626262;
@@ -63,7 +174,7 @@
     display: flex;
     align-items: start;
     justify-content: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .services ul li img {
@@ -73,9 +184,29 @@
 }
 
 .services .right_img {
-    height: 248px;
+    height: 448px;
     width: auto;
-    background-color: #eaeae5;
-    padding: 36px 36px;
-    border-radius: 16px;
+    background-color: #af8e60bd;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.service_2 h3,
+.service_4 h3 {
+    color: var(--creamy-white);
+}
+
+
+.service_2 p,
+.service_4 p {
+    color: var(--creamy-white);
+}
+
+.service_2 ul,
+.service_4 ul {
+    color: #dfdfdf;
+}
+
+.service_4 {
+    border-bottom: 1px solid #af8e603b;
 }

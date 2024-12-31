@@ -23,11 +23,23 @@
 }
 
 .container .leftSide {
-    margin-top: 2.4rem;
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: start;
+    margin-top: 3.6rem;
+}
+
+.leftSide p {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--accent);
+    background-color: #af8e6030;
+    border-radius: 1rem;
+    padding: 3px 12px;
+    box-shadow: 0 0 0px 2px #af8e605e;
+    border: 1px solid var(--accent);
+    margin-bottom: 1rem;
 }
 
 .leftSide h1 {
@@ -68,6 +80,8 @@
     width: auto;
     border-radius: 4px;
     border: 1.5px solid #af8e6073;
+    border-top-left-radius: 2.4rem;
+    border-bottom-right-radius: 2.4rem;
 }
 
 .custom_shape_divider_bottom_1735337911 {

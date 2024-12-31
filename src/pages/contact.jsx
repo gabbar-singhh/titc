@@ -121,17 +121,21 @@ const contact = () => {
           content="We help you source quality goods from China and ship them to your country"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
       <section className={`${styles.main}`}>
         <section className={styles.container}>
           <span>
-            <Fade triggerOnce duration={1000}>
-              <div className={styles.leftSide}>
-                <img src="/img/text_bubble.png" alt="" height={30} />
+            <div className={styles.leftSide}>
+              <Fade triggerOnce direction="up">
+                <p>Contact Us</p>
+              </Fade>
 
+              <Fade triggerOnce direction="up">
                 <h1>You're Just One WhatsApp Text Away From Success</h1>
+              </Fade>
 
+              <Fade triggerOnce direction="up">
                 <div onClick={openWhatsAppHandler} className={styles.cta}>
                   Get in Touch on WhatsApp{" "}
                   <img
@@ -139,8 +143,9 @@ const contact = () => {
                     alt="arrow upright icon"
                   />
                 </div>
-              </div>
-            </Fade>
+              </Fade>
+            </div>
+
             <div className={styles.rightSide}>
               <Fade triggerOnce duration={1000}>
                 <img

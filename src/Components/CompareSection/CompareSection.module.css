@@ -1,5 +1,5 @@
 .main {
-    margin: 96px 0;
+    padding: 96px 0;
     color: var(--neutral-black);
     display: flex;
     align-items: center;
@@ -48,11 +48,7 @@
     font-weight: 700;
     color: var(--blue);
     margin-bottom: 0.4rem;
-
-    position: relative;
 }
-
-
 
 .card .content p {
     font-size: 1rem;
@@ -90,7 +86,7 @@
 .card .img {
     height: 248px;
     width: auto;
-    background-color: #eaeae5;
+    background-color: #f7f5ed9c;
     padding: 36px 36px;
     border-radius: 16px;
 }

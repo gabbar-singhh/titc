@@ -28,44 +28,9 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-/* Firefox */
+/* input number slider */
 input[type=number] {
   -moz-appearance: textfield;
-}
-
-@font-face {
-  font-family: 'BriemHand';
-  src: url('/fonts/BriemHand-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'BriemHand';
-  src: url('/fonts/BriemHand-Medium.ttf') format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'BriemHand';
-  src: url('/fonts/BriemHand-SemiBold.ttf') format('truetype');
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'BriemHand';
-  src: url('/fonts/BriemHand-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'BriemHand';
-  src: url('/fonts/BriemHand-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-style: normal;
 }
 
 /* scroll bar css */

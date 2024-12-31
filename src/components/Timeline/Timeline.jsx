@@ -21,7 +21,6 @@ const Timeline = () => {
   };
 
   return (
-
     <section className={styles.timeline_main} id="my_journey">
       <h2>5 Step Process of our Business</h2>
 
@@ -45,7 +44,7 @@ const Timeline = () => {
             date="Step 1"
           >
             <img
-              src="/icons/step1.svg"
+              src="/icons/timeline/1.svg"
               height={42}
               width={42}
               alt="form icon"
@@ -71,7 +70,7 @@ const Timeline = () => {
             date="Step 2"
           >
             <img
-              src="/icons/step2.svg"
+              src="/icons/timeline/2.svg"
               alt="search icon"
               height={42}
               width={42}
@@ -99,7 +98,7 @@ const Timeline = () => {
             date="Step 3"
           >
             <img
-              src="/icons/step3.svg"
+              src="/icons/timeline/3.svg"
               alt="handshake icon"
               height={42}
               width={42}
@@ -127,7 +126,7 @@ const Timeline = () => {
             date="Step 4"
           >
             <img
-              src="/icons/step4.svg"
+              src="/icons/timeline/4.svg"
               alt="credit card icon"
               height={42}
               width={42}
@@ -153,7 +152,7 @@ const Timeline = () => {
             date="Step 5"
           >
             <img
-              src="/icons/step5.svg"
+              src="/icons/timeline/5.svg"
               alt="check icon"
               height={42}
               width={42}
@@ -181,7 +180,7 @@ const Timeline = () => {
             date="Step 6"
           >
             <img
-              src="/icons/step6.svg"
+              src="/icons/timeline/6.svg"
               alt="airplane icon"
               height={42}
               width={42}
@@ -194,9 +193,8 @@ const Timeline = () => {
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
-    </section>
 
-   
+    </section>
   );
 };
 

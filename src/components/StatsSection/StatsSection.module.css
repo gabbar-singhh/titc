@@ -1,12 +1,36 @@
 .stats_main {
     padding: 96px 0;
-    height: 70vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 4em;
+
+    /* background-image: url('/img/white_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center; */
+
+    position: relative; /* Required for the ::before pseudo-element */
+    overflow: hidden; /* Ensures the blurred background doesn't spill out */
 }
+
+.stats_main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/img/white_bg.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); /* Adjust blur value as needed */
+    z-index: -1; /* Places the blurred background behind the content */
+  }
 
 .stats_main .heading {
     text-align: center;
@@ -79,4 +103,24 @@
 .stats_cta:hover {
     color: var(--creamy-white);
     background-color: #af8e60ba;
+}
+
+.custom_shape_divider_top_1735502423 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom_shape_divider_top_1735502423 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 71px;
+}
+
+.custom_shape_divider_top_1735502423 .shape_fill {
+    fill: #f7f5ed;
 }

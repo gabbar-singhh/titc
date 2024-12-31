@@ -36,7 +36,7 @@ const ServicesSection = () => {
                 <img
                   src="/icons/trading.svg"
                   className={styles.card_icon}
-                  alt="sourcing icon"
+                  alt="trading icon"
                 />
                 <h3>Trading</h3>
                 <p>
@@ -51,7 +51,7 @@ const ServicesSection = () => {
                 <img
                   src="/icons/vendor_pay.svg"
                   className={styles.card_icon}
-                  alt="sourcing icon"
+                  alt="vendor icon"
                 />
                 <h3>Vendor Payments</h3>
                 <p>
@@ -64,7 +64,7 @@ const ServicesSection = () => {
                 <img
                   src="/icons/shipping.svg"
                   className={styles.card_icon}
-                  alt="sourcing icon"
+                  alt="shipping icon"
                 />
                 <h3>Shipping</h3>
                 <p>
