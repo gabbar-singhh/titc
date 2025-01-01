@@ -87,6 +87,7 @@
     .nav_mobile,
     .nav_mobile_container {
         display: inline-block;
+        z-index: 9999;
     }
 
     .close {

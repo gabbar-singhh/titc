@@ -14,9 +14,8 @@
     font-weight: 700;
     color: var(--blue);
 }
-.main h2 span {
 
-}
+.main h2 span {}
 
 .card_container {
     display: flex;
@@ -89,4 +88,114 @@
     background-color: #f7f5ed9c;
     padding: 36px 36px;
     border-radius: 16px;
+}
+
+/* MEDIA QUERIES */
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 200px) and (max-width: 361px) {
+
+    .main h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .card .content h3 {
+        font-size: 15px;
+text-align: center;
+    }
+
+    .card .content p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .card_container .card {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+
+    .card_container .card_02 {
+        flex-direction: column-reverse;
+        gap: 1.4rem;
+    }
+
+    .card .content {
+        width: 196px;
+    }
+
+    .card .img {
+        height: 124px;
+    }
+
+.card .content div {
+    font-size: 14px;
+    text-align: center;
+}
+}
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .main h2 {
+        font-size: 1.2rem;
+    }
+
+    .card .content h3 {
+        font-size: 1rem;
+    }
+
+    .card .content p {
+        font-size: 1rem;
+    }
+
+    .card_container .card {
+        flex-direction: column;
+    }
+
+    .card_container .card_02 {
+        flex-direction: column-reverse;
+    }
+
+    .card .content {
+        width: 248px;
+    }
+
+    .card .img {
+        height: 196px;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .main h2 {
+        font-size: 1.4rem;
+    }
+
+
+    .card_container .card {
+        flex-direction: column;
+    }
+
+    .card_container .card_02 {
+        flex-direction: column-reverse;
+    }
+
+    .card .content {
+        width: 336px;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .main h2 {
+        font-size: 1.4rem;
+    }
+
+    .card .content {
+        width: 336px;
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .main h2 {
+        font-size: 1.4rem;
+    }
 }

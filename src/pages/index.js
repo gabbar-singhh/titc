@@ -29,7 +29,7 @@ export default function Home() {
       </Head>
       <section className={`${styles.main}`}>
         <HeroSection />
-        {/* <CompareSection /> */}
+        <CompareSection />
         {/* <ServicesSection /> */}
         {/* <Timeline /> */}
         {/* <StatsSection /> */}
