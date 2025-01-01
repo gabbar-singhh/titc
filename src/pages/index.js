@@ -33,7 +33,7 @@ export default function Home() {
         <ServicesSection />
         <Timeline />
         <StatsSection />
-        {/* <ContactUsSection /> */}
+        <ContactUsSection />
         {/* <FooterSection /> */}
       </section>
     </>

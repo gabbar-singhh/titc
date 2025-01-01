@@ -120,7 +120,6 @@ const ContactUsSection = () => {
               <img src="/icons/address_icon.svg" alt="address icon" />
               <p onClick={addressClickHandler}>
                 Office No. 403, Building 1, Guangda Rd N, 1st St,
-                <br />
                 Dongcheng, Dongguan, Guangdong, China.
               </p>
             </li>

@@ -216,3 +216,139 @@
     color: var(--creamy-white);
     background-color: #af8e60ba;
 }
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 200px) and (max-width: 361px) {
+    .main {
+        padding: 20px 14px;
+        gap: 2.8rem;
+        flex-direction: column;
+    }
+
+    .contact_left .heading {
+        font-size: 1.4rem;
+    }
+
+    .contact_left {
+        margin-top: 1.6rem;
+    }
+
+    .row_1,
+    .row_2 {
+        align-items: start;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .row_1 span,
+    .row_2 span {
+        width: 90%;
+    }
+
+    .row_1 span input,
+    .row_2 span input {
+        width: 100%;
+    }
+
+
+    .row_3 span textarea {
+        width: 90%;
+    }
+}
+
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .main {
+        padding: 20px 20px;
+        gap: 3.6rem;
+        flex-direction: column;
+    }
+
+    .contact_left {
+        margin-top: 1.6rem;
+    }
+
+    .row_1,
+    .row_2 {
+        align-items: start;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .row_1 span,
+    .row_2 span {
+        width: 90%;
+    }
+
+    .row_1 span input,
+    .row_2 span input {
+        width: 100%;
+    }
+
+    .row_3 span textarea {
+        width: 90%;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .main {
+        padding: 36px 36px;
+        gap: 3.6rem;
+        flex-direction: column;
+    }
+
+    .contact_left {
+        margin-top: 1.6rem;
+    }
+
+    .row_1,
+    .row_2 {
+        align-items: start;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .row_1 span,
+    .row_2 span {
+
+        width: 90%;
+
+    }
+
+    .row_1 span input,
+    .row_2 span input {
+        width: 100%;
+    }
+
+
+    .row_3 span textarea {
+        width: 90%;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .main {
+        padding: 72px;
+        gap: 3.6rem;
+
+        flex-direction: column;
+    }
+
+    .contact_left {
+        margin-top: 1.6rem;
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .main {
+        padding: 72px 48px;
+        gap: 3.2rem;
+    }
+}
