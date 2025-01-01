@@ -34,7 +34,7 @@ export default function Home() {
         <Timeline />
         <StatsSection />
         <ContactUsSection />
-        {/* <FooterSection /> */}
+        <FooterSection />
       </section>
     </>
   );

@@ -235,8 +235,6 @@
     height: 12px;
 }
 
-
-
 .lower_foot {
     font-size: 14px;
     line-height: 135%;
@@ -244,6 +242,114 @@
     color: var(--creamy-white);
     padding: 10px;
     text-align: center;
-background-color: var(--accent);
+    background-color: var(--accent);
     border-top: 1px solid #af8e603b;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 200px) and (max-width: 361px) {
+    .right_container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .upper_foot {
+        padding: 36px 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left_container {
+        margin-bottom: 2.4rem;
+    }
+
+    .left_container .logo_img {
+        height: 36px;
+        margin-bottom: 2.4rem;
+    }
+
+    /* WORK */
+    .col_email ul li:nth-of-type(2) h3 p {
+        width: 100px;
+    }
+}
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .right_container {
+        display: grid;
+        align-items: start;
+        grid-template-columns: repeat(2, 156px);
+        gap: 1rem;
+    }
+
+    .upper_foot {
+        padding: 36px 0px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left_container {
+        margin-bottom: 2.4rem;
+    }
+
+    .left_container .logo_img {
+        height: 36px;
+        margin-bottom: 2.4rem;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .right_container {
+        align-items: start;
+        justify-content: center;
+
+        display: grid;
+        grid-template-columns: repeat(2, 196px);
+        gap: 1rem;
+    }
+
+    .upper_foot {
+        padding: 56px 48px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left_container {
+        margin-bottom: 2.4rem;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .right_container {
+        align-items: start;
+        justify-content: center;
+    }
+
+    .upper_foot {
+        padding: 56px 48px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .left_container {
+        margin-bottom: 2.4rem;
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .right_container {
+        gap: 2.4rem;
+    }
+
+    .upper_foot {
+        padding: 72px 42px;
+    }
 }
