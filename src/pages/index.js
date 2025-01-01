@@ -32,7 +32,7 @@ export default function Home() {
         <CompareSection />
         <ServicesSection />
         <Timeline />
-        {/* <StatsSection /> */}
+        <StatsSection />
         {/* <ContactUsSection /> */}
         {/* <FooterSection /> */}
       </section>
