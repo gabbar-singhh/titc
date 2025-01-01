@@ -1,7 +1,7 @@
 .main {
     background-color: var(--blue);
     padding: 104px 0;
-  position: relative;
+    position: relative;
 }
 
 .custom_shape_divider_top_1735330510 {
@@ -23,6 +23,7 @@
 .custom_shape_divider_top_1735330510 .shape_fill {
     fill: #FFFFFF;
 }
+
 /*  */
 
 .custom_shape_divider_bottom_1735330233 {
@@ -122,4 +123,90 @@
 
 .card .learn_more:hover {
     color: #828282;
+}
+
+/* MEDIA QUERIES */
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 200px) and (max-width: 361px) {
+    .container h2 {
+        font-size: 1.4rem;
+    }
+
+    .container span {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .card {
+        width: 186px;
+        padding: 1rem;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .container h2 {
+        font-size: 1.4rem;
+    }
+
+    .container span {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container .card {
+        padding: 1.4rem;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container h2 {
+        font-size: 1.4rem;
+    }
+
+    .container span {
+        gap: 0.6rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .container .card {
+        width: 184px;
+        padding: 1.3rem;
+        gap: 0.2rem;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container h2 {
+        font-size: 1.4rem;
+    }
+
+    .container .card {
+        width: 232px;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    .container h2 {
+        font-size: 1.5rem;
+    }
 }

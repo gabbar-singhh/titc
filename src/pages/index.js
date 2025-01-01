@@ -30,7 +30,7 @@ export default function Home() {
       <section className={`${styles.main}`}>
         <HeroSection />
         <CompareSection />
-        {/* <ServicesSection /> */}
+        <ServicesSection />
         {/* <Timeline /> */}
         {/* <StatsSection /> */}
         {/* <ContactUsSection /> */}
