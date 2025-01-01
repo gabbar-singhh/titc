@@ -162,7 +162,7 @@ const product = () => {
 
           <span>
             <div className={styles.grid_container}>
-              <Fade cascade damping={0.1} triggerOnce>
+              <Fade triggerOnce>
                 {productCategoryName.map((category, index) => (
                   <div key={index} className={styles.category_box}>
                     <img

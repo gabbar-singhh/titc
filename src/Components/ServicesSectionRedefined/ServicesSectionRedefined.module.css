@@ -31,7 +31,6 @@
     gap: 5.6rem;
 }
 
-
 .leftSide .heading {
     color: var(--creamy-white);
     font-size: 1.8rem;
@@ -137,4 +136,126 @@
 
 .card .learn_more:hover {
     color: #828282;
+}
+
+/* MEDIA QUERIES */
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 200px) and (max-width: 360px) {
+    .container {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+
+    .leftSide {
+        text-align: center;
+    }
+
+    .leftSide .heading {
+        text-align: center;
+    }
+
+    .leftSide .desc {
+        text-align: center;
+        margin-bottom: 1.4rem;
+    }
+
+    .leftSide .view {}
+
+    .rightSide span {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightSide .card {
+        padding: 1rem;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+
+    .leftSide {
+        text-align: center;
+    }
+
+    .leftSide .heading {
+        text-align: center;
+    }
+
+    .leftSide .desc {
+        text-align: center;
+        margin-bottom: 1.4rem;
+    }
+
+    .leftSide .view {}
+
+    .rightSide span {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightSide .card {
+        width: 70%;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .leftSide .heading {
+        text-align: center;
+    }
+
+    .leftSide .desc {
+        text-align: center;
+    }
+
+    .leftSide .view {
+        display: flex;
+    }
+
+    .rightSide span {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rightSide .card {
+        width: 70%;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .leftSide .heading {
+        text-align: center;
+    }
+
+    .leftSide .desc {
+        text-align: center;
+    }
+
+    .leftSide .view {
+        display: flex;
+    }
+
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .container {
+        gap: 2rem;
+        margin: 0 24px;
+    }
 }
