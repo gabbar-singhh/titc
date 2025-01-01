@@ -11,11 +11,9 @@
 }
 
 body {
-  backdrop-filter: blur(8px);
   cursor: default;
-
   overflow-x: hidden;
-  overscroll-behavior-y: none; 
+  overscroll-behavior-y: none;
 }
 
 a {
@@ -33,7 +31,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-/* scroll bar css */
 /* SCROLL CSS */
 body::-webkit-scrollbar {
   width: 0.4em;
@@ -49,40 +46,18 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.bubble_eff {
-  z-index: 1;
-  position: relative;
-  font-size: inherit;
-  font-family: inherit;
-  color: white;
-  padding: 0.5em 1em;
-  outline: none;
-  border: none;
-  background-color: hsl(236, 32%, 26%);
-  overflow: hidden;
-  transition: color 0.4s ease-in-out;
-}
+/* MEDIA QUERIES */
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {}
 
-.bubble_eff::before {
-  content: '';
-  z-index: -1;
-  position: absolute;
-  top: 100%;
-  right: 100%;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  background-color: var(--blue);
-  transform-origin: center;
-  transform: translate3d(50%, -50%, 0) scale3d(0, 0, 0);
-  transition: transform 0.45s ease-in-out;
-}
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {}
 
-.bubble_eff:hover {
-  cursor: pointer;
-  color: #161616;
-}
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
 
-.bubble_eff:hover::before {
-  transform: translate3d(275%, -50%, 0) scale3d(15, 15, 15);
-}
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+/* EXTRA LARGE SCREENS & TV */
+@media screen and (min-width: 1201px) {}

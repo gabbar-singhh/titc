@@ -29,12 +29,12 @@ export default function Home() {
       </Head>
       <section className={`${styles.main}`}>
         <HeroSection />
-        <CompareSection />
-        <ServicesSection />
-        <Timeline />
-        <StatsSection />
-        <ContactUsSection />
-        <FooterSection />
+        {/* <CompareSection /> */}
+        {/* <ServicesSection /> */}
+        {/* <Timeline /> */}
+        {/* <StatsSection /> */}
+        {/* <ContactUsSection /> */}
+        {/* <FooterSection /> */}
       </section>
     </>
   );
