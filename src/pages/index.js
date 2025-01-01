@@ -31,7 +31,7 @@ export default function Home() {
         <HeroSection />
         <CompareSection />
         <ServicesSection />
-        {/* <Timeline /> */}
+        <Timeline />
         {/* <StatsSection /> */}
         {/* <ContactUsSection /> */}
         {/* <FooterSection /> */}
