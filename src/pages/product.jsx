@@ -50,7 +50,7 @@ const product = () => {
       <section className={styles.main}>
         <div className={styles.hero_product}>
           <div className={styles.product_container}>
-            <span className={styles.leftSide}>
+            <div className={styles.leftSide}>
               <Fade direction="up" triggerOnce>
                 <p>product categories</p>
               </Fade>
@@ -70,55 +70,37 @@ const product = () => {
                   />
                 </div>
               </Fade>
-            </span>
+            </div>
             <section className={styles.rightSide}>
               <div>
-                <img
-                  src="/img/montage/1.webp"
-                  alt="white cup in yellow bg"
-                />
+                <img src="/img/montage/1.webp" alt="white cup in yellow bg" />
               </div>
 
               <div>
-                <img
-                  src="/img/montage/2.webp"
-                  alt="Alt text for the image"
-                />
+                <img src="/img/montage/2.webp" alt="Alt text for the image" />
               </div>
 
               <div>
-                <img
-                  src="/img/montage/5.webp"
-                  alt="china woman yellow dress"
-                />
+                <img src="/img/montage/5.webp" alt="china woman yellow dress" />
               </div>
 
               <div aria-hidden="true"></div>
 
               <div>
-                <img
-                  src="/img/montage/6.webp"
-                  alt="Alt text for the image"
-                />
+                <img src="/img/montage/6.webp" alt="Alt text for the image" />
               </div>
 
               <div aria-hidden="true"></div>
 
               <div>
-                <img
-                  src="/img/montage/8.webp"
-                  alt="Alt text for the image"
-                />
+                <img src="/img/montage/8.webp" alt="Alt text for the image" />
               </div>
 
               <div aria-hidden="true"></div>
               <div aria-hidden="true"></div>
 
               <div>
-                <img
-                  src="/img/montage/3.webp"
-                  alt="Alt text for the image"
-                />
+                <img src="/img/montage/3.webp" alt="Alt text for the image" />
               </div>
 
               <div>
@@ -129,10 +111,7 @@ const product = () => {
               </div>
 
               <div>
-                <img
-                  src="/img/montage/7.webp"
-                  alt="Alt text for the image"
-                />
+                <img src="/img/montage/7.webp" alt="Alt text for the image" />
               </div>
             </section>
           </div>

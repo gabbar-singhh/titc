@@ -139,11 +139,15 @@
 }
 
 /* MEDIA QUERIES */
-/* AVERAGE MOBILE DEVICES  */
-@media screen and (min-width: 200px) and (max-width: 360px) {
+@media screen and (min-width: 0px) and (max-width: 359px) {
     .container {
-        flex-direction: column;
         gap: 2.4rem;
+        flex-direction: column;
+    }
+
+
+    .rightSide span {
+        flex-direction: column;
     }
 
     .leftSide {
@@ -151,31 +155,31 @@
     }
 
     .leftSide .heading {
-        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 0.4rem;
     }
 
     .leftSide .desc {
-        text-align: center;
-        margin-bottom: 1.4rem;
-    }
-
-    .leftSide .view {}
-
-    .rightSide span {
-        flex-direction: column;
-        align-items: center;
+        font-size: 1rem;
     }
 
     .rightSide .card {
-        padding: 1rem;
-        width: 80%;
+        width: 184px;
+        padding: 1.4rem 1.4rem;
+        border-radius: 12px;
     }
 }
 
+/* AVERAGE MOBILE DEVICES  */
 @media screen and (min-width: 360px) and (max-width: 480px) {
     .container {
-        flex-direction: column;
         gap: 2.4rem;
+        flex-direction: column;
+    }
+
+
+    .rightSide span {
+        flex-direction: column;
     }
 
     .leftSide {
@@ -183,79 +187,97 @@
     }
 
     .leftSide .heading {
-        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 0.4rem;
     }
 
     .leftSide .desc {
-        text-align: center;
-        margin-bottom: 1.4rem;
-    }
-
-    .leftSide .view {}
-
-    .rightSide span {
-        flex-direction: column;
-        align-items: center;
+        font-size: 1rem;
     }
 
     .rightSide .card {
-        width: 70%;
+        width: 224px;
     }
 }
 
 /* IPADS AND TABLETS  */
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .container {
+        gap: 2.4rem;
         flex-direction: column;
     }
 
-    .leftSide .heading {
-        text-align: center;
-    }
-
-    .leftSide .desc {
-        text-align: center;
-    }
-
-    .leftSide .view {
-        display: flex;
-    }
 
     .rightSide span {
         flex-direction: column;
-        align-items: center;
+    }
+
+    .leftSide {
+        text-align: center;
+    }
+
+    .leftSide .heading {
+        font-size: 1.6rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .leftSide .desc {
+        font-size: 1rem;
     }
 
     .rightSide .card {
-        width: 70%;
+        width: 256px;
     }
 }
 
 /* SMALL SCREEN */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-
     .container {
+        gap: 2.4rem;
         flex-direction: column;
     }
 
-    .leftSide .heading {
+    .leftSide {
         text-align: center;
+    }
+
+    .leftSide .heading {
+        font-size: 1.6rem;
     }
 
     .leftSide .desc {
-        text-align: center;
+        font-size: 1rem;
     }
 
-    .leftSide .view {
-        display: flex;
+    .rightSide .card {
+        width: 224px;
     }
-
 }
 
 /* DESKTOP AND LARGE SCREEN */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     .container {
-        gap: 2rem;
-        margin: 0 24px;
+        gap: 2.4rem;
+    }
+
+    .leftSide .heading {
+        font-size: 1.6rem;
+    }
+
+    .leftSide .desc {
+        font-size: 1rem;
+    }
+
+    .rightSide .card {
+        width: 218px;
+        padding: 1.6rem 1.6rem;
+        border-radius: 12px;
+    }
+}
+
+/* EXTRA LARGE SCREENS & TV */
+@media screen and (min-width: 1201px) and (max-width: 1405px) {
+    .container {
+        gap: 3.2rem;
     }
 }
