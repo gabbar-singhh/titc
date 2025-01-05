@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import styles from "@/styles/About.module.css";
 import FooterSection from "@/Components/FooterSection/FooterSection";
@@ -123,9 +123,9 @@ const about_us = () => {
 
                 <div className={styles.photo_duo}>
                   {imageLoaded ? (
-                    <img src="/img/placeholder.webp" alt="" />
+                    <img src="/img/founder.webp" alt="" />
                   ) : (
-                    <img src="/img/placeholder_blur.webp" />
+                    <img src="/img/founder_blur.webp" />
                   )}
                   <p className={styles.name}>
                     Mr. Kayyush Thadani <br />
@@ -239,7 +239,7 @@ const about_us = () => {
           </div>
 
           <Fade triggerOnce direction="up">
-            <h3>Readay to start sourcing?</h3>
+            <h3>Ready to start sourcing?</h3>
           </Fade>
           <Fade triggerOnce direction="up">
             <p>

@@ -32,7 +32,7 @@ const CompareSection = () => {
   useEffect(() => {
     const img = new Image();
     img.onload = () => {
-      setImageLoaded2(true);
+      setImageLoaded3(true);
     };
 
     img.src = "/img/compareSection/3.webp";

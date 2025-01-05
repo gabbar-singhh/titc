@@ -14,7 +14,6 @@ const contact = () => {
 
   const [imageLoaded, setImageLoaded] = useState(false);
 
-
   const [formData, setFormData] = useState({
     username: "",
     companyName: "",
@@ -48,7 +47,6 @@ const contact = () => {
     event.preventDefault();
     if (
       formData.username.length !== 0 &&
-      formData.companyName.length !== 0 &&
       IsEmail.validate(formData.emailId) === true &&
       formData.phoneNum.length >= 3
     ) {
@@ -103,7 +101,7 @@ const contact = () => {
     window.open("https://maps.app.goo.gl/qmfShD2kHS1kBMhZA", "_blank");
   };
   const emailClickHandler = () => {
-    window.open("mailto:info@titc.co", "_blank");
+    window.open("mailto:thadani.internationaltrading@gmail.com", "_blank");
   };
   const addressClickHandler = () => {
     window.open("https://maps.app.goo.gl/qmfShD2kHS1kBMhZA", "_blank");
@@ -137,7 +135,7 @@ const contact = () => {
       </Head>
       <section className={`${styles.main}`}>
         <section className={styles.container}>
-          <span>
+          <div className={styles.hero_content}>
             <div className={styles.leftSide}>
               <Fade triggerOnce direction="up">
                 <p>Contact Us</p>
@@ -160,18 +158,20 @@ const contact = () => {
 
             <div className={styles.rightSide}>
               <Fade triggerOnce duration={1000}>
-
-                {imageLoaded?  <img
-                  src="/img/man_calling.webp"
-                  alt="man in formals on a call"
-                />:  <img
-                src="/img/man_calling_blur.webp"
-                alt="man in formals on a call"
-              />}
-               
+                {imageLoaded ? (
+                  <img
+                    src="/img/man_calling.webp"
+                    alt="man in formals on a call"
+                  />
+                ) : (
+                  <img
+                    src="/img/man_calling_blur.webp"
+                    alt="man in formals on a call"
+                  />
+                )}
               </Fade>
             </div>
-          </span>
+          </div>
 
           <div className={styles.custom_shape_divider_bottom_1735337911}>
             <svg
@@ -194,9 +194,7 @@ const contact = () => {
               Looking for a reliable trading company to import from China?
             </h3>
             <p className={styles.desc}>
-              Everything starts with <b>"hello"</b>. Drop us a line, and let's
-              create <br />
-              something amazing together.
+              Everything starts with <b>"hello"</b>. Drop us a line, and let's create something amazing together.
             </p>
 
             <ul className={styles.contact_options}>
@@ -206,13 +204,14 @@ const contact = () => {
               </li>
               <li>
                 <img src="/icons/mail_blue.svg" alt="mail icon" />
-                <p onClick={emailClickHandler}>info@titc.co</p>
+                <p onClick={emailClickHandler}>
+                  thadani.internationaltrading@gmail.com
+                </p>
               </li>
               <li>
                 <img src="/icons/address_blue.svg" alt="address icon" />
                 <p onClick={addressClickHandler}>
-                  Office No. 403, Building 1, Guangda Rd N, 1st St, <br />
-                  Dongcheng, Dongguan, Guangdong, China.
+                  Office No. 403, Building 1, Guangda Rd N, 1st St,Dongcheng, Dongguan, Guangdong, China.
                 </p>
               </li>
             </ul>
@@ -233,7 +232,7 @@ const contact = () => {
                 </span>
 
                 <span>
-                  <p>Company *</p>
+                  <p>Company</p>
                   <input
                     type="text"
                     placeholder="Company name"
@@ -258,10 +257,10 @@ const contact = () => {
                 </span>
 
                 <span>
-                  <p>Phone number *</p>
+                  <p>WhatsApp number *</p>
                   <input
                     type="number"
-                    placeholder="+91 987654321"
+                    placeholder="+44 7911 123456"
                     name="phoneNum"
                     onChange={handleChange}
                     value={formData.phoneNum}
@@ -316,8 +315,7 @@ const contact = () => {
             <div>
               <h3>Dongguan, China</h3>
               <p>
-                #1401, Building 1, 776 Huacheng Avenue, <br /> Tianhe District,
-                Guangzhou, 510067, China
+              Office No. 403, Building 1, Guangda Rd N, 1st St,Dongcheng, Dongguan, Guangdong, China.
               </p>
             </div>
 
@@ -332,12 +330,10 @@ const contact = () => {
           <div className={styles.right}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.6566512613167!2d113.77797!3d22.999649999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34039fedab820ed7%3A0x97280b4a35241334!2sXin%20Hongyuan%20Industrial%20Park!5e0!3m2!1sen!2sin!4v1735071989353!5m2!1sen!2sin"
-              width={800}
-              height={450}
               style={{ border: 0 }}
-              allowfullscreen=""
+              allowFullScreen
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </div>
         </div>

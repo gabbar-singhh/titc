@@ -11,6 +11,7 @@
     justify-content: center;
     position: relative;
     background: linear-gradient(0deg, #15263e 0%, rgb(247 245 237) 100%);
+    z-index: 0;
 }
 
 .hero_services span {
@@ -81,7 +82,6 @@
 
 .custom_shape_divider_bottom_1735337911 .shape_fill {
     fill: var(--creamy-white);
-
 }
 
 .main h2 {

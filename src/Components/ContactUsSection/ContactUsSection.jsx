@@ -43,7 +43,6 @@ const ContactUsSection = () => {
     event.preventDefault();
     if (
       formData.username.length !== 0 &&
-      formData.companyName.length !== 0 &&
       IsEmail.validate(formData.emailId) === true &&
       formData.phoneNum.length >= 3
     ) {
@@ -95,7 +94,7 @@ const ContactUsSection = () => {
   };
 
   const emailClickHandler = () => {
-    window.open("mailto:info@titc.co", "_blank");
+    window.open("mailto:thadani.internationaltrading@gmail.com", "_blank");
   };
   const addressClickHandler = () => {
     window.open("https://maps.app.goo.gl/qmfShD2kHS1kBMhZA", "_blank");
@@ -105,7 +104,11 @@ const ContactUsSection = () => {
       <section className={styles.main}>
         <div className={styles.contact_left}>
           <h3 className={styles.heading}>Ready to import from China?</h3>
-          <p className={styles.desc}> We handle everything—from finding trusted suppliers to delivering <br /> to your doorstep.</p>
+          <p className={styles.desc}>
+            {" "}
+            We handle everything—from finding trusted suppliers to delivering{" "}
+            <br /> to your doorstep.
+          </p>
 
           <ul className={styles.contact_options}>
             <li className={styles.first_li}>
@@ -114,13 +117,15 @@ const ContactUsSection = () => {
             </li>
             <li>
               <img src="/icons/mail_icon.svg" alt="mail icon" />
-              <p onClick={emailClickHandler}>info@titc.co</p>
+              <p onClick={emailClickHandler}>
+                thadani.internationaltrading@gmail.com
+              </p>
             </li>
             <li>
               <img src="/icons/address_icon.svg" alt="address icon" />
               <p onClick={addressClickHandler}>
-                Office No. 403, Building 1, Guangda Rd N, 1st St,
-                Dongcheng, Dongguan, Guangdong, China.
+                Office No. 403, Building 1, Guangda Rd N, 1st St, Dongcheng,
+                Dongguan, Guangdong, China.
               </p>
             </li>
           </ul>
@@ -140,7 +145,7 @@ const ContactUsSection = () => {
               </span>
 
               <span>
-                <p>Company *</p>
+                <p>Company</p>
                 <input
                   type="text"
                   placeholder="Company name"
@@ -165,10 +170,10 @@ const ContactUsSection = () => {
               </span>
 
               <span>
-                <p>Phone number *</p>
+                <p>WhatsApp number *</p>
                 <input
                   type="number"
-                  placeholder="+91 987654321"
+                  placeholder="+44 7911 123456"
                   name="phoneNum"
                   onChange={handleChange}
                   value={formData.phoneNum}

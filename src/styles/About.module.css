@@ -12,6 +12,8 @@
     justify-content: center;
     position: relative;
     background: linear-gradient(0deg, #15263e 0%, rgb(247 245 237) 100%);
+    z-index: 0;
+
 }
 
 .hero_aboutus span {

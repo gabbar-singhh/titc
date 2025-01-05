@@ -9,7 +9,7 @@
     background: rgb(29, 53, 87);
     background: linear-gradient(0deg, rgba(29, 53, 87, 0.45) 0%, rgba(244, 241, 234, 1) 100%);
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 .bottom_wave {

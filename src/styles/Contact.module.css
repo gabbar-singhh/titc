@@ -3,7 +3,7 @@
 }
 
 .container {
-    height: 90vh;
+    padding: 148px;
     text-align: center;
     background-color: #f7f5ed;
     display: flex;
@@ -15,9 +15,11 @@
 
     background: rgb(29, 53, 87);
     background: linear-gradient(0deg, #af8e6073 0%, rgba(244, 241, 234, 1) 100%);
+
+    z-index: 0;
 }
 
-.container span {
+.container .hero_content {
     display: flex;
     gap: 4.2rem;
 }
@@ -103,7 +105,6 @@
 
 .custom_shape_divider_bottom_1735337911 .shape_fill {
     fill: #f8f5ed;
-
 }
 
 .contact_form {
@@ -117,6 +118,7 @@
 
 .contact_left {
     margin-top: 4.2rem;
+    width: 480px;
 }
 
 .contact_left .heading {
@@ -301,7 +303,6 @@
     border: 1px solid #af8e6021;
     box-shadow: 4px 4px 6px 0px #dbdad8;
 
-
     margin-top: 1.4rem;
     font-weight: 500;
     padding: 10px 24px;
@@ -332,10 +333,18 @@
     display: flex;
     align-items: start;
     justify-content: space-between;
+    gap: 4.8rem;
+}
+
+.location {}
+
+.location .right iframe {
+    width: 800px;
+    height: 450px;
 }
 
 .left h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--creamy-white);
     margin-bottom: 0.8rem;
@@ -377,4 +386,493 @@
 .left .view:hover {
     cursor: pointer;
     background-color: #d9d4c7;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 0px) and (max-width: 359px) {
+    .container {
+        padding: 0;
+        height: 90vh;
+    }
+
+    .container .hero_content {
+        gap: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftSide {
+        margin-top: 0rem !important;
+        align-items: center !important;
+    }
+
+    .leftSide p {
+        text-align: center;
+    }
+
+    .leftSide h1 {
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .rightSide {
+        display: none;
+    }
+
+    .form_container {
+        padding: 2.8rem 1.2rem 2rem 1.2rem;
+    }
+
+    .contact_form {
+        gap: 3.6rem;
+        padding: 72px 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_right {
+        width: 250px;
+    }
+
+    .row_3 span textarea {
+        width: 90%;
+    }
+
+    /* send message btn */
+    .form_submit {
+        margin-top: 0rem;
+    }
+
+    .contact_options li img {
+        height: 18px;
+        width: 18px;
+        background-color: rgb(30 53 87 / 7%);
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    .contact_left li p {
+        font-size: 14px;
+    }
+
+    .form_container .row_1,
+    .form_container .row_2 {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    .row_1 span,
+    .row_2 span {
+        width: 100%;
+    }
+
+    .row_1 span input,
+    .row_2 span input {
+        width: 90%;
+    }
+
+    .contact_left {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.6rem;
+    }
+
+    .contact_left .heading {
+        font-size: 1.4rem;
+    }
+
+    .location {
+        justify-content: center;
+        gap: 2.8rem;
+        padding: 84px 72px;
+        flex-direction: column;
+    }
+
+    .location .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .location .left h2 {
+        font-size: 1.4rem;
+    }
+
+    .location .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .location .right iframe {
+        width: 250px;
+        height: 450px;
+    }
+}
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .container {
+        padding: 0;
+        height: 90vh;
+    }
+
+    .container .hero_content {
+        gap: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftSide {
+        margin-top: 0rem !important;
+        align-items: center !important;
+    }
+
+    .leftSide p {
+        text-align: center;
+    }
+
+    .leftSide h1 {
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center !important;
+    }
+
+    .rightSide {
+        display: none;
+    }
+
+    .form_container {
+        padding: 2.8rem 1.2rem 2rem 1.2rem;
+    }
+
+    .contact_form {
+        gap: 3.6rem;
+        padding: 72px 16px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_right {
+        width: 320px;
+    }
+
+    .row_3 span textarea {
+        width: 90%;
+    }
+
+    /* send message btn */
+    .form_submit {
+        margin-top: 0rem;
+    }
+
+    .contact_options li img {
+        height: 18px;
+        width: 18px;
+        background-color: rgb(30 53 87 / 7%);
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    .contact_left li p {
+        font-size: 14px;
+    }
+
+    .form_container .row_1,
+    .form_container .row_2 {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    .row_1 span,
+    .row_2 span {
+        width: 100%;
+    }
+
+    .row_1 span input,
+    .row_2 span input {
+        width: 90%;
+    }
+
+    .contact_left {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.6rem;
+    }
+
+    .contact_left .heading {
+        font-size: 1.4rem;
+    }
+
+    .location {
+        justify-content: center;
+        gap: 2.8rem;
+        padding: 84px 72px;
+        flex-direction: column;
+    }
+
+    .location .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .location .left h2 {
+        font-size: 1.4rem;
+    }
+
+    .location .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .location .right iframe {
+        width: 300px;
+        height: 450px;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 148px 48px !important;
+    }
+
+    .container .hero_content {
+        gap: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftSide {
+        margin-top: 0rem !important;
+        align-items: center !important;
+    }
+
+    .leftSide p {
+        text-align: center;
+    }
+
+    .leftSide h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 440px;
+    }
+
+    .rightSide {
+        display: none;
+    }
+
+    .contact_form {
+        gap: 3.6rem;
+        padding: 72px 36px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_right {
+        width: 420px;
+    }
+
+    .form_container .row_1,
+    .form_container .row_2 {
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
+    .row_1 span,
+    .row_2 span {
+        width: 100%;
+    }
+
+    .row_1 span input,
+    .row_2 span input {
+        width: 94%;
+    }
+
+    .contact_left {
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact_left .heading {
+        font-size: 1.6rem;
+    }
+
+    .location {
+        justify-content: center;
+        gap: 2.8rem;
+        padding: 84px 72px;
+        flex-direction: column;
+    }
+
+    .location .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .location .left h2 {
+        font-size: 1.6rem;
+    }
+
+    .location .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .location .right iframe {
+        width: 400px;
+        height: 450px;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        padding: 148px 0;
+    }
+
+    .container .hero_content {
+        gap: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .leftSide {
+        margin-top: 0rem !important;
+        align-items: center !important;
+    }
+
+    .leftSide p {
+        text-align: center;
+    }
+
+    .leftSide h1 {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 440px;
+    }
+
+    .rightSide {
+        display: none;
+    }
+
+    .contact_form {
+        gap: 3.6rem;
+        padding: 72px 56px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact_right {
+        transform: scale(1);
+        width: 580px;
+    }
+
+    .contact_left {
+        width: 560px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact_left .heading {
+        font-size: 1.6rem;
+    }
+
+    .location {
+        justify-content: center;
+        gap: 2.8rem;
+        padding: 84px 72px;
+        flex-direction: column;
+    }
+
+    .location .left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .location .left h2 {
+        font-size: 1.6rem;
+    }
+
+    .location .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .location .right iframe {
+        width: 600px;
+        height: 450px;
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .container span {
+        gap: 2.4rem;
+    }
+
+    .leftSide h1 {
+        font-size: 2.2rem;
+    }
+
+    .contact_left {
+        width: 440px;
+    }
+
+    .contact_right {
+        transform: scale(0.9);
+    }
+
+    .contact_form {
+        gap: 2.8rem;
+    }
+
+    .location {
+        justify-content: center;
+        gap: 2.8rem;
+        padding: 84px 72px;
+    }
+
+    .location .left {
+        width: 800px;
+    }
+
+    .location .right iframe {
+        width: 600px;
+        height: 450px;
+    }
 }

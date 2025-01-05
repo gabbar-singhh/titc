@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./NavigationBar.module.css";
 import Image from "next/image";
@@ -16,11 +16,22 @@ const NavigationBar = () => {
     );
   };
 
+  const hideMenuHandler = () => {
+    setTimeout(() => {
+      setShowMenu(false);
+      setHamburgerIcon("&#9776;");
+    }, 350);
+  };
+
   return (
     <nav className={styles.nav_main}>
       <div className={styles.leftside_nav}>
         <Link href={"/"}>
-          <img src={"/img/logo_nav.png"} className={styles.nav_logo} alt="tit logo" />
+          <img
+            src={"/img/logo_nav.png"}
+            className={styles.nav_logo}
+            alt="tit logo"
+          />
         </Link>
       </div>
 
@@ -66,19 +77,19 @@ const NavigationBar = () => {
           }
         >
           <ul className={styles.nav_mobile_ul}>
-            <Link href={"/"}>
+            <Link href={"/"} onClick={hideMenuHandler}>
               <li className={styles.nav_mobile_li}>home</li>
             </Link>
-            <Link href={"/services"}>
+            <Link href={"/services"} onClick={hideMenuHandler}>
               <li className={styles.nav_mobile_li}>services</li>
             </Link>{" "}
-            <Link href={"/product"}>
+            <Link href={"/product"} onClick={hideMenuHandler}>
               <li className={styles.nav_mobile_li}>product</li>
             </Link>{" "}
-            <Link href={"/about_us"}>
+            <Link href={"/about_us"} onClick={hideMenuHandler}>
               <li className={styles.nav_mobile_li}>about us</li>
             </Link>{" "}
-            <Link href={"/contact"}>
+            <Link href={"/contact"} onClick={hideMenuHandler}>
               <li
                 className={`${styles.nav_cta_contact} ${styles.nav_mobile_li}`}
               >

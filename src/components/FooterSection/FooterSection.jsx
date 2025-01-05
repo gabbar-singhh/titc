@@ -1,6 +1,7 @@
-import React from "react";
+import React , {useState}from "react";
 import styles from "./FooterSection.module.css";
 import Link from "next/link";
+import Modal from "../Modal/Modal";
 
 const FooterSection = () => {
   const openMapLocationHandler = () => {
@@ -25,8 +26,20 @@ const FooterSection = () => {
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
+
+   const [modalVal, setModalVal] = useState(false);
+  
+    const modalHandler = () => {
+      console.log("you clicked wechat btn", modalVal)
+      setModalVal((prevState) => !prevState);
+    };
+  
+    const closeModalHandler = () => {
+      setModalVal(false);
+    };
   return (
     <footer className={styles.main}>
+      <Modal showModalVal={modalVal} closeModalHandler={closeModalHandler} />
       <div className={styles.upper_foot}>
         <div className={styles.left_container}>
           <Link href={"/"}>
@@ -99,7 +112,7 @@ const FooterSection = () => {
             <ul className={styles.droptext}>
               <h3>or drop a text on:</h3>
 
-              <li className={styles.wechat_btn}>
+              <li className={styles.wechat_btn} onClick={modalHandler}>
                 <img src="/icons/wechat.svg" alt="wechat logo" />
                 WeChat
               </li>
@@ -114,7 +127,7 @@ const FooterSection = () => {
             <ul>
               <li>
                 <h3>email</h3>
-                <p>info@titc.co</p>
+                <p>thadani.internationaltrading@gmail.com</p>
               </li>
 
               <li>
