@@ -123,9 +123,12 @@ const about_us = () => {
 
                 <div className={styles.photo_duo}>
                   {imageLoaded ? (
-                    <img src="/img/founder.webp" alt="" />
+                    <img src="/img/founder.webp" alt="founder img" />
                   ) : (
-                    <img src="/img/founder_blur.webp" />
+                    <img
+                      src="/img/founder_blur.webp"
+                      alt="blur img of founder"
+                    />
                   )}
                   <p className={styles.name}>
                     Mr. Kayyush Thadani <br />
@@ -188,7 +191,7 @@ const about_us = () => {
                   />
                   <h3>Integrity</h3>
                   <p>
-                    we do business with honesty and fairness, always keeping
+                    We do business with honesty and fairness, always keeping
                     your best interests at heart.
                   </p>
                 </div>
@@ -202,7 +205,7 @@ const about_us = () => {
                   />
                   <h3>Collaboration</h3>
                   <p>
-                    we see our clients as partners. your success is our success,
+                    We see our clients as partners. Your success is our success,
                     and we're here to build lasting relationships.
                   </p>
                 </div>
@@ -243,7 +246,7 @@ const about_us = () => {
           </Fade>
           <Fade triggerOnce direction="up">
             <p>
-              connect with us to access the best products from China. <br />
+              Connect with us to access the best products from China. <br />
               Let's work together to grow your business!
             </p>
           </Fade>
