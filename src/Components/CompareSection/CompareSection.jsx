@@ -17,8 +17,8 @@ const CompareSection = () => {
       setImageLoaded1(true);
     };
 
-    img.src = "/img/compareSection/1.webp";
-  }, ["/img/compareSection/1.webp"]);
+    img.src = "/img/compareSection/1.png";
+  }, ["/img/compareSection/1.png"]);
 
   useEffect(() => {
     const img = new Image();
@@ -26,8 +26,8 @@ const CompareSection = () => {
       setImageLoaded2(true);
     };
 
-    img.src = "/img/compareSection/2.webp";
-  }, ["/img/compareSection/2.webp"]);
+    img.src = "/img/compareSection/2.png";
+  }, ["/img/compareSection/2.png"]);
 
   useEffect(() => {
     const img = new Image();
@@ -35,14 +35,14 @@ const CompareSection = () => {
       setImageLoaded3(true);
     };
 
-    img.src = "/img/compareSection/3.webp";
-  }, ["/img/compareSection/3.webp"]);
+    img.src = "/img/compareSection/3.png";
+  }, ["/img/compareSection/3.png"]);
   return (
     <section className={styles.main}>
       <div className={styles.bottom_wave}></div>
       <Fade direction="up" triggerOnce>
         <h2>
-          What Makes Us <span>Your Perfect Patner?</span>
+          What Makes Us Your Perfect Patner?
         </h2>
       </Fade>
       <div className={styles.card_container}>
@@ -67,7 +67,7 @@ const CompareSection = () => {
             </span>
             {imageLoaded1 ? (
               <img
-                src="/img/compareSection/1.webp"
+                src="/img/compareSection/1.png"
                 className={styles.img}
                 alt="shipment box img"
               />
@@ -84,14 +84,14 @@ const CompareSection = () => {
           <div className={`${styles.card} ${styles.card_02}`}>
             {imageLoaded2 ? (
               <img
-                src="/img/compareSection/2.webp"
-                className={styles.img}
+                src="/img/compareSection/2.png"
+                className={`${styles.img} ${styles.img_card2}`}
                 alt="china network img"
               />
             ) : (
               <img
                 src="/img/compareSection/2_blur.webp"
-                className={styles.img}
+                className={`${styles.img} ${styles.img_card2}`}
                 alt="china network img"
               />
             )}
@@ -136,7 +136,7 @@ const CompareSection = () => {
             </span>
             {imageLoaded3 ? (
               <img
-                src="/img/compareSection/3.webp"
+                src="/img/compareSection/3.png"
                 className={styles.img}
                 alt="credit card img"
               />
