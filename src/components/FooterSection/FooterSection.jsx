@@ -1,4 +1,4 @@
-import React , {useState}from "react";
+import React, { useState } from "react";
 import styles from "./FooterSection.module.css";
 import Link from "next/link";
 import Modal from "../Modal/Modal";
@@ -27,16 +27,16 @@ const FooterSection = () => {
     window.open(url, "_blank", "noopener,noreferrer");
   };
 
-   const [modalVal, setModalVal] = useState(false);
-  
-    const modalHandler = () => {
-      console.log("you clicked wechat btn", modalVal)
-      setModalVal((prevState) => !prevState);
-    };
-  
-    const closeModalHandler = () => {
-      setModalVal(false);
-    };
+  const [modalVal, setModalVal] = useState(false);
+
+  const modalHandler = () => {
+    console.log("you clicked wechat btn", modalVal);
+    setModalVal((prevState) => !prevState);
+  };
+
+  const closeModalHandler = () => {
+    setModalVal(false);
+  };
   return (
     <footer className={styles.main}>
       <Modal showModalVal={modalVal} closeModalHandler={closeModalHandler} />
@@ -127,7 +127,14 @@ const FooterSection = () => {
             <ul>
               <li>
                 <h3>email</h3>
-                <p>thadani.internationaltrading@gmail.com</p>
+                <p
+                  style={{
+                    wordBreak: "break-word",
+                  }}
+                >
+                  {" "}
+                  thadani.internationaltrading@gmail.com
+                </p>
               </li>
 
               <li>
