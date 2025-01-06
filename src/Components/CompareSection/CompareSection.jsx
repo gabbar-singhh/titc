@@ -101,7 +101,7 @@ const CompareSection = () => {
               <p>
                 We leverage our wide network of trusted suppliers and
                 manufacturers in China to deliver high-quality products at
-                competitive prices, saving you time and resources while giving
+                affordable prices, saving you time and resources while giving
                 you a competitive edge in the market.
               </p>
               <div onClick={getstartedClickHandler}>

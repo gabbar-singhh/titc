@@ -8,7 +8,7 @@ const StatsSection = () => {
   };
   return (
     <section className={styles.stats_main}>
-      <h2 className={styles.heading}>see why customers 💟 us</h2>
+      <h2 className={styles.heading}>see why customers 💛 us</h2>
       <p className={styles.desc}>let the number do the talking!</p>
 
       <div className={styles.stats_container}>
