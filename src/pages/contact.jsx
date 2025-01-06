@@ -188,7 +188,7 @@ const contact = () => {
           </div>
         </section>
 
-        <section className={styles.contact_form}>
+        <section className={styles.contact_form} id="contact-form">
           <div className={styles.contact_left}>
             <h3 className={styles.heading}>
               Looking for a reliable trading company to import from China?

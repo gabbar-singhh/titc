@@ -8,7 +8,7 @@ const CompareSection = () => {
   const [imageLoaded3, setImageLoaded3] = useState(false);
 
   const getstartedClickHandler = () => {
-    window.open("/contact", "_self");
+    window.open("/contact#contact-form", "_self");
   };
 
   useEffect(() => {

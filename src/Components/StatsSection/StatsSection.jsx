@@ -4,7 +4,7 @@ import CountUp from "react-countup";
 
 const StatsSection = () => {
   const contactUsClickHandler = () => {
-    window.open("/contact", "_self");
+    window.open("/contact#contact-form", "_self");
   };
   return (
     <section className={styles.stats_main}>
