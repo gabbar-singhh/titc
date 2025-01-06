@@ -26,7 +26,7 @@
 .stats_main .heading {
     text-align: center;
     margin-bottom: 1rem;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--blue);
     text-transform: capitalize;
@@ -114,53 +114,72 @@
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 0px) and (max-width: 360px) {
+@media screen and (min-width: 0px) and (max-width: 359px) {
+    .stats_main .heading {
+        font-size: 1.4rem;
+    }
+
     .stats_main {
         padding: 96px 0;
     }
 
     .stats_container {
-        gap: 1.2rem;
+        gap: 2rem;
         flex-direction: column;
     }
 
-    .stats_main .heading {
-        font-size: 1.2rem;
+    .stats_main .desc {
+        margin-bottom: 2.4rem;
+        width: 184px;
     }
 
     .stats_box {
         gap: 0;
+    }
+
+    .stats_box p {
+        font-size: 1rem;
     }
 }
 
 /* AVERAGE MOBILE DEVICES  */
 @media screen and (min-width: 360px) and (max-width: 480px) {
+    .stats_main .heading {
+        font-size: 1.4rem;
+    }
+
     .stats_main {
         padding: 96px 0;
     }
 
     .stats_container {
-        gap: 1.2rem;
+        gap: 2rem;
         flex-direction: column;
     }
 
-    .stats_main .heading {
-        font-size: 1.4rem;
+    .stats_main .desc {
+        margin-bottom: 2.4rem;
+        width: 196px;
     }
-
-.stats_main .desc {
-    margin-bottom: 2.5rem;
-}
 
     .stats_box {
         gap: 0;
+    }
+
+    .stats_box p {
+        font-size: 1rem;
     }
 }
 
 /* IPADS AND TABLETS  */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .stats_main .heading {
+        font-size: 1.6rem;
+    }
+
     .stats_main {
-        padding: 124px 0;
+        padding: 96px 0;
     }
 
     .stats_container {
@@ -168,19 +187,25 @@
         display: grid;
         grid-template-columns: repeat(2, 200px);
     }
-
-    .stats_main .heading {
-        font-size: 1.4rem;
-    }
 }
 
 /* SMALL SCREEN */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .stats_main .heading {
+        font-size: 1.6rem;
+    }
+
     .stats_main {
-        padding: 124px 0;
+        padding: 94px 0;
     }
 
     .stats_container {
         gap: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .stats_main {
+        padding: 124px 0;
     }
 }
