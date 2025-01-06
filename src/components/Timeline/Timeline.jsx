@@ -193,7 +193,6 @@ const Timeline = () => {
           </VerticalTimelineElement>
         </VerticalTimeline>
       </div>
-
     </section>
   );
 };
