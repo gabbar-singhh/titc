@@ -6,7 +6,7 @@
     justify-content: center;
     color: var(--neutral-black);
 
-    background: rgb(29, 53, 87);
+    /* background: rgb(29, 53, 87); */
     background: linear-gradient(0deg, rgba(29, 53, 87, 0.45) 0%, rgba(244, 241, 234, 1) 100%);
     position: relative;
     z-index: 0;
@@ -14,7 +14,7 @@
 
 .bottom_wave {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;

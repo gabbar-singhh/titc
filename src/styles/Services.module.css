@@ -65,7 +65,7 @@
 
 .custom_shape_divider_bottom_1735337911 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;

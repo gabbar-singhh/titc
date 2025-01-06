@@ -6,7 +6,7 @@
 
 .custom_shape_divider_top_1735330510 {
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -28,7 +28,7 @@
 
 .custom_shape_divider_bottom_1735330233 {
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     overflow: hidden;
