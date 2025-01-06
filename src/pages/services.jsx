@@ -120,7 +120,10 @@ const services = () => {
 
         <h2>we provide a wide range of expert services</h2>
         <div className={styles.container}>
-          <div className={`${styles.services} ${styles.service_1}`}>
+          <div
+            className={`${styles.services} ${styles.service_1}`}
+            id="services-1"
+          >
             <span className={styles.content}>
               <img
                 className={styles.card_icon}
@@ -175,7 +178,10 @@ const services = () => {
               />
             )}
           </div>
-          <div className={`${styles.services} ${styles.service_2}`}>
+          <div
+            className={`${styles.services} ${styles.service_2}`}
+            id="services-2"
+          >
             {imageLoaded2 ? (
               <img
                 className={styles.right_img}
@@ -229,7 +235,10 @@ const services = () => {
               </ul>
             </span>
           </div>
-          <div className={`${styles.services} ${styles.service_3}`}>
+          <div
+            className={`${styles.services} ${styles.service_3}`}
+            id="services-3"
+          >
             <span className={styles.content}>
               <img
                 src="/icons/vendor_pay.svg"
@@ -283,7 +292,10 @@ const services = () => {
               />
             )}
           </div>
-          <div className={`${styles.services} ${styles.service_4}`}>
+          <div
+            className={`${styles.services} ${styles.service_4}`}
+            id="services-4"
+          >
             {imageLoaded4 ? (
               <img
                 className={styles.right_img}

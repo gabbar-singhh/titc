@@ -26,7 +26,7 @@ const ServicesSection = () => {
         <div className={styles.container}>
           <Fade cascade damping={0.1} direction="up" triggerOnce>
             <span>
-              <Link href={"/services"} className={styles.card}>
+              <Link href={"/services#services-1"} className={styles.card}>
                 <img
                   className={styles.card_icon}
                   src="/icons/sourcing.svg"
@@ -40,7 +40,7 @@ const ServicesSection = () => {
                 </p>
                 <div className={styles.learn_more}>Learn More</div>
               </Link>
-              <Link href={"/services"} className={styles.card}>
+              <Link href={"/services#services-2"} className={styles.card}>
                 <img
                   src="/icons/trading.svg"
                   className={styles.card_icon}
@@ -55,7 +55,7 @@ const ServicesSection = () => {
               </Link>
             </span>
             <span>
-              <Link href={"/services"} className={styles.card}>
+              <Link href={"/services#services-3"} className={styles.card}>
                 <img
                   src="/icons/vendor_pay.svg"
                   className={styles.card_icon}
@@ -68,7 +68,7 @@ const ServicesSection = () => {
                 </p>
                 <div className={styles.learn_more}>Learn More</div>
               </Link>
-              <Link href={"/services"} className={styles.card}>
+              <Link href={"/services#services-4"} className={styles.card}>
                 <img
                   src="/icons/shipping.svg"
                   className={styles.card_icon}
