@@ -32,9 +32,9 @@ const contact = () => {
 
   const handleSubmit = (event) => {
     console.log("1");
-    const SERVICE_ID = "service_5vfsmsk";
-    const TEMPLATE_ID = "template_pym8uw3";
-    const PUBLIC_KEY = "CV-rNHj6PWdkBEOFj";
+    const SERVICE_ID = "service_7b8371b";
+    const TEMPLATE_ID = "template_sqm32ph";
+    const PUBLIC_KEY = "ifsoGYRcK1vMzKklP";
 
     const TEMPLATE_PARAMS = {
       name: formData.username,
