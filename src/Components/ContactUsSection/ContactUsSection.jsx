@@ -28,9 +28,9 @@ const ContactUsSection = () => {
 
   const handleSubmit = (event) => {
     console.log("1");
-    const SERVICE_ID = "service_7b8371b";
-    const TEMPLATE_ID = "template_sqm32ph";
-    const PUBLIC_KEY = "ifsoGYRcK1vMzKklP";
+    const SERVICE_ID = process.env.SERVICE_ID;
+    const TEMPLATE_ID = process.env.TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.PUBLIC_KEY;
     // const PUBLIC_KEY = "CV-rNHj6PWdkBEOFj";
 
     const TEMPLATE_PARAMS = {
