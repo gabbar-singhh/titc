@@ -32,9 +32,9 @@ const contact = () => {
 
   const handleSubmit = (event) => {
     console.log("1");
-    const SERVICE_ID = process.env.NEXT_PUBLIC_SERVICE_ID;
-    const TEMPLATE_ID = process.env.NEXT_PUBLIC_TEMPLATE_ID;
-    const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_KEY;
+    const SERVICE_ID = process.env.SERVICE_ID;
+    const TEMPLATE_ID = process.env.TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.EMAILJS_P_KEY;
 
     const TEMPLATE_PARAMS = {
       name: formData.username,
