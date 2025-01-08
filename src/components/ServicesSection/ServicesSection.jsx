@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 const ServicesSection = () => {
   return (
     <div className={styles.main}>
-      <div class={styles.custom_shape_divider_top_1735330510}>
+      <div className={styles.custom_shape_divider_top_1735330510}>
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,7 @@ const ServicesSection = () => {
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class={styles.shape_fill}
+            className={styles.shape_fill}
           ></path>
         </svg>
       </div>
@@ -86,7 +86,7 @@ const ServicesSection = () => {
         </div>
       </section>
 
-      <div class={styles.custom_shape_divider_bottom_1735330233}>
+      <div className={styles.custom_shape_divider_bottom_1735330233}>
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -95,7 +95,7 @@ const ServicesSection = () => {
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            class={styles.shape_fill}
+            className={styles.shape_fill}
           ></path>
         </svg>
       </div>
