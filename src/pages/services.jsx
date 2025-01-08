@@ -118,8 +118,8 @@ const services = () => {
           </div>
         </div>
 
-        <h2>we provide a wide range of expert services</h2>
         <div className={styles.container}>
+          <h2>we provide a wide range of expert services</h2>
           <div
             className={`${styles.services} ${styles.service_1}`}
             id="services-1"

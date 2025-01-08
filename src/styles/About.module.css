@@ -1,5 +1,5 @@
 .main {
-    background-color: var(--creamy-white);
+
 }
 
 .hero_aboutus {
@@ -11,7 +11,7 @@
     justify-content: center;
     position: relative;
     background: linear-gradient(0deg, #15263e 0%, rgb(247 245 237) 100%);
-    z-index: 0;
+    z-index: -1;
 }
 
 .hero_aboutus span {
@@ -92,6 +92,7 @@
     max-width: 900px;
     justify-self: center;
     margin: 0 auto;
+    background-color: var(--creamy-white);
 }
 
 .about_content ul {

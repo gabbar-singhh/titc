@@ -1,6 +1,4 @@
-.main {
-    background-color: var(--creamy-white);
-}
+.main {}
 
 .hero_services {
     height: 90vh;
@@ -11,7 +9,7 @@
     justify-content: center;
     position: relative;
     background: linear-gradient(0deg, #15263e 0%, rgb(247 245 237) 100%);
-    z-index: 0;
+    z-index: -1;
 }
 
 .hero_services span {
@@ -84,8 +82,8 @@
     fill: var(--creamy-white);
 }
 
-.main h2 {
-    margin-top: 96px;
+.container h2 {
+    padding-top: 96px;
     font-size: 1.8rem;
     text-transform: capitalize;
     font-weight: 700;
@@ -96,6 +94,7 @@
 .container {
     display: flex;
     flex-direction: column;
+    background-color: var(--creamy-white);
 }
 
 .services {
@@ -222,14 +221,13 @@
         text-align: center;
     }
 
-    .main h2 {
+    .container h2 {
         font-size: 1.4rem;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 224px;
-        align-self: center;
-        justify-self: center;
+        margin: 0 auto;
     }
 
     .services .content {
@@ -271,14 +269,13 @@
         text-align: center;
     }
 
-    .main h2 {
+    .container h2 {
         font-size: 1.4rem;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 356px;
-        align-self: center;
-        justify-self: center;
+        margin: 0 auto;
     }
 
     .services {
@@ -324,14 +321,33 @@
         text-align: center;
     }
 
-    .main h2 {
+    .container h2 {
         font-size: 1.4rem;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 356px;
-        align-self: center;
-        justify-self: center;
+        margin: 0 auto;
+        /* background-color: var(--creamy-white); */
+
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        /* Center text vertically */
+        justify-content: center;
+        /* Center text horizontally */
+        width: 356px;
+        /* Fixed width */
+        height: 100%;
+        /* Fill the entire parent's height */
+        margin: 0 auto;
+        /* Center horizontally within the parent */
+        background-color: var(--creamy-white);
+        /* Apply background color */
+        text-align: center;
+        /* Center text within the box */
+        box-sizing: border-box;
+        /* Ensures padding doesn't affect width/height */
     }
 
     .services {
@@ -376,7 +392,7 @@
         font-size: 1.8rem;
     }
 
-    .main h2 {
+    .container h2 {
         font-size: 1.4rem;
     }
 
@@ -436,7 +452,7 @@
         font-size: 2.2rem;
     }
 
-    .main h2 {
+    .container h2 {
         font-size: 1.6rem;
     }
 
