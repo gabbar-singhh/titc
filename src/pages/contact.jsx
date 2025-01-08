@@ -109,7 +109,7 @@ const contact = () => {
 
   const openWhatsAppHandler = () => {
     const phoneNumber = "918208896517";
-    const message = encodeURIComponent("hello, I need your help.");
+    const message = encodeURIComponent("Hello Kayyush, I visited your website and I'd be interested to know more");
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
