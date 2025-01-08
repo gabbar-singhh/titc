@@ -11,6 +11,9 @@
     border-bottom: 1px solid #af8e6021;
     -webkit-backdrop-filter: blur(11px);
     background-color: #f8f5ed;
+
+    position: relative;
+    z-index: 1;
 }
 
 .leftside_nav .nav_logo {
@@ -87,7 +90,7 @@
     .nav_mobile,
     .nav_mobile_container {
         display: inline-block;
-        z-index: 99999;
+        z-index: 999;
     }
 
     .close {
@@ -186,7 +189,7 @@
     .nav_mobile,
     .nav_mobile_container {
         display: inline-block;
-        z-index: 99999;
+        z-index: 999;
     }
 
     .close {
@@ -285,8 +288,7 @@
 
     .nav_mobile,
     .nav_mobile_container {
-        display: inline-block;
-        z-index: 99999;
+        display: block;
     }
 
     .close {
@@ -305,6 +307,10 @@
         color: var(--blue);
     }
 
+    .nav_mobile {
+        /* position: relative; */
+    }
+
     .nav_mobile_container {
         position: absolute;
         top: 61px;
@@ -312,6 +318,7 @@
         width: 100vw;
         padding: 0.8rem 0;
         background-color: var(--creamy-white);
+        z-index: 999;
     }
 
     .nav_mobile_ul {

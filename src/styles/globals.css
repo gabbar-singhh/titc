@@ -51,6 +51,9 @@ body::-webkit-scrollbar-thumb {
 
 
 /* MEDIA QUERIES */
+@media screen and (min-width: 0px) and (max-width: 359px) {}
+
+
 /* AVERAGE MOBILE DEVICES  */
 @media screen and (min-width: 360px) and (max-width: 480px) {}
 
