@@ -22,7 +22,9 @@ const FooterSection = () => {
 
   const openWhatsAppHandler = () => {
     const phoneNumber = "918208896517";
-    const message = encodeURIComponent("Hello Kayyush, I visited your website and I'd be interested to know more!");
+    const message = encodeURIComponent(
+      "Hello Kayyush, I visited your website and I'd be interested to know more!"
+    );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -154,7 +156,19 @@ const FooterSection = () => {
       </div>
 
       <div className={styles.lower_foot}>
-        @2024 Thadani International Trading Co. Ltd All Right Reserved
+        <p>@2025 Thadani International Trading Co. Ltd All Right Reserved</p>
+        <Link href={"https://www.bimboo.co/"} className={`${styles.bimboo} highlight_effect`}>
+          Built & Maintained by{" "}
+          <span
+            style={{
+              textDecoration: "underline",
+              textUnderlineOffset: "1.5px",
+            }}
+          >
+            Bimboo
+          </span>{" "}
+          <img src="/icons/arrow_up_right.svg" alt="arrow up right icon" />
+        </Link>
       </div>
     </footer>
   );
