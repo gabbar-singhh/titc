@@ -53,7 +53,7 @@ const about_us = () => {
             </Fade>
 
             <Fade direction="up" triggerOnce>
-              <div onClick={contactUsClickHandler} className={styles.cta}>
+              <div  iv onClick={contactUsClickHandler} className={styles.cta}>
                 contact us now
                 <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
               </div>

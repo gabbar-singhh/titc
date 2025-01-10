@@ -1,5 +1,5 @@
 .main {
-
+    background-color: #f3f1ea;
 }
 
 .hero_aboutus {
@@ -93,7 +93,6 @@
     max-width: 900px;
     justify-self: center;
     margin: 0 auto;
-    background-color: var(--creamy-white);
 }
 
 .about_content ul {
@@ -120,7 +119,6 @@
     color: #626262;
     margin-top: 0.5rem;
     letter-spacing: 0.3px;
-
 }
 
 .about_content .mission_container {
