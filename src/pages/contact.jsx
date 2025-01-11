@@ -125,7 +125,7 @@ const contact = () => {
   return (
     <>
       <Head>
-        <title>Contact Us Now | Thadani International Trading</title>
+        <title>Contact for International Trading with China | Thadani International Trading</title>
         <meta
           name="description"
           content="We help you source quality goods from China and ship them to your country"

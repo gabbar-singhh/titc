@@ -39,7 +39,7 @@ const product = () => {
   return (
     <>
       <Head>
-        <title>Products | Thadani International Trading</title>
+        <title>Products Categories To Import From China| Thadani International Trading</title>
         <meta
           name="description"
           content="We help you source quality goods from China and ship them to your country"

@@ -57,7 +57,7 @@ const services = () => {
   return (
     <>
       <Head>
-        <title>Services | Thadani International Trading</title>
+        <title>Global Market Solutions | Thadani International Trading</title>
         <meta
           name="description"
           content="We help you source quality goods from China and ship them to your country"

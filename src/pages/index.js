@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Thadani International Trading</title>
+        <title>Source Quality Products From China | Thadani International Trading</title>
         <meta
           name="description"
           content="We help you source quality goods from China and ship them to your country"

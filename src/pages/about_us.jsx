@@ -29,7 +29,7 @@ const about_us = () => {
   return (
     <>
       <Head>
-        <title>About Us | Thadani International Trading</title>
+        <title>Your Trusted Partner in Trading with China | Thadani International Trading</title>
         <meta
           name="description"
           content="We help you source quality goods from China and ship them to your country"
@@ -46,7 +46,6 @@ const about_us = () => {
             </Fade>
 
             <Fade direction="up" triggerOnce>
-              {/* <h1>Your Trusted Partner in Global Sourcing.</h1> */}
               <h1>
                 Get to know us, <br /> your Trusted Partner in Global Sourcing.
               </h1>
