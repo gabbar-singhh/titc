@@ -80,13 +80,13 @@ const services = () => {
               <TypeAnimation
                 sequence={[
                   "competitive pricing.",
-                  1000,
+                  1500,
                   "wide range of products.",
-                  1000,
+                  1500,
                   "on-time delivery.",
-                  1000,
+                  1500,
                   "high quality of items.",
-                  1000,
+                  1500,
                 ]}
                 style={{ textAlign: "center" }}
                 wrapper="h1"

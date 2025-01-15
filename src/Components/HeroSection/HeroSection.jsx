@@ -22,13 +22,13 @@ const HeroSection = () => {
         <TypeAnimation
           sequence={[
             "Sourcing.",
-            2000,
+            1500,
             "Trading.",
-            2000,
+            1500,
             "Vendor Payments.",
-            2000,
+            1500,
             "Shipping.",
-            2000,
+            1500,
           ]}
           style={{ textAlign: "center" }}
           wrapper="h1"
