@@ -18,7 +18,7 @@ const HeroSection = () => {
       </Fade>
       <Fade direction="up" triggerOnce>
         <p>
-          With 1,000+ suppliers in China, we source and trade globally,
+          With 1000+ suppliers in China, we source and trade globally,
           delivering quality products at competitive prices to stay ahead and
           win.
         </p>

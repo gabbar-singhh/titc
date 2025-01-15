@@ -320,7 +320,7 @@ const contact = () => {
             </div>
 
             <span className={styles.view} onClick={openMapClickHandler}>
-              view in map
+              View In Map
               <img
                 src="/icons/arrow_up_right_blue.svg"
                 alt="arrow upright icon"

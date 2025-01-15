@@ -59,7 +59,7 @@ const StatsSection = () => {
         </div>
       </div>
       <div className={`${styles.stats_cta}`} onClick={contactUsClickHandler}>
-        contact us
+        Contact Us
         <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
       </div>
 

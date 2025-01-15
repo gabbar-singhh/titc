@@ -33,7 +33,7 @@ const ServicesSectionRedefined = () => {
 
           <Fade triggerOnce direction="up">
             <Link href="/contact#contact-form" className={styles.view}>
-              contact us
+              Contact Us
               <img
                 src="/icons/arrow_up_right_blue.svg"
                 alt="arrow upright icon"

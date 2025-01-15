@@ -98,7 +98,7 @@ const services = () => {
 
             <Fade direction="up" triggerOnce>
               <div onClick={openWhatsAppHandler} className={styles.cta}>
-                contact us now
+                Contact Us Now
                 <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
               </div>
             </Fade>
