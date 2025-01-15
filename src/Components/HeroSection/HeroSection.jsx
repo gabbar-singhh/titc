@@ -21,13 +21,13 @@ const HeroSection = () => {
       <Fade direction="up" triggerOnce>
         <TypeAnimation
           sequence={[
-            "sourcing.",
+            "Sourcing.",
             2000,
-            "trading.",
+            "Trading.",
             2000,
-            "vendor payments.",
+            "Vendor Payments.",
             2000,
-            "shipping.",
+            "Shipping.",
             2000,
           ]}
           style={{ textAlign: "center" }}
