@@ -1,11 +1,14 @@
 import React from "react";
 import styles from "./HeroSection.module.css";
 import { Fade } from "react-awesome-reveal";
+import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
   const openWhatsAppHandler = () => {
     const phoneNumber = "918208896517";
-    const message = encodeURIComponent("Hello Kayyush, I visited your website and I'd be interested to know more!");
+    const message = encodeURIComponent(
+      "Hello Kayyush, I visited your website and I'd be interested to know more!"
+    );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -14,7 +17,25 @@ const HeroSection = () => {
     <section className={styles.hero_main}>
       <Fade direction="up" triggerOnce>
         <h1>Your One-Stop Solution for</h1>
-        <h1>All Import Needs</h1>
+      </Fade>
+      <Fade direction="up" triggerOnce>
+        <TypeAnimation
+          sequence={[
+            "sourcing.",
+            2000,
+            "trading.",
+            2000,
+            "vendor payments.",
+            2000,
+            "shipping.",
+            2000,
+          ]}
+          style={{ textAlign: "center" }}
+          wrapper="h1"
+          speed={50}
+          repeat={Infinity}
+          className={styles.top_text}
+        />
       </Fade>
       <Fade direction="up" triggerOnce>
         <p>
