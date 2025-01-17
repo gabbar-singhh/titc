@@ -47,7 +47,7 @@ const about_us = () => {
 
             <Fade direction="up" triggerOnce>
               <h1>
-                Get to know us, <br /> your Trusted Partner in Global Sourcing.
+                Get to know us, <br /> your Trusted Partner in China Sourcing.
               </h1>
             </Fade>
 
