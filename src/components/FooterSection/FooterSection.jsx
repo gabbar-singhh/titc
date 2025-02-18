@@ -104,9 +104,9 @@ const FooterSection = () => {
             <h3>Reach Out to us via</h3>
 
             <ul>
-              <li>
+              {/* <li>
                 <span className={styles.contact_flag}>🇮🇳</span> +91 8208896517
-              </li>
+              </li> */}
               <li>
                 <span className={styles.contact_flag}>🇨🇳</span> +86 13538501419
               </li>

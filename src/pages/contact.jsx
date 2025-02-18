@@ -203,7 +203,7 @@ const contact = () => {
             <ul className={styles.contact_options}>
               <li className={styles.first_li}>
                 <img src="/icons/call_blue.svg" alt="call icon" />
-                <p>+86 13538501419 , +91 8208896517</p>
+                <p>+86 13538501419</p>
               </li>
               <li>
                 <img src="/icons/mail_blue.svg" alt="mail icon" />

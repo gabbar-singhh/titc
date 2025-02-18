@@ -12,20 +12,23 @@ export default function Home() {
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Thadani International Trading",
-    "url": "https://www.thadaniinternationaltrading.com/",
-    "logo": "https://thadaniinternationaltrading.com/logo.png",
-    "description": "We source quality goods from China and ship them to your country.",
-    "contactPoint": {
+    name: "Thadani International Trading",
+    url: "https://www.thadaniinternationaltrading.com/",
+    logo: "https://thadaniinternationaltrading.com/logo.png",
+    description:
+      "We source quality goods from China and ship them to your country.",
+    contactPoint: {
       "@type": "ContactPoint",
-      "telephone": "+91 8208896517",
-      "contactType": "Customer Service"
-    }
+      telephone: "8613538501419",
+      contactType: "Customer Service",
+    },
   };
   return (
     <>
       <Head>
-        <title>Source Quality Products From China | Thadani International Trading</title>
+        <title>
+          Source Quality Products From China | Thadani International Trading
+        </title>
         <meta
           name="description"
           content="We help you source quality goods from China and ship them to your country"
@@ -35,10 +38,12 @@ export default function Home() {
 
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
         />
       </Head>
-      
+
       <section className={`${styles.main}`}>
         <HeroSection />
         <CompareSection />
