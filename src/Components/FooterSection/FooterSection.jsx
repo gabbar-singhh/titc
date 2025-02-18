@@ -55,7 +55,7 @@ const FooterSection = () => {
 
           <ul>
             <li>
-              <Link href={"https://www.instagram.com/"} target="_blank">
+              <Link href={"https://www.instagram.com/thadani.chinasourcing/"} target="_blank">
                 <img src="/icons/instagram.svg" alt="instagram logo" />
               </Link>
             </li>
@@ -65,7 +65,7 @@ const FooterSection = () => {
               </Link>
             </li>
             <li>
-              <Link href={"https://www.linkedin.com/"} target="_blank">
+              <Link href={"https://www.linkedin.com/company/thadani-international-trading/"} target="_blank">
                 <img src="/icons/linkedin.svg" alt="linkedin logo" />
               </Link>
             </li>
