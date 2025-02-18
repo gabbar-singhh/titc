@@ -21,13 +21,14 @@ const FooterSection = () => {
   };
 
   const openWhatsAppHandler = () => {
-    const phoneNumber = "918208896517";
+    const phoneNumber = "8613538501419";
     const message = encodeURIComponent(
       "Hello Kayyush, I visited your website and I'd be interested to know more!"
     );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
-  };
+};
+
 
   const [modalVal, setModalVal] = useState(false);
 

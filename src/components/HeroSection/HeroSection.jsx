@@ -4,14 +4,15 @@ import { Fade } from "react-awesome-reveal";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
+  
   const openWhatsAppHandler = () => {
-    const phoneNumber = "918208896517";
+    const phoneNumber = "8613538501419";
     const message = encodeURIComponent(
       "Hello Kayyush, I visited your website and I'd be interested to know more!"
     );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
-  };
+};
 
   return (
     <section className={styles.hero_main}>

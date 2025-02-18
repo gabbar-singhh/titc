@@ -107,12 +107,15 @@ const contact = () => {
     window.open("https://maps.app.goo.gl/qmfShD2kHS1kBMhZA", "_blank");
   };
 
+  
   const openWhatsAppHandler = () => {
-    const phoneNumber = "918208896517";
-    const message = encodeURIComponent("Hello Kayyush, I visited your website and I'd be interested to know more");
+    const phoneNumber = "8613538501419";
+    const message = encodeURIComponent(
+      "Hello Kayyush, I visited your website and I'd be interested to know more!"
+    );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
-  };
+};
 
   useEffect(() => {
     const img = new Image();
