@@ -27,8 +27,7 @@ const FooterSection = () => {
     );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
-};
-
+  };
 
   const [modalVal, setModalVal] = useState(false);
 
@@ -55,17 +54,30 @@ const FooterSection = () => {
 
           <ul>
             <li>
-              <Link href={"https://www.instagram.com/thadani.chinasourcing/"} target="_blank">
+              <Link
+                href={"https://www.instagram.com/thadani.chinasourcing/"}
+                target="_blank"
+              >
                 <img src="/icons/instagram.svg" alt="instagram logo" />
               </Link>
             </li>
             <li>
-              <Link href={"https://www.facebook.com/"} target="_blank">
+              <Link
+                href={
+                  "https://www.facebook.com/people/Thadani-International-Trading-Co-Ltd/61570387570569/"
+                }
+                target="_blank"
+              >
                 <img src="/icons/facebook.svg" alt="facebook logo" />
               </Link>
             </li>
             <li>
-              <Link href={"https://www.linkedin.com/company/thadani-international-trading/"} target="_blank">
+              <Link
+                href={
+                  "https://www.linkedin.com/company/thadani-international-trading/"
+                }
+                target="_blank"
+              >
                 <img src="/icons/linkedin.svg" alt="linkedin logo" />
               </Link>
             </li>
@@ -136,7 +148,7 @@ const FooterSection = () => {
                   }}
                 >
                   {" "}
-                  thadani.internationaltrading@gmail.com
+                  inquiry@thadaniinternationaltrading.com
                 </p>
               </li>
 
@@ -158,7 +170,10 @@ const FooterSection = () => {
 
       <div className={styles.lower_foot}>
         <p>@2025 Thadani International Trading Co. Ltd All Right Reserved</p>
-        <Link href={"https://www.bimboo.co/"} className={`${styles.bimboo} highlight_effect`}>
+        <Link
+          href={"https://www.bimboo.co/"}
+          className={`${styles.bimboo} highlight_effect`}
+        >
           Built & Maintained by{" "}
           <span
             style={{

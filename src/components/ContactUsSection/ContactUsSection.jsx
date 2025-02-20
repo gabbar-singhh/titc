@@ -97,7 +97,7 @@ const ContactUsSection = () => {
   };
 
   const emailClickHandler = () => {
-    window.open("mailto:thadani.internationaltrading@gmail.com", "_blank");
+    window.open("mailto:	inquiry@thadaniinternationaltrading.com", "_blank");
   };
   const addressClickHandler = () => {
     window.open("https://maps.app.goo.gl/qmfShD2kHS1kBMhZA", "_blank");
@@ -130,7 +130,7 @@ const ContactUsSection = () => {
             <li>
               <img src="/icons/mail_icon.svg" alt="mail icon" />
               <p onClick={emailClickHandler}>
-                thadani.internationaltrading@gmail.com
+                	inquiry@thadaniinternationaltrading.com
               </p>
             </li>
             <li>
