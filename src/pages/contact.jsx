@@ -107,7 +107,6 @@ const contact = () => {
     window.open("https://maps.app.goo.gl/qmfShD2kHS1kBMhZA", "_blank");
   };
 
-  
   const openWhatsAppHandler = () => {
     const phoneNumber = "8613538501419";
     const message = encodeURIComponent(
@@ -115,7 +114,7 @@ const contact = () => {
     );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
-};
+  };
 
   useEffect(() => {
     const img = new Image();
@@ -128,7 +127,10 @@ const contact = () => {
   return (
     <>
       <Head>
-        <title>Contact for International Trading with China | Thadani International Trading</title>
+        <title>
+          Contact for International Trading with China | Thadani International
+          Trading
+        </title>
         <meta
           name="description"
           content="We help you source quality goods from China and ship them to your country"
@@ -140,15 +142,15 @@ const contact = () => {
         <section className={styles.container}>
           <div className={styles.hero_content}>
             <div className={styles.leftSide}>
-              <Fade triggerOnce direction="up">
+              <Fade triggerOnce>
                 <p>Contact Us</p>
               </Fade>
 
-              <Fade triggerOnce direction="up">
+              <Fade triggerOnce>
                 <h1>You're Just One WhatsApp Text Away From Success</h1>
               </Fade>
 
-              <Fade triggerOnce direction="up">
+              <Fade triggerOnce>
                 <div onClick={openWhatsAppHandler} className={styles.cta}>
                   Get in Touch on WhatsApp{" "}
                   <img
@@ -160,7 +162,7 @@ const contact = () => {
             </div>
 
             <div className={styles.rightSide}>
-              <Fade triggerOnce duration={1000}>
+              <Fade triggerOnce>
                 {imageLoaded ? (
                   <img
                     src="/img/man_calling.webp"
@@ -197,7 +199,8 @@ const contact = () => {
               Looking for a reliable trading company to import from China?
             </h3>
             <p className={styles.desc}>
-              Everything starts with <b>"hello"</b>. Drop us a line, and let's create something amazing together.
+              Everything starts with <b>"hello"</b>. Drop us a line, and let's
+              create something amazing together.
             </p>
 
             <ul className={styles.contact_options}>
@@ -208,13 +211,14 @@ const contact = () => {
               <li>
                 <img src="/icons/mail_blue.svg" alt="mail icon" />
                 <p onClick={emailClickHandler}>
-                  	inquiry@thadaniinternationaltrading.com
+                  inquiry@thadaniinternationaltrading.com
                 </p>
               </li>
               <li>
                 <img src="/icons/address_blue.svg" alt="address icon" />
                 <p onClick={addressClickHandler}>
-                  Office No. 403, Building 1, Guangda Rd N, 1st St,Dongcheng, Dongguan, Guangdong, China.
+                  Office No. 403, Building 1, Guangda Rd N, 1st St,Dongcheng,
+                  Dongguan, Guangdong, China.
                 </p>
               </li>
             </ul>
@@ -318,7 +322,8 @@ const contact = () => {
             <div>
               <h3>Dongguan, China</h3>
               <p>
-              Office No. 403, Building 1, Guangda Rd N, 1st St,Dongcheng, Dongguan, Guangdong, China.
+                Office No. 403, Building 1, Guangda Rd N, 1st St,Dongcheng,
+                Dongguan, Guangdong, China.
               </p>
             </div>
 

@@ -135,7 +135,7 @@ const product = () => {
         </div>
 
         <div className={styles.product_category}>
-          <Fade triggerOnce direction="up">
+          <Fade triggerOnce delay={0.1}>
             <h2>
               explore our product database to find the perfect <br /> items for
               your business

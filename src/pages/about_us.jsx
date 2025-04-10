@@ -7,7 +7,6 @@ import { Fade } from "react-awesome-reveal";
 const about_us = () => {
   const [imageLoaded, setImageLoaded] = useState(false);
 
- 
   const openWhatsAppHandler = () => {
     const phoneNumber = "8613538501419";
     const message = encodeURIComponent(
@@ -15,7 +14,7 @@ const about_us = () => {
     );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
-};
+  };
 
   const contactUsClickHandler = () => {
     window.open("/contact#contact-form", "_self");
@@ -32,7 +31,10 @@ const about_us = () => {
   return (
     <>
       <Head>
-        <title>Your Trusted Partner in Trading with China | Thadani International Trading</title>
+        <title>
+          Your Trusted Partner in Trading with China | Thadani International
+          Trading
+        </title>
         <meta
           name="description"
           content="We help you source quality goods from China and ship them to your country"
@@ -44,18 +46,18 @@ const about_us = () => {
       <section className={styles.main}>
         <div className={styles.hero_aboutus}>
           <span>
-            <Fade direction="up" triggerOnce>
+            <Fade triggerOnce direction="up">
               <p>about us</p>
             </Fade>
 
-            <Fade direction="up" triggerOnce>
+            <Fade triggerOnce direction="up">
               <h1>
                 Get to know us, <br /> your Trusted Partner in China Sourcing.
               </h1>
             </Fade>
 
-            <Fade direction="up" triggerOnce>
-              <div  iv onClick={contactUsClickHandler} className={styles.cta}>
+            <Fade triggerOnce direction="up">
+              <div iv onClick={contactUsClickHandler} className={styles.cta}>
                 Contact Us Now
                 <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
               </div>
@@ -79,10 +81,10 @@ const about_us = () => {
         <div className={styles.about_content}>
           <ul>
             <li>
-              <Fade triggerOnce direction="up">
+              <Fade triggerOnce>
                 <h3>about us</h3>
               </Fade>
-              <Fade triggerOnce direction="up" damping={0.1}>
+              <Fade triggerOnce cascade damping={0.1}>
                 <p>
                   Thadani International Trading Co. Ltd connects businesses
                   worldwide with trusted manufacturers in China. We specialize
@@ -102,10 +104,10 @@ const about_us = () => {
             <li>
               <div className={styles.mission_container}>
                 <span>
-                  <Fade triggerOnce direction="up">
+                  <Fade triggerOnce>
                     <h3 className={styles.head}>Our Mission</h3>
                   </Fade>
-                  <Fade triggerOnce direction="up" damping={0.1}>
+                  <Fade triggerOnce cascade damping={0.1}>
                     <p className={styles.content}>
                       Our mission is to simplify international trade, making it
                       as easy and convenient as shopping online. We specialize
@@ -126,21 +128,22 @@ const about_us = () => {
                     </p>
                   </Fade>
                 </span>
-
-                <div className={styles.photo_duo}>
-                  {imageLoaded ? (
-                    <img src="/img/founder.webp" alt="founder img" />
-                  ) : (
-                    <img
-                      src="/img/founder_blur.webp"
-                      alt="blur img of founder"
-                    />
-                  )}
-                  <p className={styles.name}>
-                    Mr. Kayyush Thadani <br />
-                    <span>Founder @Thadani International Trading </span>
-                  </p>
-                </div>
+                <Fade triggerOnce>
+                  <div className={styles.photo_duo}>
+                    {imageLoaded ? (
+                      <img src="/img/founder.webp" alt="founder img" />
+                    ) : (
+                      <img
+                        src="/img/founder_blur.webp"
+                        alt="blur img of founder"
+                      />
+                    )}
+                    <p className={styles.name}>
+                      Mr. Kayyush Thadani <br />
+                      <span>Founder @Thadani International Trading </span>
+                    </p>
+                  </div>
+                </Fade>
               </div>
             </li>
           </ul>
@@ -170,16 +173,12 @@ const about_us = () => {
           </div>
 
           <div className={styles.core_left}>
-            <Fade triggerOnce direction="up">
+            <Fade triggerOnce cascade damping={0.1}>
               <h3>our core values, we believe in</h3>
-            </Fade>
-            <Fade triggerOnce direction="up">
               <p>
                 our principles guide us to build trust, work together, and
                 always improve.
               </p>
-            </Fade>
-            <Fade triggerOnce direction="up">
               <div onClick={contactUsClickHandler} className={styles.cta}>
                 Contact Us{" "}
                 <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
@@ -187,7 +186,7 @@ const about_us = () => {
             </Fade>
           </div>
           <div className={styles.core_right}>
-            <Fade triggerOnce cascade direction="up" damping={0.1}>
+            <Fade triggerOnce cascade damping={0.1}>
               <span>
                 <div className={styles.card}>
                   <img
@@ -203,30 +202,32 @@ const about_us = () => {
                 </div>
               </span>
               <span>
-                <div className={styles.card}>
-                  <img
-                    className={styles.card_icon}
-                    src="/icons/collaboration-blue.svg"
-                    alt="puzzle piece icon"
-                  />
-                  <h3>Collaboration</h3>
-                  <p>
-                    We see our clients as partners. Your success is our success,
-                    and we're here to build lasting relationships.
-                  </p>
-                </div>
-                <div className={styles.card}>
-                  <img
-                    src="/icons/innovation_blue.svg"
-                    className={styles.card_icon}
-                    alt="rocket icon"
-                  />
-                  <h3>Innovation</h3>
-                  <p>
-                    The sourcing world keeps changing, and so do we. We adapt
-                    and improve to deliver better solutions every time.
-                  </p>
-                </div>
+                <Fade triggerOnce cascade damping={0.1}>
+                  <div className={styles.card}>
+                    <img
+                      className={styles.card_icon}
+                      src="/icons/collaboration-blue.svg"
+                      alt="puzzle piece icon"
+                    />
+                    <h3>Collaboration</h3>
+                    <p>
+                      We see our clients as partners. Your success is our
+                      success, and we're here to build lasting relationships.
+                    </p>
+                  </div>
+                  <div className={styles.card}>
+                    <img
+                      src="/icons/innovation_blue.svg"
+                      className={styles.card_icon}
+                      alt="rocket icon"
+                    />
+                    <h3>Innovation</h3>
+                    <p>
+                      The sourcing world keeps changing, and so do we. We adapt
+                      and improve to deliver better solutions every time.
+                    </p>
+                  </div>
+                </Fade>
               </span>
             </Fade>
           </div>
@@ -247,16 +248,12 @@ const about_us = () => {
             </svg>
           </div>
 
-          <Fade triggerOnce direction="up">
+          <Fade triggerOnce damping={0.1}>
             <h3>Ready to start sourcing?</h3>
-          </Fade>
-          <Fade triggerOnce direction="up">
             <p>
               Connect with us to access the best products from China. <br />
               Let's work together to grow your business!
             </p>
-          </Fade>
-          <Fade triggerOnce direction="up">
             <div onClick={openWhatsAppHandler} className={styles.cta}>
               Get in Touch on WhatsApp
               <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />

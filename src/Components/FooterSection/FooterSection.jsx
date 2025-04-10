@@ -116,9 +116,6 @@ const FooterSection = () => {
             <h3>Reach Out to us via</h3>
 
             <ul>
-              {/* <li>
-                <span className={styles.contact_flag}>🇮🇳</span> +91 8208896517
-              </li> */}
               <li>
                 <span className={styles.contact_flag}>🇨🇳</span> +86 13538501419
               </li>
@@ -172,7 +169,7 @@ const FooterSection = () => {
         <p>@2025 Thadani International Trading Co. Ltd All Right Reserved</p>
         <Link
           href={"https://www.bimboo.co/"}
-          className={`${styles.bimboo} highlight_effect`}
+          className={`${styles.bimboo}`}
         >
           Built & Maintained by{" "}
           <span
@@ -183,7 +180,7 @@ const FooterSection = () => {
           >
             Bimboo
           </span>{" "}
-          <img src="/icons/arrow_up_right.svg" alt="arrow up right icon" />
+          <img src="/icons/arrow-up-right.svg" alt="arrow up right icon" />
         </Link>
       </div>
     </footer>

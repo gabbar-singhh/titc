@@ -25,12 +25,12 @@
     display: flex;
     align-items: center;
     list-style-type: none;
-    gap: 12px;
+    gap: 1.2rem;
 }
 
 .nav_ul .nav_li {
     text-transform: capitalize;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--blue);
     font-size: 1rem;
     cursor: pointer;
@@ -57,7 +57,7 @@
     display: flex;
     align-content: center;
     justify-content: center;
-    gap: 8px;
+    gap: 0.25rem;
     box-shadow: 4px 4px 6px 0px #dbdad8;
 }
 

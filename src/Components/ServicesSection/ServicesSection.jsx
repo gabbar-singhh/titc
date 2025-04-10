@@ -23,65 +23,62 @@ const ServicesSection = () => {
       <section className={styles.container}>
         <h2>Our Expert Services</h2>
 
-        <div className={styles.container}>
-          <Fade cascade damping={0.1} direction="up" triggerOnce>
-            <span>
-              <Link href={"/services#services-1"} className={styles.card}>
-                <img
-                  className={styles.card_icon}
-                  src="/icons/sourcing.svg"
-                  alt="sourcing icon"
-                />
-                <h3>sourcing</h3>
-                <p>
-                  We connect you with top manufacturers in China, ensuring
-                  high-quality products at competitive prices tailored to your
-                  needs.
-                </p>
-                <div className={styles.learn_more}>Learn More</div>
-              </Link>
-              <Link href={"/services#services-2"} className={styles.card}>
-                <img
-                  src="/icons/trading.svg"
-                  className={styles.card_icon}
-                  alt="trading icon"
-                />
-                <h3>Trading</h3>
-                <p>
-                  We handle all aspects of trading, from negotiating deals to
-                  ensuring timely delivery, making global sourcing hassle-free.
-                </p>
-                <div className={styles.learn_more}>Learn More</div>
-              </Link>
-            </span>
-            <span>
-              <Link href={"/services#services-3"} className={styles.card}>
-                <img
-                  src="/icons/vendor_pay.svg"
-                  className={styles.card_icon}
-                  alt="vendor icon"
-                />
-                <h3>Vendor Payments</h3>
-                <p>
-                  We streamline vendor payments, managing secure transactions to
-                  ensure smooth business operations and on-time deliveries.
-                </p>
-                <div className={styles.learn_more}>Learn More</div>
-              </Link>
-              <Link href={"/services#services-4"} className={styles.card}>
-                <img
-                  src="/icons/shipping.svg"
-                  className={styles.card_icon}
-                  alt="shipping icon"
-                />
-                <h3>Shipping</h3>
-                <p>
-                  We offer both air and sea freight services, ensuring your
-                  goods are delivered quickly and safely, anywhere in the world.
-                </p>
-                <div className={styles.learn_more}>Learn More</div>
-              </Link>
-            </span>
+        <div className={styles.card_container}>
+          <Fade cascade damping={0.1} triggerOnce>
+            <Link href={"/services#services-1"} className={styles.card}>
+              <img
+                className={styles.card_icon}
+                src="/icons/sourcing.svg"
+                alt="sourcing icon"
+              />
+              <h3>sourcing</h3>
+              <p>
+                We connect you with top manufacturers in China, ensuring
+                high-quality products at competitive prices tailored to your
+                needs.
+              </p>
+              <div className={styles.learn_more}>Learn More</div>
+            </Link>
+            <Link href={"/services#services-2"} className={styles.card}>
+              <img
+                src="/icons/trading.svg"
+                className={styles.card_icon}
+                alt="trading icon"
+              />
+              <h3>Trading</h3>
+              <p>
+                We handle all aspects of trading, from negotiating deals to
+                ensuring timely delivery, making global sourcing hassle-free.
+              </p>
+              <div className={styles.learn_more}>Learn More</div>
+            </Link>
+
+            <Link href={"/services#services-3"} className={styles.card}>
+              <img
+                src="/icons/vendor_pay.svg"
+                className={styles.card_icon}
+                alt="vendor icon"
+              />
+              <h3>Vendor Payments</h3>
+              <p>
+                We streamline vendor payments, managing secure transactions to
+                ensure smooth business operations and on-time deliveries.
+              </p>
+              <div className={styles.learn_more}>Learn More</div>
+            </Link>
+            <Link href={"/services#services-4"} className={styles.card}>
+              <img
+                src="/icons/shipping.svg"
+                className={styles.card_icon}
+                alt="shipping icon"
+              />
+              <h3>Shipping</h3>
+              <p>
+                We offer both air and sea freight services, ensuring your goods
+                are delivered quickly and safely, anywhere in the world.
+              </p>
+              <div className={styles.learn_more}>Learn More</div>
+            </Link>
           </Fade>
         </div>
       </section>

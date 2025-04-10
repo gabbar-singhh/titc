@@ -52,7 +52,7 @@ const NavigationBar = () => {
           <Link href={"/contact"}>
             <li className={`${styles.cta_contact} ${styles.nav_li}`}>
               contact
-              <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
+              <img src="/icons/arrow-up-right.svg" alt="arrow upright icon" />
             </li>
           </Link>
         </ul>
