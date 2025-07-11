@@ -48,7 +48,7 @@ const HeroSection = () => {
       <Fade direction="up" triggerOnce>
         <div onClick={openWhatsAppHandler} className={styles.cta}>
           Get in Touch on WhatsApp{" "}
-          <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
+          <img src="/icons/arrow-up-right-new.svg" alt="arrow upright icon" />
         </div>
       </Fade>
 

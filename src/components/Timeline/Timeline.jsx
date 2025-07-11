@@ -22,7 +22,7 @@ const Timeline = () => {
 
   return (
     <section className={styles.timeline_main} id="my_journey">
-      <h2>6 Step Process of our Business</h2>
+      <h2>From Order to Delivery: Our 6-Step Process</h2>
 
       <div className={styles.timeline_container}>
         <VerticalTimeline

@@ -42,7 +42,7 @@ const CompareSection = () => {
       <div className={styles.bottom_wave}></div>
       <Fade direction="up" triggerOnce>
         <h2>
-          What Makes Us Your Perfect Patner?
+          What Makes Us Your <span className={styles.stylesText}>Perfect Patner?</span> 
         </h2>
       </Fade>
       <div className={styles.card_container}>

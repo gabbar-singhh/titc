@@ -53,7 +53,7 @@
     width: 650px;
     line-height: 135%;
     font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     color: #626262;
     line-height: 135%;
     text-align: center;
@@ -63,7 +63,7 @@
     margin-top: 2.4rem;
     color: var(--creamy-white);
     background-color: var(--accent);
-    padding: 16px 24px;
+    padding: 0.85rem 1rem 0.85rem 2rem;
     border-radius: 4rem;
     font-weight: 500;
     transition: all 400ms ease-in-out;
@@ -73,12 +73,31 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 1rem;
+    font-size: 1.2rem;
+    border: 2.4px solid var(--accent);
+}
+
+.hero_main .cta img {
+    background-color: #f7f5ed;
+    height: 22px;
+    width: 22px;
+    padding: 1.2rem;
+    border-radius: 50%;
+}
+
+.hero_main .cta img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hero_main .cta:hover img {
+    transform: rotate(45deg);
 }
 
 .hero_main .cta:hover {
     color: var(--creamy-white);
     background-color: #af8e60ba;
+    border: 2.4px solid #c7b195;
 }
 
 /* MEDIA QUERIES */
