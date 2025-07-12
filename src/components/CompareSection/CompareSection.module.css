@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
+
 .main {
     padding: 96px 0;
     color: var(--neutral-black);
@@ -16,11 +18,14 @@
 }
 
 .stylesText {
-    /* color: #7D3C41; */
-    /* color: #C88EA7; */
-    /* color: #8D9F87; */
-    /* color: #5C9EAD; */
-    /* color: #4A9E96; */
+
+    /* font-family: "Alkatra", system-ui; */
+    /* font-size: 1.9rem; */
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-underline-offset: 6px;
+    text-decoration-color: #af8e60;
+    text-decoration-thickness: 2.4px;
 }
 
 .main h2 span {}

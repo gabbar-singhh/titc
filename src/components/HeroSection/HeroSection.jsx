@@ -4,7 +4,6 @@ import { Fade } from "react-awesome-reveal";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
-  
   const openWhatsAppHandler = () => {
     const phoneNumber = "8613538501419";
     const message = encodeURIComponent(
@@ -12,59 +11,60 @@ const HeroSection = () => {
     );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
-};
+  };
 
   return (
     <section className={styles.hero_main}>
-      <Fade direction="up" triggerOnce>
-        <h1>Your One-Stop Solution for</h1>
-      </Fade>
-      <Fade direction="up" triggerOnce>
-        <TypeAnimation
-          sequence={[
-            "Sourcing.",
-            1500,
-            "Trading.",
-            1500,
-            "Vendor Payments.",
-            1500,
-            "Shipping.",
-            1500,
-          ]}
-          style={{ textAlign: "center" }}
-          wrapper="h1"
-          speed={50}
-          repeat={Infinity}
-          className={styles.top_text}
-        />
-      </Fade>
-      <Fade direction="up" triggerOnce>
-        <p>
-          With 1000+ suppliers in China, we source and trade globally,
-          delivering quality products at competitive prices to stay ahead and
-          win.
-        </p>
-      </Fade>
-      <Fade direction="up" triggerOnce>
-        <div onClick={openWhatsAppHandler} className={styles.cta}>
-          Get in Touch on WhatsApp{" "}
-          <img src="/icons/arrow-up-right-new.svg" alt="arrow upright icon" />
+      <div className={styles.container}>
+        <div className={styles.left}>
+          <Fade direction="up" triggerOnce>
+            <h1 className={styles.heroHeading}>Your One-Stop Solution for</h1>
+          </Fade>
+          <Fade direction="up" triggerOnce>
+            <TypeAnimation
+              sequence={[
+                "Sourcing of Products.",
+                1500,
+                "Trading of Goods.",
+                1500,
+                "Shipping of Products.",
+                1500,
+                "Vendor Payments.",
+                1500,
+              ]}
+              wrapper="h1"
+              speed={50}
+              repeat={Infinity}
+              style={{ textAlign: "left" }}
+              className={`${styles.heroHeading}`}
+            />
+          </Fade>
+          <Fade direction="up" triggerOnce>
+            <p>
+              With 1000+ suppliers in China, we source and trade globally,
+              delivering quality products at competitive prices to stay ahead
+              and win.
+            </p>
+          </Fade>
+          <Fade direction="up" triggerOnce>
+            <div onClick={openWhatsAppHandler} className={styles.cta}>
+              Get in Touch on WhatsApp{" "}
+              <img
+                src="/icons/arrow-up-right-new.svg"
+                alt="arrow upright icon"
+              />
+            </div>
+          </Fade>
         </div>
-      </Fade>
 
-      {/* bottom wave effect */}
-      <div className={styles.bottom_wave}>
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            className={styles.shape_fill}
-          ></path>
-        </svg>
+        <div className={styles.right}>
+          <img
+            src="/img/hero-img.png"
+            alt="shipping container box"
+            width={424}
+            height={"auto"}
+          />
+        </div>
       </div>
     </section>
   );

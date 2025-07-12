@@ -1,88 +1,61 @@
 .hero_main {
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--neutral-black);
-
-    /* background: rgb(29, 53, 87); */
-    background: linear-gradient(0deg,
-            rgba(29, 53, 87, 0.45) 0%,
-            rgba(244, 241, 234, 1) 100%);
-    position: relative;
     z-index: 0;
+    background-image: radial-gradient(circle closest-corner at 0 28%, #af8e604a, #fff);
 }
 
-.bottom_wave {
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
+.hero_main .container {
+    max-width: 1150px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 7.2rem 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
 }
 
-.bottom_wave svg {
-    position: relative;
-    display: block;
-    width: calc(115% + 1.3px);
-    height: 35px;
-}
-
-.bottom_wave .shape_fill {
-    fill: #ffffff;
-}
-
-.hero_main h1 {
-    text-align: center;
-    font-size: 3.6rem;
+.hero_main .heroHeading {
+    font-size: 2.8rem;
     color: var(--neutral-black);
-    background-color: #fff;
-    padding: 0px 10px;
-    margin-bottom: 0.7rem;
-    background-color: #1e35571f;
-    border-radius: 2px;
+    text-align: left;
+    font-weight: 600;
+    line-height: 125%;
+    width: 100%;
 }
-
-.hero_main h1 span {}
 
 .hero_main p {
-    margin-top: 0.875em;
-    width: 650px;
+    width: 548px;
     line-height: 135%;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 1.2rem;
-    color: #626262;
-    line-height: 135%;
-    text-align: center;
+    color: #6e6e6e;
+    margin-top: 0.75rem;
+    margin-bottom: 2.4rem;
 }
 
 .hero_main .cta {
-    margin-top: 2.4rem;
-    color: var(--creamy-white);
-    background-color: var(--accent);
-    padding: 0.85rem 1rem 0.85rem 2rem;
-    border-radius: 4rem;
-    font-weight: 500;
-    transition: all 400ms ease-in-out;
-    color: #fff;
-    cursor: pointer;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
-    font-size: 1.2rem;
-    border: 2.4px solid var(--accent);
+    gap: 0.8rem;
+    padding: 1.2rem 1.4rem;
+    border-radius: 1.8rem;
+    font-weight: 500;
+    transition: all 400ms ease-in-out;
+    font-size: 1rem;
+
+    color: #fff;
+    box-shadow: 4px 4px 11px #ddd;
+    background-image: linear-gradient(to right top, #af8e60, #a9885a, #a28254, #9c7c4e, #967648);
+    cursor: pointer;
 }
 
 .hero_main .cta img {
     background-color: #f7f5ed;
-    height: 22px;
-    width: 22px;
-    padding: 1.2rem;
+    height: 20px;
+    width: 20px;
+    padding: 0.5rem;
     border-radius: 50%;
 }
 
@@ -97,8 +70,46 @@
 .hero_main .cta:hover {
     color: var(--creamy-white);
     background-color: #af8e60ba;
-    border: 2.4px solid #c7b195;
+    filter: brightness(1.1);
 }
+
+.right {
+    position: relative;
+}
+
+.right img {
+    border-radius: 0.8rem;
+    box-shadow: 4px 4px 11px #ddd;
+    border: 5px solid #1f355633;
+}
+
+.right::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: -50px;
+    background-image: url('/img/hero-flame-card.png');
+    z-index: 1;
+    width: 220px;
+    height: 220px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: floatUpDown 4s ease-in-out infinite;
+    pointer-events: none;
+}
+
+@keyframes floatUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
 
 /* MEDIA QUERIES */
 /* AVERAGE MOBILE DEVICES  */

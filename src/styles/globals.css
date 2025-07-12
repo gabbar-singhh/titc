@@ -42,10 +42,11 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
   padding: 2em;
+  background-color: var(--creamy-white);
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: var(--accent);
+  background-color: #1a2d49;
   border-radius: 0.5em;
 }
 
@@ -62,7 +63,6 @@ body::-webkit-scrollbar-thumb {
   bottom: 0;
   left: -0.25em;
   right: -0.25em;
-  /* background-color: hsla(341, 97%, 59%, 0.75); */
   background-color: #4901a3;
   transform-origin: center right;
   transform: scaleX(0);

@@ -44,15 +44,14 @@ const NavigationBar = () => {
             <li className={styles.nav_li}>services</li>
           </Link>{" "}
           <Link href={"/product"}>
-            <li className={styles.nav_li}>product</li>
+            <li className={styles.nav_li}>products</li>
           </Link>{" "}
           <Link href={"/about_us"}>
             <li className={styles.nav_li}>about us</li>
           </Link>{" "}
           <Link href={"/contact"}>
             <li className={`${styles.cta_contact} ${styles.nav_li}`}>
-              contact
-              <img src="/icons/arrow-up-right.svg" alt="arrow upright icon" />
+              contact us
             </li>
           </Link>
         </ul>
@@ -84,7 +83,7 @@ const NavigationBar = () => {
               <li className={styles.nav_mobile_li}>services</li>
             </Link>{" "}
             <Link href={"/product"} onClick={hideMenuHandler}>
-              <li className={styles.nav_mobile_li}>product</li>
+              <li className={styles.nav_mobile_li}>products</li>
             </Link>{" "}
             <Link href={"/about_us"} onClick={hideMenuHandler}>
               <li className={styles.nav_mobile_li}>about us</li>
@@ -93,7 +92,7 @@ const NavigationBar = () => {
               <li
                 className={`${styles.nav_cta_contact} ${styles.nav_mobile_li}`}
               >
-                contact
+                contact us
                 <img
                   src="/icons/arrow_up_right.svg"
                   className={styles.img}

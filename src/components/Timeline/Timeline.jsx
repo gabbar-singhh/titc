@@ -4,8 +4,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
 import styles from "./Timeline.module.css";
 
 const Timeline = () => {
