@@ -239,7 +239,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: var(--accent);
+    background-color: #1a2d49;
 }
 
 .lower_foot p {
@@ -249,7 +249,6 @@
     color: var(--creamy-white);
     padding: 10px;
     text-align: center;
-    border-top: 1px solid #af8e603b;
 }
 
 .lower_foot .bimboo {
@@ -267,8 +266,7 @@
 }
 
 .lower_foot .bimboo:hover {
-    background-color: #7851a9;
-
+    background-color: #6b3ba6;
 }
 
 .lower_foot .bimboo img {
