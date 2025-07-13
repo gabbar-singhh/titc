@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
+
 .main {
     padding: 96px 0;
     color: var(--neutral-black);
@@ -15,7 +17,12 @@
     color: var(--blue);
 }
 
-.main h2 span {}
+.stylesText {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 6px;
+    text-decoration-color: #af8e60a3;
+}
 
 .card_container {
     display: flex;

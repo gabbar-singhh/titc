@@ -13,8 +13,10 @@ const services = () => {
   const [imageLoaded4, setImageLoaded4] = useState(false);
 
   const openWhatsAppHandler = () => {
-    const phoneNumber = "918208896517";
-    const message = encodeURIComponent("Hello Kayyush, I visited your website and I'd be interested to know more");
+    const phoneNumber = "8613538501419";
+    const message = encodeURIComponent(
+      "Hello Kayyush, I visited your website and I'd be interested to know more!"
+    );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
   };
@@ -80,13 +82,13 @@ const services = () => {
               <TypeAnimation
                 sequence={[
                   "competitive pricing.",
-                  1000,
+                  1500,
                   "wide range of products.",
-                  1000,
+                  1500,
                   "on-time delivery.",
-                  1000,
+                  1500,
                   "high quality of items.",
-                  1000,
+                  1500,
                 ]}
                 style={{ textAlign: "center" }}
                 wrapper="h1"

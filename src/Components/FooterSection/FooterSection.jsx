@@ -21,7 +21,7 @@ const FooterSection = () => {
   };
 
   const openWhatsAppHandler = () => {
-    const phoneNumber = "918208896517";
+    const phoneNumber = "8613538501419";
     const message = encodeURIComponent(
       "Hello Kayyush, I visited your website and I'd be interested to know more!"
     );
@@ -54,17 +54,30 @@ const FooterSection = () => {
 
           <ul>
             <li>
-              <Link href={"https://www.instagram.com/"} target="_blank">
+              <Link
+                href={"https://www.instagram.com/thadani.chinasourcing/"}
+                target="_blank"
+              >
                 <img src="/icons/instagram.svg" alt="instagram logo" />
               </Link>
             </li>
             <li>
-              <Link href={"https://www.facebook.com/"} target="_blank">
+              <Link
+                href={
+                  "https://www.facebook.com/people/Thadani-International-Trading-Co-Ltd/61570387570569/"
+                }
+                target="_blank"
+              >
                 <img src="/icons/facebook.svg" alt="facebook logo" />
               </Link>
             </li>
             <li>
-              <Link href={"https://www.linkedin.com/"} target="_blank">
+              <Link
+                href={
+                  "https://www.linkedin.com/company/thadani-international-trading/"
+                }
+                target="_blank"
+              >
                 <img src="/icons/linkedin.svg" alt="linkedin logo" />
               </Link>
             </li>
@@ -104,9 +117,6 @@ const FooterSection = () => {
 
             <ul>
               <li>
-                <span className={styles.contact_flag}>🇮🇳</span> +91 8208896517
-              </li>
-              <li>
                 <span className={styles.contact_flag}>🇨🇳</span> +86 13538501419
               </li>
             </ul>
@@ -135,7 +145,7 @@ const FooterSection = () => {
                   }}
                 >
                   {" "}
-                  thadani.internationaltrading@gmail.com
+                  inquiry@thadaniinternationaltrading.com
                 </p>
               </li>
 
@@ -157,7 +167,10 @@ const FooterSection = () => {
 
       <div className={styles.lower_foot}>
         <p>@2025 Thadani International Trading Co. Ltd All Right Reserved</p>
-        <Link href={"https://www.bimboo.co/"} className={`${styles.bimboo} highlight_effect`}>
+        <Link
+          href={"https://www.bimboo.co/"}
+          className={`${styles.bimboo}`}
+        >
           Built & Maintained by{" "}
           <span
             style={{
@@ -167,7 +180,7 @@ const FooterSection = () => {
           >
             Bimboo
           </span>{" "}
-          <img src="/icons/arrow_up_right.svg" alt="arrow up right icon" />
+          <img src="/icons/arrow-up-right.svg" alt="arrow up right icon" />
         </Link>
       </div>
     </footer>

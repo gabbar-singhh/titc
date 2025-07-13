@@ -7,12 +7,15 @@ import SmallCTASection from "@/Components/SmallCTASection/SmallCTASection";
 import FooterSection from "@/Components/FooterSection/FooterSection";
 
 const product = () => {
+ 
   const openWhatsAppHandler = () => {
-    const phoneNumber = "918208896517";
-    const message = encodeURIComponent("Hello Kayyush, I visited your website and I'd be interested to know more");
+    const phoneNumber = "8613538501419";
+    const message = encodeURIComponent(
+      "Hello Kayyush, I visited your website and I'd be interested to know more!"
+    );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
-  };
+};
 
   const productCategoryName = [
     "Apparel",
@@ -132,7 +135,7 @@ const product = () => {
         </div>
 
         <div className={styles.product_category}>
-          <Fade triggerOnce direction="up">
+          <Fade triggerOnce delay={0.1}>
             <h2>
               explore our product database to find the perfect <br /> items for
               your business

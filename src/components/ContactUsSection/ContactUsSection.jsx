@@ -97,7 +97,7 @@ const ContactUsSection = () => {
   };
 
   const emailClickHandler = () => {
-    window.open("mailto:thadani.internationaltrading@gmail.com", "_blank");
+    window.open("mailto:	inquiry@thadaniinternationaltrading.com", "_blank");
   };
   const addressClickHandler = () => {
     window.open("https://maps.app.goo.gl/qmfShD2kHS1kBMhZA", "_blank");
@@ -125,12 +125,12 @@ const ContactUsSection = () => {
           <ul className={styles.contact_options}>
             <li className={styles.first_li}>
               <img src="/icons/call_icon.svg" alt="call icon" />
-              <p>+86 13538501419 , +91 8208896517</p>
+              <p>+86 13538501419</p>
             </li>
             <li>
               <img src="/icons/mail_icon.svg" alt="mail icon" />
               <p onClick={emailClickHandler}>
-                thadani.internationaltrading@gmail.com
+                	inquiry@thadaniinternationaltrading.com
               </p>
             </li>
             <li>

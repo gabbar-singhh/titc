@@ -22,16 +22,11 @@ const ServicesSectionRedefined = () => {
 
       <section className={styles.container}>
         <div className={styles.leftSide}>
-          <Fade triggerOnce direction="up">
+          <Fade triggerOnce damping={0.2}>
             <h3 className={styles.heading}>we'll take you from 0 to 100</h3>
-          </Fade>
-          <Fade triggerOnce direction="up">
             <p className={styles.desc}>
               with our expert and professional services
             </p>
-          </Fade>
-
-          <Fade triggerOnce direction="up">
             <Link href="/contact#contact-form" className={styles.view}>
               Contact Us
               <img
@@ -43,7 +38,7 @@ const ServicesSectionRedefined = () => {
         </div>
 
         <div className={styles.rightSide}>
-          <Fade cascade damping={0.1} direction="up" triggerOnce>
+          <Fade cascade damping={0.1} triggerOnce>
             <span>
               <Link href={"/services#services-1"} className={styles.card}>
                 <img
@@ -73,6 +68,7 @@ const ServicesSectionRedefined = () => {
                 <div className={styles.learn_more}>Learn More</div>
               </Link>
             </span>
+          <Fade cascade damping={0.1} triggerOnce>
             <span>
               <Link href={"/services#services-3"} className={styles.card}>
                 <img
@@ -101,6 +97,7 @@ const ServicesSectionRedefined = () => {
                 <div className={styles.learn_more}>Learn More</div>
               </Link>
             </span>
+            </Fade>
           </Fade>
         </div>
       </section>

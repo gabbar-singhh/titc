@@ -1,0 +1,13 @@
+.reelsMain {
+    overflow: hidden;
+}
+
+.reelsMain iframe {
+    height: 663px;
+    width: 400px;
+    border: none;
+    overflow: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border-radius: 12px;
+}
