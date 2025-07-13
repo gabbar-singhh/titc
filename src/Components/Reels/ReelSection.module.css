@@ -15,6 +15,11 @@
     font-weight: 700;
     color: #1D3557;
     text-transform: capitalize;
+
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 6px;
+    text-decoration-color: #af8e60a3;
 }
 
 .main .reelsFeed {

@@ -18,17 +18,11 @@
 }
 
 .stylesText {
-
-    /* font-family: "Alkatra", system-ui; */
-    /* font-size: 1.9rem; */
     text-decoration: underline;
-    text-decoration-style: wavy;
-    text-underline-offset: 6px;
-    text-decoration-color: #af8e60;
-    text-decoration-thickness: 2.4px;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 6px;
+    text-decoration-color: #af8e60a3;
 }
-
-.main h2 span {}
 
 .card_container {
     display: flex;

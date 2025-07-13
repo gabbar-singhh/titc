@@ -20,7 +20,10 @@ const Timeline = () => {
 
   return (
     <section className={styles.timeline_main} id="my_journey">
-      <h2>From Order to Delivery: Our 6-Step Process</h2>
+      <h2>
+        From Order to Delivery:{" "}
+        <span className={styles.wavyUnderline}>Our 6-Step Process</span>
+      </h2>
 
       <div className={styles.timeline_container}>
         <VerticalTimeline

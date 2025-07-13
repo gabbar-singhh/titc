@@ -20,18 +20,18 @@
     color: var(--neutral-black);
     text-align: left;
     font-weight: 600;
-    line-height: 125%;
+    line-height: 135%;
     width: 100%;
 }
 
 .hero_main p {
     width: 548px;
-    line-height: 135%;
+    line-height: 155%;
     font-weight: 400;
     font-size: 1.2rem;
     color: #6e6e6e;
-    margin-top: 0.75rem;
-    margin-bottom: 2.4rem;
+    margin-top: 0.8rem;
+    margin-bottom: 2.8rem;
 }
 
 .hero_main .cta {
