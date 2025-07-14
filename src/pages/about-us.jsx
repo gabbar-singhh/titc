@@ -16,8 +16,8 @@ const about_us = () => {
       setImageLoaded(true);
     };
 
-    img.src = "/img/placeholder.webp";
-  }, ["/img/placeholder.webp"]);
+    img.src = "/img/founder.webp";
+  }, ["/img/founder.webp"]);
   return (
     <>
       <Head>
@@ -126,7 +126,7 @@ const about_us = () => {
                         <img src="/img/founder.webp" alt="founder img" />
                       ) : (
                         <img
-                          src="/img/founder_blur.webp"
+                          src="/img/founder-blur.webp"
                           alt="blur img of founder"
                         />
                       )}
@@ -234,7 +234,7 @@ const about_us = () => {
           head="Ready To Start Sourcing?"
           content="Connect with us to access the best products from China. Let's work together to grow your business!"
         />
-        <ContactUsSection/>
+        <ContactUsSection />
         <FooterSection />
       </section>
     </>

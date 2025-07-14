@@ -172,13 +172,13 @@ const services = () => {
             {imageLoaded1 ? (
               <img
                 className={styles.right_img}
-                src="/img/services/sourcing-new.png"
+                src="/img/services/sourcing.webp"
                 alt="china network img"
               />
             ) : (
               <img
                 className={styles.right_img}
-                src="/img/services/sourcing_blur.webp"
+                src="/img/services/sourcing-blur.webp"
                 alt="china network img"
               />
             )}
@@ -190,13 +190,13 @@ const services = () => {
             {imageLoaded2 ? (
               <img
                 className={styles.right_img}
-                src="/img/services/trading-new.png"
+                src="/img/services/trading.webp"
                 alt="china network img"
               />
             ) : (
               <img
                 className={styles.right_img}
-                src="/img/services/trading_blur.webp"
+                src="/img/services/trading-blur.webp"
                 alt="china network img"
               />
             )}
@@ -286,13 +286,13 @@ const services = () => {
             {imageLoaded3 ? (
               <img
                 className={styles.right_img}
-                src="/img/services/vendor-new.png"
+                src="/img/services/vendor.webp"
                 alt=""
               />
             ) : (
               <img
                 className={styles.right_img}
-                src="/img/services/vendor_blur.webp"
+                src="/img/services/vendor-blur.webp"
                 alt=""
               />
             )}
@@ -304,13 +304,13 @@ const services = () => {
             {imageLoaded4 ? (
               <img
                 className={styles.right_img}
-                src="/img/services/shipping-new.png"
+                src="/img/services/shipping.webp"
                 alt="china network img"
               />
             ) : (
               <img
                 className={styles.right_img}
-                src="/img/services/shipping_blur.webp"
+                src="/img/services/shipping-blur.webp"
                 alt="china network img"
               />
             )}

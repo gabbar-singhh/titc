@@ -59,7 +59,7 @@ const HeroSection = () => {
 
         <div className={styles.right}>
           <img
-            src="/img/hero-img.png"
+            src="/img/hero-home.webp"
             alt="shipping container box"
             width={424}
             height={"auto"}

@@ -175,7 +175,7 @@ const contact = () => {
 
             <div className={styles.right}>
               <img
-                src="/img/man-calling-new.png"
+                src="/img/hero-contact.webp"
                 alt="shipping container box"
                 width={424}
                 height={"auto"}

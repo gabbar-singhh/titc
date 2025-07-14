@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400..700&display=swap');
 
 .main {
-    padding: 96px 0;
+    padding: 48px 0 96px 0;
     color: var(--neutral-black);
     display: flex;
     align-items: center;

@@ -60,6 +60,7 @@ const product = () => {
       <section className={styles.main}>
         <div className={styles.herosection}>
           <div className={styles.herosectionConatiner}>
+            <div className={styles.left}>
             <Fade direction="up" triggerOnce>
               <div className={styles.capsule}>
                 <img src="/icons/boxes.svg" alt="briefcase business" />
@@ -87,6 +88,16 @@ const product = () => {
                 />
               </div>
             </Fade>
+            </div>
+            <div className={styles.right}>
+               <img
+            src="/img/hero-product.webp"
+            alt="warehouse china"
+            width={424}
+            height={"auto"}
+          />
+            </div>
+
           </div>
         </div>
 

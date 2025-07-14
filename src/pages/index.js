@@ -4,10 +4,8 @@ import HeroSection from "@/Components/HeroSection/HeroSection";
 import CompareSection from "@/Components/CompareSection/CompareSection";
 import ServicesSection from "@/Components/ServicesSection/ServicesSection";
 import Timeline from "@/Components/Timeline/Timeline";
-import StatsSection from "@/Components/StatsSection/StatsSection";
 import ContactUsSection from "@/Components/ContactUsSection/ContactUsSection";
 import FooterSection from "@/Components/FooterSection/FooterSection";
-import Reels from "@/Components/Reels/Reels";
 import ReelSection from "@/Components/Reels/ReelSection";
 
 export default function Home() {

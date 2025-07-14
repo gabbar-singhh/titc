@@ -20,7 +20,7 @@ const ServicesSection = () => {
         </svg>
       </div>
       <section className={styles.container}>
-        <h2>we'll take you from 0 to 100</h2>
+        <h2>We'll take you from 0 to 100</h2>
         <p>with our expert and professional services</p>
 
         <div className={styles.card_container}>
