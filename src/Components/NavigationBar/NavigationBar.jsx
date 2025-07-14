@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./NavigationBar.module.css";
-import Image from "next/image";
-import { Fade, Slide } from "react-awesome-reveal";
 
 const NavigationBar = () => {
   const [hamburgerIcon, setHamburgerIcon] = useState("&#9776;");

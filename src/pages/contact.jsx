@@ -5,7 +5,7 @@ import FooterSection from "@/Components/FooterSection/FooterSection";
 import { Fade } from "react-awesome-reveal";
 import emailjs from "@emailjs/browser";
 import IsEmail from "isemail";
-import { Spinner, Tooltip } from "@radix-ui/themes";
+import { Spinner } from "@radix-ui/themes";
 
 const contact = () => {
   const [showLoading, setShowLoading] = useState(false);
