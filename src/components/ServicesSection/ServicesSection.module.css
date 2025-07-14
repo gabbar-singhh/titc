@@ -84,7 +84,7 @@
 }
 
 .container .card {
-    background-color: var(--creamy-white);
+    background-color: #fff;
     text-align: center;
     padding: 2.4rem 2.4rem;
     border-radius: 12px;
@@ -99,7 +99,7 @@
 }
 
 .container .card:hover {
-    background-color: #fdf5e2;
+    background-color: var(--creamy-white);
     -webkit-box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);
     -moz-box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);
     box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);

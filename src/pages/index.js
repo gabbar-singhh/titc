@@ -55,7 +55,6 @@ export default function Home() {
         <CompareSection />
         <ServicesSection />
         <Timeline />
-        {/* <StatsSection /> */}
         <ReelSection />
         <ContactUsSection />
         <FooterSection />

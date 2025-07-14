@@ -1,10 +1,10 @@
 .main {
     background-color: var(--blue);
-    padding: 104px 0;
+    padding: 144px 0 124px 0;
     position: relative;
 }
 
-.custom_shape_divider_top_1735330510 {
+.wavyTop {
     position: absolute;
     top: 0;
     left: 0;
@@ -13,15 +13,35 @@
     line-height: 0;
 }
 
-.custom_shape_divider_top_1735330510 svg {
+.wavyTop svg {
     position: relative;
     display: block;
-    width: calc(123% + 1.3px);
-    height: 19px;
+    width: calc(100% + 1.3px);
+    height: 71px;
 }
 
-.custom_shape_divider_top_1735330510 .shape_fill {
-    fill: #f3f1ea;
+.wavyTop .shapeFill {
+    fill: #FFFFFF;
+}
+
+.wavyBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wavyBottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 71px;
+}
+
+.wavyBottom .shapeFill {
+    fill: #f8f5ed;
 }
 
 .container {
@@ -61,7 +81,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: 0.5rem;
     cursor: pointer;
     transition: all 400ms ease-in-out;
 }
@@ -80,7 +100,7 @@
 
 .rightSide .card {
     width: 256px;
-    background-color: var(--creamy-white);
+    background-color: #fff;
     text-align: center;
     padding: 2.4rem 2.4rem;
     border-radius: 12px;
@@ -95,7 +115,7 @@
 }
 
 .rightSide .card:hover {
-    background-color: #fdf5e2;
+    background-color: var(--creamy-white);
     -webkit-box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);
     -moz-box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);
     box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);
