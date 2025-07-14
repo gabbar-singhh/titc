@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 const ServicesSectionRedefined = () => {
   return (
     <div className={styles.main}>
-       <div className={styles.wavyTop}>
+      <div className={styles.wavyTop}>
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -28,10 +28,7 @@ const ServicesSectionRedefined = () => {
             </p>
             <Link href="/contact#contact-form" className={styles.view}>
               Get Started
-              <img
-                src="/icons/arrow_up_right_blue.svg"
-                alt="arrow upright icon"
-              />
+              <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
             </Link>
           </Fade>
         </div>
@@ -67,40 +64,41 @@ const ServicesSectionRedefined = () => {
                 <div className={styles.learn_more}>Learn More</div>
               </Link>
             </span>
-          <Fade cascade damping={0.1} triggerOnce>
-            <span>
-              <Link href={"/services#services-3"} className={styles.card}>
-                <img
-                  src="/icons/vendor_pay.svg"
-                  className={styles.card_icon}
-                  alt="vendor icon"
-                />
-                <h3>Vendor Payments</h3>
-                <p>
-                  We streamline vendor payments, managing secure transactions to
-                  ensure smooth business operations and on-time deliveries.
-                </p>
-                <div className={styles.learn_more}>Learn More</div>
-              </Link>
-              <Link href={"/services#services-4"} className={styles.card}>
-                <img
-                  src="/icons/shipping.svg"
-                  className={styles.card_icon}
-                  alt="shipping icon"
-                />
-                <h3>Shipping</h3>
-                <p>
-                  We offer both air and sea freight services, ensuring your
-                  goods are delivered quickly and safely, anywhere in the world.
-                </p>
-                <div className={styles.learn_more}>Learn More</div>
-              </Link>
-            </span>
+            <Fade cascade damping={0.1} triggerOnce>
+              <span>
+                <Link href={"/services#services-3"} className={styles.card}>
+                  <img
+                    src="/icons/vendor_pay.svg"
+                    className={styles.card_icon}
+                    alt="vendor icon"
+                  />
+                  <h3>Vendor Payments</h3>
+                  <p>
+                    We streamline vendor payments, managing secure transactions
+                    to ensure smooth business operations and on-time deliveries.
+                  </p>
+                  <div className={styles.learn_more}>Learn More</div>
+                </Link>
+                <Link href={"/services#services-4"} className={styles.card}>
+                  <img
+                    src="/icons/shipping.svg"
+                    className={styles.card_icon}
+                    alt="shipping icon"
+                  />
+                  <h3>Shipping</h3>
+                  <p>
+                    We offer both air and sea freight services, ensuring your
+                    goods are delivered quickly and safely, anywhere in the
+                    world.
+                  </p>
+                  <div className={styles.learn_more}>Learn More</div>
+                </Link>
+              </span>
             </Fade>
           </Fade>
         </div>
       </section>
-       <div className={styles.wavyBottom}>
+      <div className={styles.wavyBottom}>
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
