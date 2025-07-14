@@ -1,5 +1,8 @@
 .reelsMain {
     overflow: hidden;
+    border-radius: 0.8rem;
+    box-shadow: 4px 4px 11px #ddd;
+    border: 5px solid #1f355633;
 }
 
 .reelsMain iframe {
@@ -9,5 +12,5 @@
     overflow: hidden;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    border-radius: 12px;
+    /* border-radius: 12px; */
 }

@@ -1,15 +1,12 @@
 .main {
     background-color: #f7f5ed;
-    padding: 148px;
-    text-align: center;
-
-    background-image: url('/img/white_bg.jpg');
-    background-size: cover;
-    background-position: center;
     display: flex;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
+
+    position: relative;
+    padding: 96px 0 172px 0;
 }
 
 .main .heading {
@@ -20,35 +17,74 @@
 }
 
 .main .desc {
-    font-size: 1.1rem;
+    color: #626262;
+    font-size: 1.2rem;
     line-height: 135%;
     letter-spacing: -0.1px;
-    color: #626262;
     font-weight: 500;
+    width: 424px;
+    margin-bottom: 2.8rem;
+    text-align: center;
 }
 
 .main .cta {
-    margin-top: 3.2rem;
-    color: var(--creamy-white);
-    background-color: var(--accent);
-    padding: 16px 24px;
-    border-radius: 4rem;
-    font-weight: 600;
-    transition: all 400ms ease-in-out;
-    color: #fff;
-    cursor: pointer;
-
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 0.8rem;
+    padding: 1.2rem 1.4rem;
+    border-radius: 1.8rem;
+    font-weight: 500;
+    transition: all 400ms ease-in-out;
+    font-size: 1rem;
+
+    color: #fff;
+    box-shadow: 4px 4px 11px #ddd;
+    background-image: linear-gradient(to right top, #af8e60, #a9885a, #a28254, #9c7c4e, #967648);
+    cursor: pointer;
+}
+
+.main .cta img {
+    background-color: #f7f5ed;
+    height: 20px;
+    width: 20px;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.main .cta img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.main .cta:hover img {
+    transform: rotate(45deg);
 }
 
 .main .cta:hover {
     color: var(--creamy-white);
     background-color: #af8e60ba;
+    filter: brightness(1.1);
 }
 
+.wavyBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wavyBottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 71px;
+}
+
+.wavyBottom .shapeFill {
+    fill: var(--blue);
+}
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 0px) and (max-width: 359px) {

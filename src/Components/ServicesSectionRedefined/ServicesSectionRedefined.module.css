@@ -1,10 +1,10 @@
 .main {
     background-color: var(--blue);
-    padding: 104px 0;
+    padding: 144px 0 124px 0;
     position: relative;
 }
 
-.custom_shape_divider_top_1735330510 {
+.wavyTop {
     position: absolute;
     top: 0;
     left: 0;
@@ -13,15 +13,35 @@
     line-height: 0;
 }
 
-.custom_shape_divider_top_1735330510 svg {
+.wavyTop svg {
     position: relative;
     display: block;
-    width: calc(123% + 1.3px);
-    height: 19px;
+    width: calc(100% + 1.3px);
+    height: 71px;
 }
 
-.custom_shape_divider_top_1735330510 .shape_fill {
-    fill: #f3f1ea;
+.wavyTop .shapeFill {
+    fill: #f5f1ea;
+}
+
+.wavyBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wavyBottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 71px;
+}
+
+.wavyBottom .shapeFill {
+    fill: #f8f5ed;
 }
 
 .container {
@@ -48,27 +68,23 @@
     margin-bottom: 2.8rem;
 }
 
-
 .leftSide .view {
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--blue);
-    background-color: var(--creamy-white);
-    margin-bottom: 0.8rem;
-    padding: 10px 18px;
-    border-radius: 4px;
-
+    cursor: pointer;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
-    cursor: pointer;
+    gap: 8px;
+    padding: 14px 1.2rem;
+    border-radius: 12px;
+    font-weight: 600;
     transition: all 400ms ease-in-out;
+    color: #fff;
+    box-shadow: 4px 4px 11px #0e1e3587;
+    background-image: linear-gradient(to right top, #af8e60, #a9885a, #a28254, #9c7c4e, #967648);
 }
 
 .leftSide .view:hover {
-    cursor: pointer;
-    background-color: #d9d4c7;
+    filter: brightness(1.1);
 }
 
 .rightSide span {
@@ -80,7 +96,7 @@
 
 .rightSide .card {
     width: 256px;
-    background-color: var(--creamy-white);
+    background-color: #fff;
     text-align: center;
     padding: 2.4rem 2.4rem;
     border-radius: 12px;
@@ -95,7 +111,7 @@
 }
 
 .rightSide .card:hover {
-    background-color: #fdf5e2;
+    background-color: var(--creamy-white);
     -webkit-box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);
     -moz-box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);
     box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);

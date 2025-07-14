@@ -17,7 +17,7 @@ const FooterSection = () => {
   };
 
   const footerAboutClickHandler = () => {
-    window.open("/about_us", "_self");
+    window.open("/about-us", "_self");
   };
 
   const openWhatsAppHandler = () => {

@@ -46,7 +46,7 @@ const NavigationBar = () => {
           <Link href={"/product"}>
             <li className={styles.nav_li}>products</li>
           </Link>{" "}
-          <Link href={"/about_us"}>
+          <Link href={"/about-us"}>
             <li className={styles.nav_li}>about us</li>
           </Link>{" "}
           <Link href={"/contact"}>
@@ -85,7 +85,7 @@ const NavigationBar = () => {
             <Link href={"/product"} onClick={hideMenuHandler}>
               <li className={styles.nav_mobile_li}>products</li>
             </Link>{" "}
-            <Link href={"/about_us"} onClick={hideMenuHandler}>
+            <Link href={"/about-us"} onClick={hideMenuHandler}>
               <li className={styles.nav_mobile_li}>about us</li>
             </Link>{" "}
             <Link href={"/contact"} onClick={hideMenuHandler}>
