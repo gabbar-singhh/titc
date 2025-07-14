@@ -22,7 +22,7 @@ const ServicesSectionRedefined = () => {
       <section className={styles.container}>
         <div className={styles.leftSide}>
           <Fade triggerOnce damping={0.2}>
-            <h3 className={styles.heading}>we'll take you from 0 to 100</h3>
+            <h3 className={styles.heading}>We'll take you from 0 to 100</h3>
             <p className={styles.desc}>
               with our expert and professional services
             </p>
