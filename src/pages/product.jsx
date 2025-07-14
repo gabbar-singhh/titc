@@ -91,7 +91,7 @@ const product = () => {
             </div>
             <div className={styles.right}>
                <img
-            src="/img/products-new.png"
+            src="/img/hero-product.webp"
             alt="warehouse china"
             width={424}
             height={"auto"}

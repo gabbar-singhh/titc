@@ -17,8 +17,8 @@ const CompareSection = () => {
       setImageLoaded1(true);
     };
 
-    img.src = "/img/compareSection/1.png";
-  }, ["/img/compareSection/1.png"]);
+    img.src = "/img/compareSection/1.webp";
+  }, ["/img/compareSection/1.webp"]);
 
   useEffect(() => {
     const img = new Image();
@@ -26,8 +26,8 @@ const CompareSection = () => {
       setImageLoaded2(true);
     };
 
-    img.src = "/img/compareSection/2.png";
-  }, ["/img/compareSection/2.png"]);
+    img.src = "/img/compareSection/2.webp";
+  }, ["/img/compareSection/2.webp"]);
 
   useEffect(() => {
     const img = new Image();
@@ -35,8 +35,8 @@ const CompareSection = () => {
       setImageLoaded3(true);
     };
 
-    img.src = "/img/compareSection/3.png";
-  }, ["/img/compareSection/3.png"]);
+    img.src = "/img/compareSection/3.webp";
+  }, ["/img/compareSection/3.webp"]);
   return (
     <section className={styles.main}>
       <div className={styles.bottom_wave}></div>
@@ -67,7 +67,7 @@ const CompareSection = () => {
             </span>
             {imageLoaded1 ? (
               <img
-                src="/img/compareSection/1.png"
+                src="/img/compareSection/1.webp"
                 className={styles.img}
                 alt="shipment box img"
               />
@@ -84,7 +84,7 @@ const CompareSection = () => {
           <div className={`${styles.card} ${styles.card_02}`}>
             {imageLoaded2 ? (
               <img
-                src="/img/compareSection/2.png"
+                src="/img/compareSection/2.webp"
                 className={`${styles.img} ${styles.img_card2}`}
                 alt="china network img"
               />
@@ -136,7 +136,7 @@ const CompareSection = () => {
             </span>
             {imageLoaded3 ? (
               <img
-                src="/img/compareSection/3.png"
+                src="/img/compareSection/3.webp"
                 className={styles.img}
                 alt="credit card img"
               />
