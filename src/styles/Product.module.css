@@ -133,6 +133,7 @@
 
 .product_category {
     padding: 96px;
+    background-image: linear-gradient(to bottom, #ffffff, #fdfbfc, #fcf7f7, #faf3f0, #f4f1ea);
 }
 
 .product_category h2 {
