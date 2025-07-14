@@ -28,7 +28,7 @@ const NavigationBar = () => {
       <div className={styles.leftside_nav}>
         <Link href={"/"}>
           <img
-            src={"/img/logo_nav.webp"}
+            src={"/img/logo-nav.webp"}
             className={styles.nav_logo}
             alt="tit logo"
           />
