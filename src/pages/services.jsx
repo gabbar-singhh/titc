@@ -68,60 +68,63 @@ const services = () => {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <section className={styles.main}>
-        <div className={styles.hero_services}>
-          <span>
+        <div className={styles.herosection}>
+          <div className={styles.herosectionConatiner}>
             <Fade direction="up" triggerOnce>
-              <p>our services</p>
+              <div className={styles.capsule}>
+                <img
+                  src="/icons/briefcase-business.svg"
+                  alt="briefcase business"
+                />
+                Our Services
+              </div>
             </Fade>
-
             <Fade direction="up" triggerOnce>
-              <h1>We help companies by providing</h1>
+              <h1 className={styles.heroHeading}>
+                We help companies by providing
+              </h1>
             </Fade>
-
             <Fade direction="up" triggerOnce>
               <TypeAnimation
                 sequence={[
-                  "competitive pricing.",
+                  "Wide Range of Products.",
                   1500,
-                  "wide range of products.",
+                  "On Time Deliveries.",
                   1500,
-                  "on-time delivery.",
+                  "Premium Quality of Items.",
                   1500,
-                  "high quality of items.",
+                  "Competitive Pricing.",
                   1500,
                 ]}
-                style={{ textAlign: "center" }}
                 wrapper="h1"
                 speed={50}
                 repeat={Infinity}
-                className={styles.top_text}
+                style={{ textAlign: "left" }}
+                className={`${styles.heroHeading}`}
               />
             </Fade>
-
+            <Fade direction="up" triggerOnce>
+              <p>
+                From factory to doorstep — we source, trade, and deliver quality
+                goods globally with speed and reliability.
+              </p>
+            </Fade>
             <Fade direction="up" triggerOnce>
               <div onClick={openWhatsAppHandler} className={styles.cta}>
-                Contact us now
-                <img src="/icons/arrow_up_right.svg" alt="arrow upright icon" />
+                Get in Touch on WhatsApp{" "}
+                <img
+                  src="/icons/arrow-up-right-new.svg"
+                  alt="arrow upright icon"
+                />
               </div>
             </Fade>
-          </span>
-          <div className={styles.custom_shape_divider_bottom_1735337911}>
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                className={styles.shape_fill}
-              ></path>
-            </svg>
           </div>
         </div>
 
         <div className={styles.container}>
-          <h2>we provide a wide range of expert services</h2>
+          <h2>
+            we provide a wide range of <br /> professional services
+          </h2>
           <div
             className={`${styles.services} ${styles.service_1}`}
             id="services-1"
@@ -169,7 +172,7 @@ const services = () => {
             {imageLoaded1 ? (
               <img
                 className={styles.right_img}
-                src="/img/services/sourcing.webp"
+                src="/img/services/sourcing-new.png"
                 alt="china network img"
               />
             ) : (
@@ -187,7 +190,7 @@ const services = () => {
             {imageLoaded2 ? (
               <img
                 className={styles.right_img}
-                src="/img/services/trading.webp"
+                src="/img/services/trading-new.png"
                 alt="china network img"
               />
             ) : (
@@ -283,7 +286,7 @@ const services = () => {
             {imageLoaded3 ? (
               <img
                 className={styles.right_img}
-                src="/img/services/vendor.webp"
+                src="/img/services/vendor-new.png"
                 alt=""
               />
             ) : (
@@ -301,7 +304,7 @@ const services = () => {
             {imageLoaded4 ? (
               <img
                 className={styles.right_img}
-                src="/img/services/shipping.webp"
+                src="/img/services/shipping-new.png"
                 alt="china network img"
               />
             ) : (
