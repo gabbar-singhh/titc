@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./CompareSection.module.css";
 import { Fade } from "react-awesome-reveal";
+import Link from "next/link";
 
 const CompareSection = () => {
   const [imageLoaded1, setImageLoaded1] = useState(false);
@@ -42,7 +43,8 @@ const CompareSection = () => {
       <div className={styles.bottom_wave}></div>
       <Fade direction="up" triggerOnce>
         <h2>
-          What Makes Us Your <span className={styles.stylesText}>Perfect Partner</span> ?
+          What Makes Us Your{" "}
+          <span className={styles.stylesText}>Perfect Partner</span> ?
         </h2>
       </Fade>
       <div className={styles.card_container}>
@@ -56,14 +58,14 @@ const CompareSection = () => {
                 we ensure the best products and reduce the risk of poor-quality
                 goods in your market.
               </p>
-              <div onClick={getstartedClickHandler}>
+              <Link href={"/contact#contact-form"}>
                 get started{" "}
                 <img
                   src="/icons/chevron-right.svg"
                   height={16}
                   alt="arrow icon"
                 />
-              </div>
+              </Link>
             </span>
             {imageLoaded1 ? (
               <img
@@ -104,14 +106,14 @@ const CompareSection = () => {
                 affordable prices, saving you time and resources while giving
                 you a competitive edge in the market.
               </p>
-              <div onClick={getstartedClickHandler}>
+              <Link href={"/contact#contact-form"}>
                 get started{" "}
                 <img
                   src="/icons/chevron-right.svg"
                   height={16}
                   alt="arrow icon"
                 />
-              </div>
+              </Link>
             </span>
           </div>
         </Fade>
@@ -125,14 +127,14 @@ const CompareSection = () => {
                 your products arrive on time, keeping your business running
                 smoothly.
               </p>
-              <div onClick={getstartedClickHandler}>
+             <Link href={"/contact#contact-form"}>
                 get started{" "}
                 <img
                   src="/icons/chevron-right.svg"
                   height={16}
                   alt="arrow icon"
                 />
-              </div>
+              </Link>
             </span>
             {imageLoaded3 ? (
               <img

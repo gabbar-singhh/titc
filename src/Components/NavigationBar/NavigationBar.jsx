@@ -47,7 +47,7 @@ const NavigationBar = () => {
           <Link href={"/about-us"}>
             <li className={styles.nav_li}>about us</li>
           </Link>{" "}
-          <Link href={"/contact"}>
+          <Link href={"/contact#contact-form"}>
             <li className={`${styles.cta_contact} ${styles.nav_li}`}>
               contact us
             </li>

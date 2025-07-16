@@ -64,7 +64,7 @@
     margin-bottom: 1.2rem;
 }
 
-.card .content div {
+.card .content a {
     text-transform: capitalize;
     display: flex;
     align-items: center;
@@ -76,15 +76,15 @@
     cursor: pointer;
 }
 
-.card .content div:hover {
+.card .content a:hover {
     color: #b7a081;
 }
 
-.card .content div img {
+.card .content a img {
     transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
-.card .content div:hover img {
+.card .content a:hover img {
     transform: translateX(4px);
 }
 
@@ -92,7 +92,8 @@
 .card .img {
     height: 248px;
     width: auto;
-    background-color: #f7f5ed9c;
+    /* background-color: #f7f5ed9c; */
+    background-color: #faf9f3;
     padding: 36px 36px;
     border-radius: 16px;
 }
