@@ -69,7 +69,7 @@ const services = () => {
       </Head>
       <section className={styles.main}>
         <div className={styles.herosection}>
-          <div className={styles.herosectionConatiner}>
+          <div className={styles.herosectionContainer}>
             <Fade direction="up" triggerOnce>
               <div className={styles.capsule}>
                 <img
@@ -104,7 +104,7 @@ const services = () => {
               />
             </Fade>
             <Fade direction="up" triggerOnce>
-              <p>
+              <p className={styles.desc}>
                 From factory to doorstep — we source, trade, and deliver quality
                 goods globally with speed and reliability.
               </p>
