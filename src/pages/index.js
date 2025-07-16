@@ -53,7 +53,7 @@ export default function Home() {
         <CompareSection />
         <ServicesSection />
         <Timeline />
-        {/* <ReelSection /> */}
+        <ReelSection />
         <ContactUsSection />
         <FooterSection />
       </section>
