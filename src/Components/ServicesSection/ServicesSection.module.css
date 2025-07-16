@@ -14,7 +14,7 @@
     margin-bottom: 1rem;
 }
 
-.container p {
+.container .desc {
     font-size: 1.1rem;
     line-height: 135%;
     letter-spacing: -0.1px;
@@ -144,27 +144,21 @@
 
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 0px) and (max-width: 359px) {
+@media screen and (min-width: 0px) and (max-width: 480px) {
     .container h2 {
-        font-size: 1.4rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container .desc {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 1rem;
+        margin-bottom: 2.8rem;
     }
 
     .container .card {
-        padding: 1.4rem;
-        border-radius: 12px;
-    }
-
-    .card_container {
-        grid-template-columns: repeat(1, minmax(126px, 1fr));
-        align-items: flex-start;
-        margin: 0 1rem;
-    }
-}
-
-/* AVERAGE MOBILE DEVICES  */
-@media screen and (min-width: 360px) and (max-width: 480px) {
-    .container h2 {
-        font-size: 1.4rem;
+        padding: 1.2rem 1.4rem;
     }
 
     .card_container {
@@ -177,16 +171,24 @@
 /* IPADS AND TABLETS  */
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .container h2 {
-        font-size: 1.6rem;
+        width: 70%;
+        margin: 0 auto;
     }
 
     .container .card {
-        padding: 1.4rem 1.8rem;
+        padding: 1.2rem 1.4rem;
     }
 
     .card_container {
         grid-template-columns: repeat(2, minmax(196px, 1fr));
         align-items: flex-start;
         margin: 0 1.4rem;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .container .card {
+        padding: 1.2rem 1.4rem;
     }
 }
