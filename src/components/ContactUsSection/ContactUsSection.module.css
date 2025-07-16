@@ -255,6 +255,11 @@
     .row_3 span textarea {
         width: 90%;
     }
+
+     .contact_options li p{
+        width: 80%;
+        word-wrap: break-word;
+    }
 }
 
 
@@ -290,6 +295,11 @@
 
     .row_3 span textarea {
         width: 90%;
+    }
+
+    .contact_options li p{
+        width: 80%;
+        word-wrap: break-word;
     }
 }
 
