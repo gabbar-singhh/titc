@@ -157,10 +157,9 @@
 /* MEDIA QUERIES */
 @media screen and (min-width: 0px) and (max-width: 359px) {
     .container {
-        gap: 2.4rem;
+        gap: 3.2rem;
         flex-direction: column;
     }
-
 
     .rightSide span {
         flex-direction: column;
@@ -171,12 +170,15 @@
     }
 
     .leftSide .heading {
-        font-size: 1.4rem;
-        margin-bottom: 0.4rem;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 0.6rem;
     }
 
     .leftSide .desc {
-        font-size: 1rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 1.8rem;
     }
 
     .rightSide .card {
@@ -189,10 +191,9 @@
 /* AVERAGE MOBILE DEVICES  */
 @media screen and (min-width: 360px) and (max-width: 480px) {
     .container {
-        gap: 2.4rem;
+        gap: 3.2rem;
         flex-direction: column;
     }
-
 
     .rightSide span {
         flex-direction: column;
@@ -203,12 +204,15 @@
     }
 
     .leftSide .heading {
-        font-size: 1.4rem;
-        margin-bottom: 0.4rem;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 0.8rem;
     }
 
     .leftSide .desc {
-        font-size: 1rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
     }
 
     .rightSide .card {
@@ -219,10 +223,9 @@
 /* IPADS AND TABLETS  */
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .container {
-        gap: 2.4rem;
+        gap: 3.2rem;
         flex-direction: column;
     }
-
 
     .rightSide span {
         flex-direction: column;
@@ -233,12 +236,15 @@
     }
 
     .leftSide .heading {
-        font-size: 1.6rem;
-        margin-bottom: 0.4rem;
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 0.8rem;
     }
 
     .leftSide .desc {
-        font-size: 1rem;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
     }
 
     .rightSide .card {
@@ -249,7 +255,7 @@
 /* SMALL SCREEN */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .container {
-        gap: 2.4rem;
+        gap: 3.2rem;
         flex-direction: column;
     }
 
@@ -258,11 +264,11 @@
     }
 
     .leftSide .heading {
-        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
     }
 
     .leftSide .desc {
-        font-size: 1rem;
+        margin-bottom: 2rem;
     }
 
     .rightSide .card {

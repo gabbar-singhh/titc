@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import { Fade } from "react-awesome-reveal";
 import styles from "@/styles/Product.module.css";
@@ -9,6 +9,23 @@ import Link from "next/link";
 import ContactUsSection from "@/Components/ContactUsSection/ContactUsSection";
 
 const product = () => {
+  const [imageSrc, setImageSrc] = useState("/");
+
+  useEffect(() => {
+    const updateImage = () => {
+      const width = window.innerWidth;
+      if (width <= 1024 && width >= 240) {
+        setImageSrc("/img/hero-product-mobile.webp");
+      } else {
+        setImageSrc("/img/hero-product.webp");
+      }
+    };
+
+    updateImage(); // Check on mount
+    window.addEventListener("resize", updateImage);
+    return () => window.removeEventListener("resize", updateImage);
+  }, []);
+
   const openWhatsAppHandler = () => {
     const phoneNumber = "8613538501419";
     const message = encodeURIComponent(
@@ -61,43 +78,38 @@ const product = () => {
         <div className={styles.herosection}>
           <div className={styles.herosectionConatiner}>
             <div className={styles.left}>
-            <Fade direction="up" triggerOnce>
-              <div className={styles.capsule}>
-                <img src="/icons/boxes.svg" alt="briefcase business" />
-                Product Categories
-              </div>
-            </Fade>
-            <Fade direction="up" triggerOnce>
-              <h1 className={styles.heroHeading}>with right products</h1>
-            </Fade>
-            <Fade direction="up" triggerOnce>
-              <h1 className={styles.heroHeading}>we scale you to success.</h1>
-            </Fade>
-            <Fade direction="up" triggerOnce>
-              <p>
-                Discover trusted, high-quality products sourced directly from
-                China — tailored to your business needs, at competitive prices.
-              </p>
-            </Fade>
-            <Fade direction="up" triggerOnce>
-              <div onClick={openWhatsAppHandler} className={styles.cta}>
-                Get in Touch on WhatsApp{" "}
-                <img
-                  src="/icons/arrow-up-right-new.svg"
-                  alt="arrow upright icon"
-                />
-              </div>
-            </Fade>
+              <Fade direction="up" triggerOnce>
+                <div className={styles.capsule}>
+                  <img src="/icons/boxes.svg" alt="briefcase business" />
+                  Product Categories
+                </div>
+              </Fade>
+              <Fade direction="up" triggerOnce>
+                <h1 className={styles.heroHeading}>with right products</h1>
+              </Fade>
+              <Fade direction="up" triggerOnce>
+                <h1 className={styles.heroHeading}>we scale you to success.</h1>
+              </Fade>
+              <Fade direction="up" triggerOnce>
+                <p>
+                  Discover trusted, high-quality products sourced directly from
+                  China — tailored to your business needs, at competitive
+                  prices.
+                </p>
+              </Fade>
+              <Fade direction="up" triggerOnce>
+                <div onClick={openWhatsAppHandler} className={styles.cta}>
+                  Get in Touch on WhatsApp{" "}
+                  <img
+                    src="/icons/arrow-up-right-new.svg"
+                    alt="arrow upright icon"
+                  />
+                </div>
+              </Fade>
             </div>
             <div className={styles.right}>
-               <img
-            src="/img/hero-product.webp"
-            alt="warehouse china"
-            width={424}
-            height={"auto"}
-          />
+              <img src={imageSrc} alt="warehouse china" />
             </div>
-
           </div>
         </div>
 
@@ -107,7 +119,10 @@ const product = () => {
               We post trending and high potential products for new and existing
               business.
             </h3>
-            <Link className={styles.whatsappChannelBtn} href="https://whatsapp.com/channel/0029VbA9H97HLHQaPeRTsJ3E">
+            <Link
+              className={styles.whatsappChannelBtn}
+              href="https://whatsapp.com/channel/0029VbA9H97HLHQaPeRTsJ3E"
+            >
               Join Our WhatsApp Channel
             </Link>
           </div>
