@@ -1,8 +1,3 @@
-.nav_mobile,
-.nav_mobile_container {
-    display: none;
-}
-
 .nav_main {
     display: flex;
     align-items: center;
@@ -29,7 +24,6 @@
 .nav_ul .nav_li {
     text-transform: capitalize;
     font-weight: 500;
-    color: var(--blue);
     color: #484848;
     font-size: 1rem;
     cursor: pointer;
@@ -62,306 +56,94 @@
     filter: brightness(1.15);
 }
 
-/* MEDIA QUERIES */
-/* AVERAGE MOBILE DEVICES  */
-@media screen and (min-width: 200px) and (max-width: 361px) {
-    .hamburger {
-        display: block;
-    }
-
-    .leftside_nav .nav_logo {
-        height: 32px;
-    }
-
-    .nav_main {
-        height: 60px;
-        justify-content: space-between;
-        padding: 0 2.4rem;
-    }
-
-    .rightside_nav {
-        display: none;
-    }
-
-    .nav_mobile,
-    .nav_mobile_container {
-        display: inline-block;
-        z-index: 999;
-    }
-
-    .close {
-        display: none;
-    }
-
-    .x_size {
-        font-size: 1.4rem;
-        transform: scale(1.6) !important;
-        color: var(--blue);
-    }
-
-    .ham_size {
-        font-size: 1.6rem;
-        transform: scale(1.6) !important;
-        color: var(--blue);
-    }
-
-    .nav_mobile_container {
-        position: absolute;
-        top: 61px;
-        left: 0;
-        width: 100vw;
-        padding: 0.8rem 0;
-        background-color: var(--creamy-white);
-    }
-
-    .nav_mobile_ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        list-style-type: none;
-        gap: 1rem;
-    }
-
-    .nav_mobile_ul .nav_mobile_li {
-        text-transform: capitalize;
-        font-weight: 600;
-        color: var(--blue);
-        font-size: 1rem;
-        cursor: pointer;
-        letter-spacing: -2%;
-        transition: all 300ms ease-in-out;
-    }
-
-    .nav_mobile_ul .nav_mobile_li:hover {
-        color: var(--accent);
-    }
-
-    .nav_mobile_ul .nav_cta_contact {
-        margin-top: 8px;
-        margin-bottom: 0.5rem;
-        color: var(--creamy-white);
-        background-color: var(--accent);
-        padding: 10px 14px;
-        border-radius: 4px;
-        width: 80vw;
-        border: 1px solid #af8e6021;
-        font-weight: 600;
-        transition: all 400ms ease-in-out;
-        color: #fff;
-        box-shadow: 4px 4px 6px 0px #dbdad8;
-    }
-
-    .nav_mobile_ul .nav_cta_contact .img {
-        height: 12px;
-        margin-left: 6px;
-    }
-
-    .nav_mobile_ul .nav_cta_contact:hover {
-        color: var(--creamy-white);
-        background-color: #af8e60ba;
-    }
+.hamburgerMenu,
+.menuBox {
+    display: none;
 }
 
-@media screen and (min-width: 360px) and (max-width: 480px) {
-    .hamburger {
-        display: block;
-    }
-
-    .leftside_nav .nav_logo {
-        height: 32px;
-    }
-
+/* === MOBILE ONLY === */
+@media screen and (max-width: 900px) {
     .nav_main {
-        height: 60px;
         justify-content: space-between;
-        padding: 0 2.4rem;
+        padding: 0 1.4rem;
+        background-color: #fff;
     }
 
-    .rightside_nav {
+    .rightside_nav .nav_ul {
         display: none;
     }
 
-    .nav_mobile,
-    .nav_mobile_container {
-        display: inline-block;
-        z-index: 999;
+    .hamburgerMenu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        border: 1.5px solid #af8e6021;
+        padding: 10px;
+        border-radius: 8px;
+        background-color: #af8e601e;
     }
 
-    .close {
-        display: none;
+    .hamburgerMenu img {
+        height: 28px;
+        width: auto;
     }
 
-    .x_size {
-        font-size: 1.4rem;
-        transform: scale(1.6) !important;
-        color: var(--blue);
-    }
-
-    .ham_size {
-        font-size: 1.6rem;
-        transform: scale(1.6) !important;
-        color: var(--blue);
-    }
-
-    .nav_mobile_container {
+    .menuBox {
         position: absolute;
-        top: 61px;
-        left: 0;
-        width: 100vw;
-        padding: 0.8rem 0;
-        background-color: var(--creamy-white);
+        top: 5.8rem;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 93%;
+        height: 80vh;
+        margin: 0 auto;
+
+        display: flex;
+        opacity: 0.998;
+
+        /* Glassmorphic effect */
+        background: #fff;
+        box-shadow: 0 8px 32px 0 #d2d2d200;
+        -webkit-backdrop-filter: blur(44px);
+        backdrop-filter: blur(44px);
+        background-blend-mode: multiply;
+        z-index: 9999;
+
+        transition: opacity 200ms ease-in-out, visibility 200ms ease-in-out;
+
+        border: 1.5px solid #af8e602d;
+        border-radius: 8px;
     }
 
-    .nav_mobile_ul {
+    .menuBoxList {
+        list-style-type: none;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 125%;
+        letter-spacing: 0.4px;
+
         display: flex;
         flex-direction: column;
-        text-align: center;
         align-items: center;
-        list-style-type: none;
-        gap: 1rem;
+        width: 100%;
+        gap: 2.4rem;
+        padding: 2.8rem;
     }
 
-    .nav_mobile_ul .nav_mobile_li {
+    .menuBoxList li {
         text-transform: capitalize;
-        font-weight: 600;
-        color: var(--blue);
+        font-weight: 500;
+        color: #484848;
         font-size: 1rem;
         cursor: pointer;
         letter-spacing: -2%;
-        transition: all 300ms ease-in-out;
-    }
-
-    .nav_mobile_ul .nav_mobile_li:hover {
-        color: var(--accent);
-    }
-
-    .nav_mobile_ul .nav_cta_contact {
-        margin-top: 8px;
-        margin-bottom: 0.5rem;
-        color: var(--creamy-white);
-        background-color: var(--accent);
-        padding: 10px 14px;
-        border-radius: 4px;
-        width: 85vw;
-        border: 1px solid #af8e6021;
-        font-weight: 600;
         transition: all 400ms ease-in-out;
-        color: #fff;
-        box-shadow: 4px 4px 6px 0px #dbdad8;
     }
 
-    .nav_mobile_ul .nav_cta_contact .img {
-        height: 12px;
-        margin-left: 6px;
-    }
-
-    .nav_mobile_ul .nav_cta_contact:hover {
-        color: var(--creamy-white);
-        background-color: #af8e60ba;
-    }
-}
-
-/* IPADS AND TABLETS  */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    .hamburger {
-        display: block;
-    }
-
-    .leftside_nav .nav_logo {
-        height: 32px;
-    }
-
-    .nav_main {
-        height: 60px;
-        justify-content: space-between;
-        padding: 0 2.4rem;
-    }
-
-    .rightside_nav {
-        display: none;
-    }
-
-    .nav_mobile,
-    .nav_mobile_container {
-        display: block;
-    }
-
-    .close {
-        display: none;
-    }
-
-    .x_size {
-        font-size: 1.4rem;
-        transform: scale(1.6) !important;
-        color: var(--blue);
-    }
-
-    .ham_size {
-        font-size: 1.6rem;
-        transform: scale(1.6) !important;
-        color: var(--blue);
-    }
-
-    .nav_mobile {
-        /* position: relative; */
-    }
-
-    .nav_mobile_container {
-        position: absolute;
-        top: 61px;
-        left: 0;
-        width: 100vw;
-        padding: 0.8rem 0;
-        background-color: var(--creamy-white);
-        z-index: 999;
-    }
-
-    .nav_mobile_ul {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        list-style-type: none;
-        gap: 1rem;
-    }
-
-    .nav_mobile_ul .nav_mobile_li {
-        text-transform: capitalize;
-        font-weight: 600;
-        color: var(--blue);
-        font-size: 1rem;
-        cursor: pointer;
-        letter-spacing: -2%;
-        transition: all 300ms ease-in-out;
-    }
-
-    .nav_mobile_ul .nav_mobile_li:hover {
-        color: var(--accent);
-    }
-
-    .nav_mobile_ul .nav_cta_contact {
-        margin-top: 8px;
-        margin-bottom: 0.5rem;
-        color: var(--creamy-white);
-        background-color: var(--accent);
-        padding: 10px 14px;
-        border-radius: 4px;
-        width: 85vw;
-        border: 1px solid #af8e6021;
-        font-weight: 600;
-        transition: all 400ms ease-in-out;
-        color: #fff;
-        box-shadow: 4px 4px 6px 0px #dbdad8;
-    }
-
-    .nav_mobile_ul .nav_cta_contact .img {
-        height: 12px;
-        margin-left: 6px;
-    }
-
-    .nav_mobile_ul .nav_cta_contact:hover {
-        color: var(--creamy-white);
-        background-color: #af8e60ba;
+    .hide {
+        opacity: 0;
+        visibility: hidden;
     }
 }

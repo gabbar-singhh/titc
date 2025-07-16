@@ -3,23 +3,22 @@ import Link from "next/link";
 import styles from "./NavigationBar.module.css";
 
 const NavigationBar = () => {
-  const [hamburgerIcon, setHamburgerIcon] = useState("&#9776;");
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenuBox, setShowMenuBox] = useState(false);
 
-  const hamburgerClickHandler = () => {
-    setShowMenu((prevShowMenu) => !prevShowMenu);
+  const toggleMenu = () => setShowMenuBox((prev) => !prev);
 
-    setHamburgerIcon((prevIcon) =>
-      prevIcon === "&#9776;" ? "&#10005;" : "&#9776;"
-    );
-  };
+  const closeMenu = () => setShowMenuBox(false);
 
-  const hideMenuHandler = () => {
-    setTimeout(() => {
-      setShowMenu(false);
-      setHamburgerIcon("&#9776;");
-    }, 350);
-  };
+  useEffect(() => {
+    if (showMenuBox) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [showMenuBox]);
 
   return (
     <nav className={styles.nav_main}>
@@ -40,66 +39,47 @@ const NavigationBar = () => {
           </Link>
           <Link href={"/services"}>
             <li className={styles.nav_li}>services</li>
-          </Link>{" "}
+          </Link>
           <Link href={"/product"}>
             <li className={styles.nav_li}>products</li>
-          </Link>{" "}
+          </Link>
           <Link href={"/about-us"}>
             <li className={styles.nav_li}>about us</li>
-          </Link>{" "}
+          </Link>
           <Link href={"/contact#contact-form"}>
             <li className={`${styles.cta_contact} ${styles.nav_li}`}>
               contact us
             </li>
           </Link>
         </ul>
+
+        <div className={styles.hamburgerMenu} onClick={toggleMenu}>
+          {!showMenuBox ? (
+            <img src="/icons/menu.svg" alt="menu" height="28px" width="auto" />
+          ) : (
+            <img src="/icons/x.svg" alt="close" height="28px" width="auto" />
+          )}
+        </div>
       </div>
 
-      <div className={styles.nav_mobile}>
-        <span
-          onClick={hamburgerClickHandler}
-          dangerouslySetInnerHTML={{ __html: hamburgerIcon }}
-          className={
-            hamburgerIcon === "&#10005;"
-              ? `${styles.x_size}`
-              : `${styles.ham_size}`
-          }
-        ></span>
-
-        <div
-          className={
-            showMenu
-              ? `${styles.nav_mobile_container}`
-              : `${styles.close} ${styles.nav_mobile_container}`
-          }
-        >
-          <ul className={styles.nav_mobile_ul}>
-            <Link href={"/"} onClick={hideMenuHandler}>
-              <li className={styles.nav_mobile_li}>home</li>
-            </Link>
-            <Link href={"/services"} onClick={hideMenuHandler}>
-              <li className={styles.nav_mobile_li}>services</li>
-            </Link>{" "}
-            <Link href={"/product"} onClick={hideMenuHandler}>
-              <li className={styles.nav_mobile_li}>products</li>
-            </Link>{" "}
-            <Link href={"/about-us"} onClick={hideMenuHandler}>
-              <li className={styles.nav_mobile_li}>about us</li>
-            </Link>{" "}
-            <Link href={"/contact"} onClick={hideMenuHandler}>
-              <li
-                className={`${styles.nav_cta_contact} ${styles.nav_mobile_li}`}
-              >
-                contact us
-                <img
-                  src="/icons/arrow_up_right.svg"
-                  className={styles.img}
-                  alt="arrow upright icon"
-                />
-              </li>
-            </Link>
-          </ul>
-        </div>
+      <div className={`${styles.menuBox} ${!showMenuBox ? styles.hide : ""}`}>
+        <ol className={styles.menuBoxList}>
+          <Link href={"/"}>
+            <li onClick={closeMenu}>Home</li>
+          </Link>
+          <Link href={"/services"}>
+            <li onClick={closeMenu}>Services</li>
+          </Link>
+          <Link href={"/product"}>
+            <li onClick={closeMenu}>Products</li>
+          </Link>
+          <Link href={"/about-us"}>
+            <li onClick={closeMenu}>About Us</li>
+          </Link>
+          <Link href={"/contact#contact-form"}>
+            <li onClick={closeMenu}>Contact Us</li>
+          </Link>
+        </ol>
       </div>
     </nav>
   );

@@ -49,13 +49,13 @@ export default function Home() {
       </Head>
 
       <section className={`${styles.main}`}>
-        <HeroSection />
-        <CompareSection />
-        <ServicesSection />
-        <Timeline />
-        <ReelSection />
+        {/* <HeroSection /> */}
+        {/* <CompareSection /> */}
+        {/* <ServicesSection /> */}
+        {/* <Timeline /> */}
+        {/* <ReelSection /> */}
         <ContactUsSection />
-        <FooterSection />
+        {/* <FooterSection /> */}
       </section>
     </>
   );
