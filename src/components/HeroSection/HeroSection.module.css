@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 4rem;
+    width: 100%;
 }
 
 .hero_main .heroHeading {
@@ -81,6 +82,7 @@
     border-radius: 0.8rem;
     box-shadow: 4px 4px 11px #ddd;
     border: 5px solid #1f355633;
+    width: 424px;
 }
 
 .right::before {
@@ -96,6 +98,7 @@
     background-repeat: no-repeat;
     animation: floatUpDown 4s ease-in-out infinite;
     pointer-events: none;
+    z-index: 0;
 }
 
 @keyframes floatUpDown {
@@ -110,73 +113,189 @@
     }
 }
 
-
 /* MEDIA QUERIES */
-/* AVERAGE MOBILE DEVICES  */
-@media screen and (min-width: 200px) and (max-width: 361px) {
-    .hero_main h1 {
-        font-size: 1.1rem;
+/* SMALLER MOBILE DEVICES  */
+@media screen and (min-width: 0) and (max-width: 359px) {
+    .container .left {
+        text-align: left;
+    }
+
+    .hero_main .container {
+        padding: 3.2rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.4rem;
+        margin: 0 auto;
+        max-width: 85%;
+    }
+
+    .hero_main .heroHeading {
+        font-size: 2rem;
     }
 
     .hero_main p {
-        font-size: 15px;
-        width: 196px;
+        width: 100%;
+        margin-bottom: 1.4rem;
+        font-size: 1rem;
     }
 
-    .hero_main .cta {
-        font-size: 14px;
+    .right {
+        position: relative;
+    }
+
+    .right img {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .right::before {
+        bottom: -95px;
+        right: -15px;
     }
 }
 
+/* AVERAGE MOBILE DEVICES  */
 @media screen and (min-width: 360px) and (max-width: 480px) {
-    .hero_main h1 {
-        font-size: 1.6rem;
+    .container .left {
+        text-align: left;
+    }
+
+    .hero_main .container {
+        padding: 3.2rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.4rem;
+        margin: 0 auto;
+        max-width: 85%;
+    }
+
+    .hero_main .heroHeading {
+        font-size: 2rem;
     }
 
     .hero_main p {
+        width: 100%;
+        margin-bottom: 1.4rem;
         font-size: 1rem;
-        width: 330px;
     }
 
-    .hero_main .cta {
-        font-size: 15px;
+    .right {
+        position: relative;
+    }
+
+    .right img {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .right::before {
+        bottom: -95px;
+        right: -15px;
     }
 }
 
 /* IPADS AND TABLETS  */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .hero_main h1 {
-        font-size: 2rem;
+    .container .left {
+        text-align: left;
+    }
+
+    .hero_main .container {
+        padding: 4.8rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.4rem;
+        margin: 0 auto;
+        max-width: 85%;
+    }
+
+    .hero_main .heroHeading {
+        font-size: 2.4rem;
     }
 
     .hero_main p {
-        font-size: 1rem;
-        width: 400px;
+        width: 100%;
+        margin-bottom: 1.4rem;
     }
 
-    .hero_main .cta {
-        font-size: 15px;
+    .right {
+        position: relative;
+    }
+
+    .right img {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .right::before {
+        bottom: -95px;
+        right: -15px;
     }
 }
 
 /* SMALL SCREEN */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .hero_main h1 {
-        font-size: 2.4rem;
+    .container .left {
+        text-align: left;
     }
 
-    .hero_main p {
-        font-size: 1rem;
+    .hero_main .container {
+        padding: 4.8rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.6rem;
+        margin: 0 auto;
+        max-width: 700px;
+    }
+
+    .right {
+        position: relative;
+    }
+
+    .right img {
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .right::before {
+        right: -25px;
     }
 }
 
 /* DESKTOP AND LARGE SCREEN */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    .hero_main h1 {
-        font-size: 3.2rem;
+
+    .hero_main .heroHeading {
+        font-size: 2.4rem;
     }
 
-    .hero_main p {
-        font-size: 1rem;
+    .hero_main .container {
+        padding: 6.8rem 0;
+        justify-content: center;
+        gap: 1.8rem;
+    }
+
+    .right img {
+        width: 336px;
+    }
+
+    .right::before {
+        width: 200px;
+        height: 200px;
+        right: -30px;
+    }
+}
+
+/* EXTRA LARGE SCREENS & TV */
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+
+    .hero_main .container {
+        padding: 6.8rem 0;
+        justify-content: center;
+        gap: 2.4rem;
+    }
+
+    .right img {
+        width: 384px;
     }
 }

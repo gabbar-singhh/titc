@@ -1,9 +1,26 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./HeroSection.module.css";
 import { Fade } from "react-awesome-reveal";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
+  const [imageSrc, setImageSrc] = useState("/");
+
+  useEffect(() => {
+    const updateImage = () => {
+      const width = window.innerWidth;
+      if (width <= 1024 && width >= 240) {
+        setImageSrc("/img/hero-home-mobile.webp");
+      } else {
+        setImageSrc("/img/hero-home.webp");
+      }
+    };
+
+    updateImage(); // Check on mount
+    window.addEventListener("resize", updateImage);
+    return () => window.removeEventListener("resize", updateImage);
+  }, []);
+
   const openWhatsAppHandler = () => {
     const phoneNumber = "8613538501419";
     const message = encodeURIComponent(
@@ -36,7 +53,7 @@ const HeroSection = () => {
               speed={50}
               repeat={Infinity}
               style={{ textAlign: "left" }}
-              className={`${styles.heroHeading}`}
+              className={styles.heroHeading}
             />
           </Fade>
           <Fade direction="up" triggerOnce>
@@ -58,12 +75,7 @@ const HeroSection = () => {
         </div>
 
         <div className={styles.right}>
-          <img
-            src="/img/hero-home.webp"
-            alt="shipping container box"
-            width={424}
-            height={"auto"}
-          />
+          <img src={imageSrc} alt="shipping container box" />
         </div>
       </div>
     </section>

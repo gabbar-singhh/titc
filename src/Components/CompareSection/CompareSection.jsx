@@ -8,10 +8,6 @@ const CompareSection = () => {
   const [imageLoaded2, setImageLoaded2] = useState(false);
   const [imageLoaded3, setImageLoaded3] = useState(false);
 
-  const getstartedClickHandler = () => {
-    window.open("/contact#contact-form", "_self");
-  };
-
   useEffect(() => {
     const img = new Image();
     img.onload = () => {
