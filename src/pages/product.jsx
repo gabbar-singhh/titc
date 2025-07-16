@@ -107,7 +107,7 @@ const product = () => {
               We post trending and high potential products for new and existing
               business.
             </h3>
-            <Link className={styles.whatsappChannelBtn} href="/">
+            <Link className={styles.whatsappChannelBtn} href="https://whatsapp.com/channel/0029VbA9H97HLHQaPeRTsJ3E">
               Join Our WhatsApp Channel
             </Link>
           </div>

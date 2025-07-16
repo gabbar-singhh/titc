@@ -5,7 +5,8 @@ import FooterSection from "@/Components/FooterSection/FooterSection";
 import { Fade } from "react-awesome-reveal";
 import emailjs from "@emailjs/browser";
 import IsEmail from "isemail";
-import { Spinner, Tooltip } from "@radix-ui/themes";
+import { Spinner } from "@radix-ui/themes";
+import Link from "next/link";
 
 const contact = () => {
   const [showLoading, setShowLoading] = useState(false);
@@ -331,13 +332,13 @@ const contact = () => {
               </p>
             </div>
 
-            <span className={styles.view} onClick={openMapClickHandler}>
+            <Link href={"https://maps.app.goo.gl/qmfShD2kHS1kBMhZA"} className={styles.view}>
               View In Map
               <img
                 src="/icons/arrow_up_right_blue.svg"
                 alt="arrow upright icon"
               />
-            </span>
+            </Link>
           </div>
           <div className={styles.right}>
             <iframe

@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./NavigationBar.module.css";
-import Image from "next/image";
-import { Fade, Slide } from "react-awesome-reveal";
 
 const NavigationBar = () => {
   const [hamburgerIcon, setHamburgerIcon] = useState("&#9776;");
@@ -28,7 +26,7 @@ const NavigationBar = () => {
       <div className={styles.leftside_nav}>
         <Link href={"/"}>
           <img
-            src={"/img/logo_nav.webp"}
+            src={"/img/logo-nav.webp"}
             className={styles.nav_logo}
             alt="tit logo"
           />
@@ -49,7 +47,7 @@ const NavigationBar = () => {
           <Link href={"/about-us"}>
             <li className={styles.nav_li}>about us</li>
           </Link>{" "}
-          <Link href={"/contact"}>
+          <Link href={"/contact#contact-form"}>
             <li className={`${styles.cta_contact} ${styles.nav_li}`}>
               contact us
             </li>
