@@ -100,6 +100,7 @@
     border-radius: 0.8rem;
     box-shadow: 4px 4px 11px #ddd;
     border: 5px solid #1f355633;
+    width: 424px;
 }
 
 .right::before {
