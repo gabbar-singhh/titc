@@ -4,8 +4,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { Slide } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
 import styles from "./Timeline.module.css";
 
 const Timeline = () => {
@@ -22,7 +20,10 @@ const Timeline = () => {
 
   return (
     <section className={styles.timeline_main} id="my_journey">
-      <h2>6 Step Process of our Business</h2>
+      <h2>
+        From Order to Delivery:{" "}
+        <span className={styles.wavyUnderline}>Our 6-Step Process</span>
+      </h2>
 
       <div className={styles.timeline_container}>
         <VerticalTimeline

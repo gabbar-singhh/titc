@@ -2,10 +2,9 @@
 
 import React, { useState, useEffect } from "react";
 import styles from "./ContactUsSection.module.css";
-import Link from "next/link";
 import emailjs from "@emailjs/browser";
 import IsEmail from "isemail";
-import { Spinner, Tooltip } from "@radix-ui/themes";
+import { Spinner } from "@radix-ui/themes";
 
 const ContactUsSection = () => {
   const [showLoading, setShowLoading] = useState(false);

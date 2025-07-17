@@ -1,13 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import { Fade } from "react-awesome-reveal";
 import styles from "@/styles/Product.module.css";
 import ServicesSectionRedefined from "@/Components/ServicesSectionRedefined/ServicesSectionRedefined";
 import SmallCTASection from "@/Components/SmallCTASection/SmallCTASection";
 import FooterSection from "@/Components/FooterSection/FooterSection";
+import Link from "next/link";
+import ContactUsSection from "@/Components/ContactUsSection/ContactUsSection";
 
 const product = () => {
- 
+  const [imageSrc, setImageSrc] = useState("/");
+
+  useEffect(() => {
+    const updateImage = () => {
+      const width = window.innerWidth;
+      if (width <= 1024 && width >= 240) {
+        setImageSrc("/img/hero-product-mobile.webp");
+      } else {
+        setImageSrc("/img/hero-product.webp");
+      }
+    };
+
+    updateImage(); // Check on mount
+    window.addEventListener("resize", updateImage);
+    return () => window.removeEventListener("resize", updateImage);
+  }, []);
+
   const openWhatsAppHandler = () => {
     const phoneNumber = "8613538501419";
     const message = encodeURIComponent(
@@ -15,7 +33,7 @@ const product = () => {
     );
     const url = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(url, "_blank", "noopener,noreferrer");
-};
+  };
 
   const productCategoryName = [
     "Apparel",
@@ -39,10 +57,16 @@ const product = () => {
     "Jewelry",
     "Lighting",
   ];
+
+  const WHATSAPP_CHANNEL =
+    "https://whatsapp.com/channel/0029VbA9H97HLHQaPeRTsJ3E";
   return (
     <>
       <Head>
-        <title>Products Categories To Import From China| Thadani International Trading</title>
+        <title>
+          Products Categories To Import From China| Thadani International
+          Trading
+        </title>
         <meta
           name="description"
           content="We help you source quality goods from China and ship them to your country"
@@ -51,94 +75,64 @@ const product = () => {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <section className={styles.main}>
-        <div className={styles.hero_product}>
-          <div className={styles.product_container}>
-            <div className={styles.leftSide}>
+        <div className={styles.herosection}>
+          <div className={styles.herosectionConatiner}>
+            <div className={styles.left}>
               <Fade direction="up" triggerOnce>
-                <p>product categories</p>
+                <div className={styles.capsule}>
+                  <img src="/icons/boxes.svg" alt="briefcase business" />
+                  Product Categories
+                </div>
               </Fade>
-
               <Fade direction="up" triggerOnce>
-                <h1>
-                  With right products <br /> we scale you to success
-                </h1>
+                <h1 className={styles.heroHeading}>with right products</h1>
               </Fade>
-
+              <Fade direction="up" triggerOnce>
+                <h1 className={styles.heroHeading}>we scale you to success.</h1>
+              </Fade>
+              <Fade direction="up" triggerOnce>
+                <p>
+                  Discover trusted, high-quality products sourced directly from
+                  China — tailored to your business needs, at competitive
+                  prices.
+                </p>
+              </Fade>
               <Fade direction="up" triggerOnce>
                 <div onClick={openWhatsAppHandler} className={styles.cta}>
-                  Get in Touch on WhatsApp
+                  Get in Touch on WhatsApp{" "}
                   <img
-                    src="/icons/arrow_up_right.svg"
+                    src="/icons/arrow-up-right-new.svg"
                     alt="arrow upright icon"
                   />
                 </div>
               </Fade>
             </div>
-            <section className={styles.rightSide}>
-              <div>
-                <img src="/img/montage/1.webp" alt="white cup in yellow bg" />
-              </div>
-
-              <div>
-                <img src="/img/montage/2.webp" alt="Alt text for the image" />
-              </div>
-
-              <div>
-                <img src="/img/montage/5.webp" alt="china woman yellow dress" />
-              </div>
-
-              <div aria-hidden="true"></div>
-
-              <div>
-                <img src="/img/montage/6.webp" alt="Alt text for the image" />
-              </div>
-
-              <div aria-hidden="true"></div>
-
-              <div>
-                <img src="/img/montage/8.webp" alt="Alt text for the image" />
-              </div>
-
-              <div aria-hidden="true"></div>
-              <div aria-hidden="true"></div>
-
-              <div>
-                <img src="/img/montage/3.webp" alt="Alt text for the image" />
-              </div>
-
-              <div>
-                <img
-                  src="/img/montage/4.webp"
-                  alt="brown package in white bg"
-                />
-              </div>
-
-              <div>
-                <img src="/img/montage/7.webp" alt="Alt text for the image" />
-              </div>
-            </section>
+            <div className={styles.right}>
+              <img src={imageSrc} alt="warehouse china" />
+            </div>
           </div>
+        </div>
 
-          <div className={styles.custom_shape_divider_bottom_1735337911}>
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
+        <div className={styles.whatsappChannelCTA}>
+          <div className={styles.whatsappChannelContainer}>
+            <h3>
+              We post trending and high potential products for new and existing
+              business.
+            </h3>
+            <Link
+              className={styles.whatsappChannelBtn}
+              href="https://whatsapp.com/channel/0029VbA9H97HLHQaPeRTsJ3E"
             >
-              <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                className={styles.shape_fill}
-              ></path>
-            </svg>
+              Join Our WhatsApp Channel
+            </Link>
           </div>
         </div>
 
         <div className={styles.product_category}>
           <Fade triggerOnce delay={0.1}>
             <h2>
-              explore our product database to find the perfect <br /> items for
-              your business
+              explore our product database to <br /> find the right products for
+              your business.
             </h2>
           </Fade>
 
@@ -163,9 +157,10 @@ const product = () => {
 
         <ServicesSectionRedefined />
         <SmallCTASection
-          head="Have a product in mind?"
-          content="let's get going then."
+          head="Have a Product in Mind? We'll Source It for You"
+          content="Share your requirements and we’ll find the best-quality product at the right price."
         />
+        <ContactUsSection />
         <FooterSection />
       </section>
     </>

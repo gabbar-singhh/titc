@@ -5,7 +5,8 @@ import FooterSection from "@/Components/FooterSection/FooterSection";
 import { Fade } from "react-awesome-reveal";
 import emailjs from "@emailjs/browser";
 import IsEmail from "isemail";
-import { Spinner, Tooltip } from "@radix-ui/themes";
+import { Spinner } from "@radix-ui/themes";
+import Link from "next/link";
 
 const contact = () => {
   const [showLoading, setShowLoading] = useState(false);
@@ -124,6 +125,23 @@ const contact = () => {
 
     img.src = "/img/man_calling.webp";
   }, ["/img/man_calling.webp"]);
+
+  const [imageSrc, setImageSrc] = useState("/img/hero-contact.webp");
+
+  useEffect(() => {
+    const updateImage = () => {
+      const width = window.innerWidth;
+      if (width <= 1024 && width >= 240) {
+        setImageSrc("/img/hero-contact-mobile.webp");
+      } else {
+        setImageSrc("/img/hero-contact.webp");
+      }
+    };
+
+    updateImage(); // Check on mount
+    window.addEventListener("resize", updateImage);
+    return () => window.removeEventListener("resize", updateImage);
+  }, []);
   return (
     <>
       <Head>
@@ -139,57 +157,43 @@ const contact = () => {
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <section className={`${styles.main}`}>
-        <section className={styles.container}>
-          <div className={styles.hero_content}>
-            <div className={styles.leftSide}>
-              <Fade triggerOnce>
-                <p>Contact Us</p>
+        <section className={styles.hero_main}>
+          <div className={styles.container}>
+            <div className={styles.left}>
+              <Fade direction="up" triggerOnce>
+                <div className={styles.capsule}>
+                  <img
+                    src="/icons/message-circle.svg"
+                    alt="briefcase business"
+                  />
+                  contact us
+                </div>
               </Fade>
-
-              <Fade triggerOnce>
-                <h1>You're Just One WhatsApp Text Away From Success</h1>
+              <Fade direction="up" triggerOnce>
+                <h1 className={styles.heroHeading}>
+                  you're just one whatsapp text away from success.
+                </h1>
               </Fade>
-
-              <Fade triggerOnce>
+              <Fade direction="up" triggerOnce>
+                <p className={styles.heroDesc}>
+                  Reach out to explore global sourcing solutions and build
+                  lasting partnerships for your business success.
+                </p>
+              </Fade>
+              <Fade direction="up" triggerOnce>
                 <div onClick={openWhatsAppHandler} className={styles.cta}>
                   Get in Touch on WhatsApp{" "}
                   <img
-                    src="/icons/arrow_up_right.svg"
+                    src="/icons/arrow-up-right-new.svg"
                     alt="arrow upright icon"
                   />
                 </div>
               </Fade>
             </div>
 
-            <div className={styles.rightSide}>
-              <Fade triggerOnce>
-                {imageLoaded ? (
-                  <img
-                    src="/img/man_calling.webp"
-                    alt="man in formals on a call"
-                  />
-                ) : (
-                  <img
-                    src="/img/man_calling_blur.webp"
-                    alt="man in formals on a call"
-                  />
-                )}
-              </Fade>
+            <div className={styles.right}>
+              <img src={imageSrc} alt="shipping container box" />
             </div>
-          </div>
-
-          <div className={styles.custom_shape_divider_bottom_1735337911}>
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                className={styles.shape_fill}
-              ></path>
-            </svg>
           </div>
         </section>
 
@@ -315,6 +319,19 @@ const contact = () => {
         </section>
 
         <div className={styles.location}>
+          <div className={styles.wavyTop}>
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                className={styles.shapeFill}
+              ></path>
+            </svg>
+          </div>
           <div className={styles.left}>
             <h2>Our Location</h2>
             <p>Want to schedule a meeting with us?</p>
@@ -327,13 +344,16 @@ const contact = () => {
               </p>
             </div>
 
-            <span className={styles.view} onClick={openMapClickHandler}>
+            <Link
+              href={"https://maps.app.goo.gl/qmfShD2kHS1kBMhZA"}
+              className={styles.view}
+            >
               View In Map
               <img
                 src="/icons/arrow_up_right_blue.svg"
                 alt="arrow upright icon"
               />
-            </span>
+            </Link>
           </div>
           <div className={styles.right}>
             <iframe

@@ -1,0 +1,181 @@
+.main {
+    padding: 44px 0 148px 0;
+    background-color: #f8f5ed;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.main h2 {
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+    color: #1D3557;
+    text-transform: capitalize;
+
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 6px;
+    text-decoration-color: #af8e60a3;
+}
+
+.main .reelsFeed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+    margin-top: 3.6rem;
+}
+
+.main .ctaInsta {
+    position: relative;
+    background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    text-transform: capitalize;
+    margin-top: 3.2rem;
+    border-radius: 4rem;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    padding: 1.6rem 1.8rem;
+    box-shadow: 4px 4px 14px #c6c6c6;
+}
+
+.main .ctaInsta::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.3s ease-in-out;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.main .ctaInsta:hover::before {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.main .ctaInsta {
+    z-index: 2;
+    position: relative;
+}
+
+.bottomWave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.bottomWave svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 69px;
+}
+
+.bottomWave .shapeFill {
+    fill: var(--blue);
+}
+
+
+/* MEDIA QUERIES */
+/* SMALLER DEVICES */
+@media screen and (min-width: 0) and (max-width: 359px) {
+    .main {
+        padding: 36px 0 144px 0;
+    }
+
+    .main .headingTwo {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main .reelsFeed {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .main .ctaInsta {
+        margin-top: 2rem;
+        font-size: 15px;
+    }
+}
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .main {
+        padding: 36px 0 144px 0;
+    }
+
+    .main .headingTwo {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main .reelsFeed {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .main .ctaInsta {
+        margin-top: 2rem;
+        font-size: 15px;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .main {
+        padding: 12px 0 124px 0;
+    }
+
+    .main .headingTwo {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .main .reelsFeed {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .main .ctaInsta {
+        font-size: 1rem;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .main .reelsFeed {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .main .reelsFeed {
+        gap: 1.2rem;
+    }
+}
+
+/* EXTRA LARGE SCREENS & TV */
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+
+    .main .reelsFeed {
+        gap: 1.2rem;
+    }
+}

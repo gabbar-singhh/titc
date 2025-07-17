@@ -20,7 +20,7 @@
 }
 
 .contact_left .desc {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 135%;
     letter-spacing: -0.1px;
     color: #dfdfdf;
@@ -255,6 +255,11 @@
     .row_3 span textarea {
         width: 90%;
     }
+
+     .contact_options li p{
+        width: 80%;
+        word-wrap: break-word;
+    }
 }
 
 
@@ -290,6 +295,11 @@
 
     .row_3 span textarea {
         width: 90%;
+    }
+
+    .contact_options li p{
+        width: 80%;
+        word-wrap: break-word;
     }
 }
 

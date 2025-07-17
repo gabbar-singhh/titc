@@ -17,7 +17,7 @@ const FooterSection = () => {
   };
 
   const footerAboutClickHandler = () => {
-    window.open("/about_us", "_self");
+    window.open("/about-us", "_self");
   };
 
   const openWhatsAppHandler = () => {
@@ -46,7 +46,7 @@ const FooterSection = () => {
         <div className={styles.left_container}>
           <Link href={"/"}>
             <img
-              src={"/img/logo_footer.webp"}
+              src={"/img/logo-footer.webp"}
               className={styles.logo_img}
               alt="tit logo"
             />

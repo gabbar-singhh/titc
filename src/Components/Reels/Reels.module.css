@@ -1,0 +1,63 @@
+.reelsMain {
+    overflow: hidden;
+    border-radius: 0.8rem;
+}
+
+.reelsMain iframe {
+    height: 660px;
+    width: 400px;
+    border: none;
+    overflow: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    border-radius: 12px;
+}
+
+/* MEDIA QUERIES */
+/* SMALLER MOBILE DEVICES  */
+@media screen and (min-width: 0) and (max-width: 359px) {
+    .reelsMain iframe {
+        height: 472px;
+        width: 250px;
+    }
+}
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .reelsMain iframe {
+        height: 538px;
+        width: 300px;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .reelsMain iframe {
+        height: 608px;
+        width: 356px;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .reelsMain iframe {
+        height: 542px;
+        width: 303px;
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .reelsMain iframe {
+        height: 542px;
+        width: 303px;
+    }
+}
+
+/* EXTRA LARGE SCREENS & TV */
+@media screen and (min-width: 1201px)and (max-width: 1400px) {
+    .reelsMain iframe {
+        height: 608px;
+        width: 356px;
+    }
+}

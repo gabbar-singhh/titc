@@ -24,7 +24,7 @@ const Modal = ({ showModalVal, closeModalHandler }) => {
               </p>
               <img
                 className={styles.qr_code}
-                src="/img/qr_code.jpg"
+                src="/img/qr-code.webp"
                 alt="qr code"
               />
             </div>

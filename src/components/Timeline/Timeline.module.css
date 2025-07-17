@@ -16,21 +16,27 @@
 .timeline_main h2 {
     font-size: 1.8rem;
     text-align: center;
-    margin-bottom: 3.6rem;
     font-weight: 700;
     color: #1D3557;
     text-transform: capitalize;
+    margin-bottom: 3.6rem;
 }
 
-.timeline_main h2::after {
-    content: "";
-    height: 40px;
-    width: 40px;
-    display: inline-block;
-    background-image: url('/img/highlight.svg');
-    background-size: cover;
-    background-position: center;
-    transform: rotate(15deg);
+.timeline_main .wavyUnderline {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    text-decoration-thickness: 6px;
+    text-decoration-color: #af8e60a3;
+}
+
+.timeline_main p {
+    font-size: 1rem;
+    line-height: 135%;
+    color: var(--neutral-black);
+    text-align: left;
+    margin-bottom: 3.6rem;
+    font-weight: 500;
+    color: #626262;
 }
 
 .timeline_element img {
@@ -74,9 +80,8 @@
     }
 
     .timeline_main h2 {
-        font-size: 1.4rem;
         margin-bottom: 2.8rem;
-        width: 324px;
+        width: 80%;
     }
 
     .timeline_main h2::after {
@@ -116,9 +121,8 @@
     }
 
     .timeline_main h2 {
-        font-size: 1.4rem;
         margin-bottom: 2.8rem;
-        width: 324px;
+        width: 80%;
     }
 
     .timeline_main h2::after {
@@ -154,8 +158,8 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
     .timeline_main h2 {
-        font-size: 1.6rem;
         margin-bottom: 2.8rem;
+        width: 70%;
     }
 
     .timeline_main h3 {
@@ -180,9 +184,6 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .timeline_main h2 {
-        font-size: 1.6rem;
-    }
 
     .verticalTimeline_container {
         width: 484px;
@@ -198,9 +199,6 @@
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    .timeline_main h2 {
-        font-size: 1.8rem;
-    }
 
     .verticalTimeline_container {
         width: 550px;
@@ -212,13 +210,5 @@
 
     .timeline_container {
         width: 900px;
-    }
-}
-
-
-@media screen and (min-width: 1201px) and (max-width: 1405px) {
-
-    .timeline_main h2 {
-        font-size: 1.8rem;
     }
 }

@@ -4,9 +4,9 @@ import HeroSection from "@/Components/HeroSection/HeroSection";
 import CompareSection from "@/Components/CompareSection/CompareSection";
 import ServicesSection from "@/Components/ServicesSection/ServicesSection";
 import Timeline from "@/Components/Timeline/Timeline";
-import StatsSection from "@/Components/StatsSection/StatsSection";
 import ContactUsSection from "@/Components/ContactUsSection/ContactUsSection";
 import FooterSection from "@/Components/FooterSection/FooterSection";
+import ReelSection from "@/Components/Reels/ReelSection";
 
 export default function Home() {
   const organizationSchema = {
@@ -38,11 +38,7 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
 
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/favicon.svg"
-        />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.svg" />
 
         <script
           type="application/ld+json"
@@ -57,7 +53,7 @@ export default function Home() {
         <CompareSection />
         <ServicesSection />
         <Timeline />
-        {/* <StatsSection /> */}
+        <ReelSection />
         <ContactUsSection />
         <FooterSection />
       </section>
