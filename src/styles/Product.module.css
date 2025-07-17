@@ -108,7 +108,7 @@
     bottom: 30px;
     right: -60px;
     background-image: url('/img/product-flame-card.webp');
-    z-index: 1;
+    z-index: 0;
     width: 220px;
     height: 220px;
     background-size: contain;
@@ -174,7 +174,7 @@
 }
 
 .product_category h2 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-transform: capitalize;
     font-weight: 700;
     color: var(--blue);
@@ -219,9 +219,63 @@
 
 /* MEDIA QUERIES */
 @media screen and (min-width: 0px) and (max-width: 359px) {
-    .hero_product {
-        height: 100%;
-        padding: 184px 16px;
+    .herosectionConatiner .left {
+        text-align: left;
+    }
+
+    .herosection .herosectionConatiner {
+        padding: 3.2rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.4rem;
+        margin: 0 auto;
+        max-width: 85%;
+    }
+
+    .herosection .heroHeading {
+        font-size: 2rem;
+    }
+
+    .herosection p {
+        width: 100%;
+        margin-bottom: 1.4rem;
+        font-size: 1rem;
+    }
+
+    .right {
+        position: relative;
+    }
+
+    .right img {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .right::before {
+        width: 160px;
+        height: 160px;
+        bottom: -30px;
+        right: -15px;
+    }
+
+    .whatsappChannelCTA {
+        padding: 2rem 0;
+
+    }
+
+    .whatsappChannelContainer {
+        flex-direction: column;
+    }
+
+    .whatsappChannelContainer h3 {
+        font-size: 1rem;
+        width: 85%;
+        text-align: center;
+        margin-bottom: 1.4rem;
+    }
+
+    .whatsappChannelContainer .whatsappChannelBtn {
+        font-size: 0.8rem;
     }
 
     .product_category {
@@ -230,23 +284,6 @@
 
     .product_category h2 {
         font-size: 1.3rem;
-    }
-
-    .leftSide {
-        margin-top: 0 !important;
-        width: 100% !important;
-    }
-
-    .leftSide h1 {
-        font-size: 1.8rem;
-    }
-
-    .leftSide .cta {
-        margin-top: 2.4rem;
-    }
-
-    .rightSide {
-        display: none;
     }
 
     .grid_container {
@@ -268,9 +305,59 @@
 
 /* AVERAGE MOBILE DEVICES  */
 @media screen and (min-width: 360px) and (max-width: 480px) {
-    .hero_product {
-        height: 100%;
-        padding: 184px 16px;
+    .herosectionConatiner .left {
+        text-align: left;
+    }
+
+    .herosection .herosectionConatiner {
+        padding: 3.2rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.4rem;
+        margin: 0 auto;
+        max-width: 85%;
+    }
+
+    .herosection .heroHeading {
+        font-size: 2rem;
+    }
+
+    .herosection p {
+        width: 100%;
+        margin-bottom: 1.4rem;
+        font-size: 1rem;
+    }
+
+    .right {
+        position: relative;
+    }
+
+    .right img {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .right::before {
+        width: 180px;
+        height: 180px;
+        bottom: -30px;
+        right: -15px;
+    }
+
+    .whatsappChannelCTA {
+        padding: 2rem 0;
+
+    }
+
+    .whatsappChannelContainer {
+        flex-direction: column;
+    }
+
+    .whatsappChannelContainer h3 {
+        font-size: 1.2rem;
+        width: 85%;
+        text-align: center;
+        margin-bottom: 1.4rem;
     }
 
     .product_category {
@@ -279,23 +366,6 @@
 
     .product_category h2 {
         font-size: 1.3rem;
-    }
-
-    .leftSide {
-        margin-top: 0 !important;
-        width: 100% !important;
-    }
-
-    .leftSide h1 {
-        font-size: 1.8rem;
-    }
-
-    .leftSide .cta {
-        margin-top: 2.4rem;
-    }
-
-    .rightSide {
-        display: none;
     }
 
     .grid_container {
@@ -317,11 +387,59 @@
 
 /* IPADS AND TABLETS  */
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .hero_product {
-        height: 100%;
-        padding: 184px 0;
+    .herosectionConatiner .left {
+        text-align: left;
     }
 
+    .herosection .herosectionConatiner {
+        padding: 4.8rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.4rem;
+        margin: 0 auto;
+        max-width: 85%;
+    }
+
+    .herosection .heroHeading {
+        font-size: 2.4rem;
+    }
+
+    .herosection p {
+        width: 100%;
+        margin-bottom: 1.4rem;
+    }
+
+    .right {
+        position: relative;
+    }
+
+    .right img {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .right::before {
+        width: 180px;
+        height: 180px;
+        bottom: 15px;
+        right: -15px;
+    }
+
+    .whatsappChannelCTA {
+        padding: 2rem 0;
+
+    }
+
+    .whatsappChannelContainer {
+        flex-direction: column;
+    }
+
+    .whatsappChannelContainer h3 {
+        font-size: 1.2rem;
+        width: 85%;
+        text-align: center;
+        margin-bottom: 1.4rem;
+    }
 
     .product_category {
         background-color: #f3f1ea;
@@ -330,23 +448,6 @@
 
     .product_category h2 {
         font-size: 1.4rem;
-    }
-
-    .leftSide {
-        margin-top: 0 !important;
-        width: 100% !important;
-    }
-
-    .leftSide h1 {
-        font-size: 1.8rem;
-    }
-
-    .leftSide .cta {
-        margin-top: 2.4rem;
-    }
-
-    .rightSide {
-        display: none;
     }
 
     .grid_container {
@@ -368,26 +469,39 @@
 
 /* SMALL SCREEN */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .hero_product {
-        height: 100%;
-        padding: 184px 0;
+    .herosectionConatiner .left {
+        text-align: left;
     }
 
-    .leftSide {
-        margin-top: 0 !important;
-        width: 100% !important;
+    .herosection .herosectionConatiner {
+        padding: 4.8rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3.6rem;
+        margin: 0 auto;
+        max-width: 700px;
     }
 
-    .leftSide h1 {
-        font-size: 2.2rem;
+    .right {
+        position: relative;
     }
 
-    .leftSide .cta {
-        margin-top: 2.4rem;
+    .right img {
+        margin: 0 auto;
+        width: 100%;
     }
 
-    .rightSide {
-        display: none;
+    .right::before {
+        right: -25px;
+    }
+
+    .whatsappChannelContainer {
+        justify-content: space-around;
+    }
+
+    .whatsappChannelContainer h3 {
+        font-size: 1.2rem;
+        width: 50%;
     }
 
     .grid_container {
@@ -409,26 +523,30 @@
 
 /* DESKTOP AND LARGE SCREEN */
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    .hero_product {
-        height: 100%;
-        padding: 184px 0;
+
+    .herosection .heroHeading {
+        font-size: 2.4rem;
     }
 
-    .leftSide {
-        margin-top: 0 !important;
-        width: 100% !important;
+    .herosection .herosectionConatiner {
+        padding: 6.8rem 0;
+        justify-content: center;
+        gap: 1.8rem;
     }
 
-    .leftSide h1 {
-        font-size: 2.2rem;
+    .right img {
+        width: 336px;
     }
 
-    .leftSide .cta {
-        margin-top: 2.4rem;
+    .right::before {
+        width: 200px;
+        height: 200px;
+        bottom: -30px;
+        right: -30px;
     }
 
-    .rightSide {
-        display: none;
+    .whatsappChannelContainer {
+        justify-content: space-around;
     }
 
     .grid_container {
@@ -439,13 +557,18 @@
 
 /* EXTRA LARGE SCREENS & TV */
 @media screen and (min-width: 1201px) and (max-width: 1405px) {
-
-    .leftSide {
-        padding: 0 36px;
+    .herosection .herosectionConatiner {
+        padding: 6.8rem 0;
+        justify-content: center;
+        gap: 2.4rem;
     }
 
-    .rightSide {
-        max-width: 684px;
+    .right img {
+        width: 384px;
+    }
+
+    .whatsappChannelContainer {
+        justify-content: space-around;
     }
 
     .grid_container {

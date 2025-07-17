@@ -8,10 +8,6 @@ const CompareSection = () => {
   const [imageLoaded2, setImageLoaded2] = useState(false);
   const [imageLoaded3, setImageLoaded3] = useState(false);
 
-  const getstartedClickHandler = () => {
-    window.open("/contact#contact-form", "_self");
-  };
-
   useEffect(() => {
     const img = new Image();
     img.onload = () => {
@@ -44,13 +40,13 @@ const CompareSection = () => {
       <Fade direction="up" triggerOnce>
         <h2>
           What Makes Us Your{" "}
-          <span className={styles.stylesText}>Perfect Partner</span> ?
+          <span className={styles.stylesText}>Perfect Partner ?</span>
         </h2>
       </Fade>
       <div className={styles.card_container}>
         <Fade direction="up" triggerOnce>
           <div className={styles.card}>
-            <span className={styles.content}>
+            <div className={styles.content}>
               <h3>Quality You Can Trust</h3>
               <p>
                 We deliver high-quality products from China at competitive
@@ -66,39 +62,43 @@ const CompareSection = () => {
                   alt="arrow icon"
                 />
               </Link>
-            </span>
-            {imageLoaded1 ? (
-              <img
-                src="/img/compareSection/1.webp"
-                className={styles.img}
-                alt="shipment box img"
-              />
-            ) : (
-              <img
-                src="/img/compareSection/1_blur.webp"
-                className={styles.img}
-                alt="shipment box img"
-              />
-            )}
+            </div>
+            <div className={styles.cardImgContainer}>
+              {imageLoaded1 ? (
+                <img
+                  src="/img/compareSection/1.webp"
+                  className={styles.img}
+                  alt="shipment box img"
+                />
+              ) : (
+                <img
+                  src="/img/compareSection/1_blur.webp"
+                  className={styles.img}
+                  alt="shipment box img"
+                />
+              )}
+            </div>
           </div>
         </Fade>
         <Fade direction="up" triggerOnce>
           <div className={`${styles.card} ${styles.card_02}`}>
-            {imageLoaded2 ? (
-              <img
-                src="/img/compareSection/2.webp"
-                className={`${styles.img} ${styles.img_card2}`}
-                alt="china network img"
-              />
-            ) : (
-              <img
-                src="/img/compareSection/2_blur.webp"
-                className={`${styles.img} ${styles.img_card2}`}
-                alt="china network img"
-              />
-            )}
+            <div className={styles.cardImgContainer}>
+              {imageLoaded2 ? (
+                <img
+                  src="/img/compareSection/2.webp"
+                  className={`${styles.img} ${styles.img_card2}`}
+                  alt="china network img"
+                />
+              ) : (
+                <img
+                  src="/img/compareSection/2_blur.webp"
+                  className={`${styles.img} ${styles.img_card2}`}
+                  alt="china network img"
+                />
+              )}
+            </div>
 
-            <span className={styles.content}>
+            <div className={styles.content}>
               <h3>Access to Supplier Network</h3>
               <p>
                 We leverage our wide network of trusted suppliers and
@@ -114,12 +114,12 @@ const CompareSection = () => {
                   alt="arrow icon"
                 />
               </Link>
-            </span>
+            </div>
           </div>
         </Fade>
         <Fade direction="up" triggerOnce>
           <div className={styles.card}>
-            <span className={styles.content}>
+            <div className={styles.content}>
               <h3>Safe Payments. No Frauds. Timely Delivery</h3>
               <p>
                 We handle payments securely, eliminating delays and fraud. We
@@ -127,7 +127,7 @@ const CompareSection = () => {
                 your products arrive on time, keeping your business running
                 smoothly.
               </p>
-             <Link href={"/contact#contact-form"}>
+              <Link href={"/contact#contact-form"}>
                 get started{" "}
                 <img
                   src="/icons/chevron-right.svg"
@@ -135,20 +135,22 @@ const CompareSection = () => {
                   alt="arrow icon"
                 />
               </Link>
-            </span>
-            {imageLoaded3 ? (
-              <img
-                src="/img/compareSection/3.webp"
-                className={styles.img}
-                alt="credit card img"
-              />
-            ) : (
-              <img
-                src="/img/compareSection/3_blur.webp"
-                className={styles.img}
-                alt="credit card img"
-              />
-            )}
+            </div>
+            <div className={styles.cardImgContainer}>
+              {imageLoaded3 ? (
+                <img
+                  src="/img/compareSection/3.webp"
+                  className={styles.img}
+                  alt="credit card img"
+                />
+              ) : (
+                <img
+                  src="/img/compareSection/3_blur.webp"
+                  className={styles.img}
+                  alt="credit card img"
+                />
+              )}
+            </div>
           </div>
         </Fade>
       </div>

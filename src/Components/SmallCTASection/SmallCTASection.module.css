@@ -90,15 +90,23 @@
 @media screen and (min-width: 0px) and (max-width: 359px) {
     .main {
         background-color: #f7f5ed;
-        padding: 148px 16px;
+        padding: 72px 0 156px 0;
+
     }
 
     .main .heading {
-        font-size: 1.2rem;
+        width: 85%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 1.4rem;
+        margin-bottom: 0.5rem;
     }
 
     .main .desc {
+        width: 80%;
+        margin: 0 auto;
         font-size: 1rem;
+        margin-bottom: 2.4rem;
     }
 }
 
@@ -106,15 +114,22 @@
 @media screen and (min-width: 360px) and (max-width: 480px) {
     .main {
         background-color: #f7f5ed;
-        padding: 148px 0;
+        padding: 72px 0 156px 0;
     }
 
     .main .heading {
+        width: 85%;
+        text-align: center;
+        margin: 0 auto;
         font-size: 1.4rem;
+        margin-bottom: 0.5rem;
     }
 
     .main .desc {
+        width: 80%;
+        margin: 0 auto;
         font-size: 1rem;
+        margin-bottom: 2.4rem;
     }
 }
 
@@ -122,15 +137,22 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
     .main {
         background-color: #f7f5ed;
-        padding: 148px 0;
+        padding: 72px 0 156px 0;
     }
 
     .main .heading {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto;
         font-size: 1.6rem;
+        margin-bottom: 0.5rem;
     }
 
     .main .desc {
+        width: 90%;
+        margin: 0 auto;
         font-size: 1rem;
+        margin-bottom: 2.8rem;
     }
 }
 
@@ -157,7 +179,7 @@
 }
 
 /* EXTRA LARGE SCREENS & TV */
-@media screen and (min-width: 1201px) {
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
 
     .main .heading {
         font-size: 1.6rem;

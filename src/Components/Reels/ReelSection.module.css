@@ -89,3 +89,93 @@
 .bottomWave .shapeFill {
     fill: var(--blue);
 }
+
+
+/* MEDIA QUERIES */
+/* SMALLER DEVICES */
+@media screen and (min-width: 0) and (max-width: 359px) {
+    .main {
+        padding: 36px 0 144px 0;
+    }
+
+    .main .headingTwo {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main .reelsFeed {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .main .ctaInsta {
+        margin-top: 2rem;
+        font-size: 15px;
+    }
+}
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .main {
+        padding: 36px 0 144px 0;
+    }
+
+    .main .headingTwo {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .main .reelsFeed {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .main .ctaInsta {
+        margin-top: 2rem;
+        font-size: 15px;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .main {
+        padding: 12px 0 124px 0;
+    }
+
+    .main .headingTwo {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .main .reelsFeed {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .main .ctaInsta {
+        font-size: 1rem;
+    }
+}
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .main .reelsFeed {
+        flex-wrap: wrap;
+        gap: 1.2rem;
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .main .reelsFeed {
+        gap: 1.2rem;
+    }
+}
+
+/* EXTRA LARGE SCREENS & TV */
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+
+    .main .reelsFeed {
+        gap: 1.2rem;
+    }
+}

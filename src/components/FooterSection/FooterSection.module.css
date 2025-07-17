@@ -277,7 +277,7 @@
 /* MEDIA QUERIES */
 @media screen and (min-width: 0px) and (max-width: 359px) {
     .upper_foot {
-        padding: 72px 48px;
+        padding: 72px 24px;
         flex-direction: column;
         align-items: center;
         gap: 2.8rem;
@@ -289,18 +289,6 @@
 
     .left_container .logo_img {
         height: 36px;
-    }
-
-    .col_services h3 {
-        margin-bottom: 1rem;
-    }
-
-    .col_services ul li {
-        margin-bottom: 0.5rem;
-    }
-
-    .col_services ul li:last-child {
-        margin-bottom: 2.8rem;
     }
 
     .col_contact h3 {
@@ -324,21 +312,19 @@
     }
 
     .right_container {
-        gap: 3.6rem;
+        width: 95%;
+        gap: 1.4rem;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     .right_container .col_email ul {
         margin-top: 1.4rem !important;
     }
 
-    .col_email ul {}
-
     .lower_foot {
         flex-direction: column;
         gap: 0.5rem;
+        padding: 0.5rem 0;
     }
 
     .lower_foot p {
@@ -361,18 +347,6 @@
         gap: 1.2rem;
     }
 
-    .col_services h3 {
-        margin-bottom: 1rem;
-    }
-
-    .col_services ul li {
-        margin-bottom: 0.5rem;
-    }
-
-    .col_services ul li:last-child {
-        margin-bottom: 2.8rem;
-    }
-
     .col_contact h3 {
         margin-bottom: 1rem;
     }
@@ -394,10 +368,8 @@
     }
 
     .right_container {
-        gap: 3.6rem;
+        gap: 1.4rem;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
     }
 
     .right_container .col_email ul {
@@ -409,12 +381,17 @@
     .lower_foot {
         flex-direction: column;
         gap: 0.5rem;
+        padding: 0.5rem 0;
     }
 
     .lower_foot p {
         width: 95%;
         line-height: 120%;
         padding: 4px;
+    }
+
+    .col_services {
+        display: none;
     }
 }
 
@@ -427,18 +404,12 @@
         gap: 3.6rem;
     }
 
-    .left_container {}
-
     .right_container {
         gap: 1rem;
         display: grid;
         align-items: start;
         justify-content: center;
         grid-template-columns: repeat(2, minmax(200px, 1fr));
-    }
-
-    .right_container .col_email ul {
-        margin-top: 1.4rem !important;
     }
 
     .left_container .logo_img {
@@ -452,12 +423,17 @@
     .lower_foot {
         flex-direction: column;
         gap: 0.5rem;
+        padding: 0.5rem 0;
     }
 
     .lower_foot p {
         width: 95%;
         line-height: 120%;
         padding: 4px;
+    }
+
+    .col_services {
+        display: none;
     }
 }
 
@@ -492,10 +468,21 @@
         width: 224px;
     }
 
+    .lower_foot {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
     .lower_foot p {
-        width: 256px;
+        width: 50%;
         line-height: 120%;
-        padding: 4px;
+        padding: 12px;
+    }
+
+    .lower_foot .bimboo {
+        line-height: 120%;
+        padding: 12px;
     }
 }
 

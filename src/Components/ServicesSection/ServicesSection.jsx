@@ -21,7 +21,7 @@ const ServicesSection = () => {
       </div>
       <section className={styles.container}>
         <h2>We'll take you from 0 to 100</h2>
-        <p>with our expert and professional services</p>
+        <p className={styles.desc}>with our expert and professional services</p>
 
         <div className={styles.card_container}>
           <Fade cascade damping={0.1} triggerOnce>

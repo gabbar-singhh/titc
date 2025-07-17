@@ -80,9 +80,8 @@
     }
 
     .timeline_main h2 {
-        font-size: 1.4rem;
         margin-bottom: 2.8rem;
-        width: 324px;
+        width: 80%;
     }
 
     .timeline_main h2::after {
@@ -122,9 +121,8 @@
     }
 
     .timeline_main h2 {
-        font-size: 1.4rem;
         margin-bottom: 2.8rem;
-        width: 324px;
+        width: 80%;
     }
 
     .timeline_main h2::after {
@@ -160,8 +158,8 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
 
     .timeline_main h2 {
-        font-size: 1.6rem;
         margin-bottom: 2.8rem;
+        width: 70%;
     }
 
     .timeline_main h3 {
@@ -186,9 +184,6 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-    .timeline_main h2 {
-        font-size: 1.6rem;
-    }
 
     .verticalTimeline_container {
         width: 484px;
@@ -204,9 +199,6 @@
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    .timeline_main h2 {
-        font-size: 1.8rem;
-    }
 
     .verticalTimeline_container {
         width: 550px;
@@ -218,13 +210,5 @@
 
     .timeline_container {
         width: 900px;
-    }
-}
-
-
-@media screen and (min-width: 1201px) and (max-width: 1405px) {
-
-    .timeline_main h2 {
-        font-size: 1.8rem;
     }
 }
