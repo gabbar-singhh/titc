@@ -108,7 +108,7 @@
     bottom: 30px;
     right: -60px;
     background-image: url('/img/product-flame-card.webp');
-    z-index: 1;
+    z-index: 0;
     width: 220px;
     height: 220px;
     background-size: contain;

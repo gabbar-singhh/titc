@@ -35,7 +35,7 @@ const about_us = () => {
 
       <section className={styles.main}>
         <div className={styles.herosection}>
-          <div className={styles.herosectionConatiner}>
+          <div className={styles.herosectionContainer}>
             <Fade direction="up" triggerOnce>
               <div className={styles.capsule}>
                 <img src="/icons/about-us-icon.svg" alt="briefcase business" />
@@ -51,7 +51,7 @@ const about_us = () => {
               </h1>
             </Fade>
             <Fade direction="up" triggerOnce>
-              <p>
+              <p className={styles.desc}>
                 We simplify global trade by sourcing quality products from
                 China, ensuring trust, speed, and reliability every step.
               </p>
