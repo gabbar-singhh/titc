@@ -125,6 +125,23 @@ const contact = () => {
 
     img.src = "/img/man_calling.webp";
   }, ["/img/man_calling.webp"]);
+
+  const [imageSrc, setImageSrc] = useState("/img/hero-contact.webp");
+
+  useEffect(() => {
+    const updateImage = () => {
+      const width = window.innerWidth;
+      if (width <= 1024 && width >= 240) {
+        setImageSrc("/img/hero-contact-mobile.webp");
+      } else {
+        setImageSrc("/img/hero-contact.webp");
+      }
+    };
+
+    updateImage(); // Check on mount
+    window.addEventListener("resize", updateImage);
+    return () => window.removeEventListener("resize", updateImage);
+  }, []);
   return (
     <>
       <Head>
@@ -175,12 +192,7 @@ const contact = () => {
             </div>
 
             <div className={styles.right}>
-              <img
-                src="/img/hero-contact.webp"
-                alt="shipping container box"
-                width={424}
-                height={"auto"}
-              />
+              <img src={imageSrc} alt="shipping container box" />
             </div>
           </div>
         </section>
@@ -332,7 +344,10 @@ const contact = () => {
               </p>
             </div>
 
-            <Link href={"https://maps.app.goo.gl/qmfShD2kHS1kBMhZA"} className={styles.view}>
+            <Link
+              href={"https://maps.app.goo.gl/qmfShD2kHS1kBMhZA"}
+              className={styles.view}
+            >
               View In Map
               <img
                 src="/icons/arrow_up_right_blue.svg"

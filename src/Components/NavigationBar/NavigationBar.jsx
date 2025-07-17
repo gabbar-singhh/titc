@@ -46,7 +46,7 @@ const NavigationBar = () => {
           <Link href={"/about-us"}>
             <li className={styles.nav_li}>about us</li>
           </Link>
-          <Link href={"/contact#contact-form"}>
+          <Link href={"/contact"}>
             <li className={`${styles.cta_contact} ${styles.nav_li}`}>
               contact us
             </li>
@@ -76,7 +76,7 @@ const NavigationBar = () => {
           <Link href={"/about-us"}>
             <li onClick={closeMenu}>About Us</li>
           </Link>
-          <Link href={"/contact#contact-form"}>
+          <Link href={"/contact"}>
             <li onClick={closeMenu}>Contact Us</li>
           </Link>
         </ol>
