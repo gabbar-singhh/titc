@@ -12,7 +12,7 @@ const ReelSection = () => {
         <h2>Built On Trust.</h2>
       </Fade>
       <Fade direction="up" triggerOnce>
-        <h2 className={styles.headingTwo}>Join Our 26K+ Strong Instagram Community</h2>
+        <h2 className={styles.headingTwo}>Join Our 33K+ Strong Instagram Community</h2>
       </Fade>
 
       <div className={styles.reelsFeed}>
