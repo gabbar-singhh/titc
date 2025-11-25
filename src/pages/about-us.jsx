@@ -18,6 +18,15 @@ const about_us = () => {
 
     img.src = "/img/founder.webp";
   }, ["/img/founder.webp"]);
+
+   useEffect(() => {
+    const img = new Image();
+    img.onload = () => {
+      setImageLoaded(true);
+    };
+
+    img.src = "/img/cofounder.webp";
+  }, ["/img/cofounder.webp"]);
   return (
     <>
       <Head>
@@ -101,39 +110,85 @@ const about_us = () => {
                     </Fade>
                     <Fade triggerOnce cascade damping={0.1}>
                       <p className={styles.content}>
-                        Our mission is to simplify international trade, making
-                        it as easy and convenient as shopping online. We
-                        specialize in helping businesses connect with China’s
-                        vast and diverse manufacturing network, providing
-                        support every step of the way. From identifying the
-                        right suppliers and negotiating the best deals to
-                        ensuring high quality and handling logistics, we manage
-                        the entire import process seamlessly. <br />
-                        <br /> Our aim is to offer a comprehensive, one-stop
-                        solution tailored to the unique needs of each client. By
-                        providing access to high-quality products at competitive
-                        prices, we empower businesses to stay ahead in their
-                        markets. With our expertise and commitment to
-                        excellence, we strive to build lasting partnerships,
-                        giving our clients the confidence to focus on their
-                        growth and success.
+                        Our mission is simple: we want to make international
+                        trade feel as easy as ordering something online. No
+                        confusion, no stress—just straightforward business that
+                        actually works. We help companies tap into China's
+                        massive manufacturing world. And trust us, it's huge and
+                        incredibly diverse. Whether you're looking for something
+                        specific or exploring options, we're here to guide you
+                        through it all. <br />
+                        <br /> Here's what we actually do: We find the right
+                        suppliers for your needs. We negotiate prices so you get
+                        solid deals. We check quality because nobody wants
+                        surprises when the shipment arrives. And we handle all
+                        the logistics headaches—the shipping, the paperwork, the
+                        tracking, everything. Basically, we manage the entire
+                        import process from start to finish. You tell us what
+                        you need, and we make it happen.
+                        <br />
+                        Every business is different. We get that. So we don't do
+                        cookie-cutter solutions. We take time to understand what
+                        you're trying to achieve, what your challenges are, and
+                        what success looks like for you. Then we build a plan
+                        around that. Our goal is to get you access to quality
+                        products at prices that make sense for your business.
+                        Good products shouldn't cost a fortune, and cheap
+                        products shouldn't be garbage.
+                        <br />
+                        <br /> We find that sweet spot. We're not just here for
+                        one transaction. We want to build real partnerships—the
+                        kind where we understand your business well enough that
+                        things get easier over time, not harder. We learn what
+                        you like, what you don't, what works for your customers.
+                        When you work with us, you get to focus on what you do
+                        best: running and growing your business. You don't need
+                        to become an expert in international shipping
+                        regulations or spend hours vetting factories in
+                        Guangzhou. That's our job. We bring the expertise. We
+                        bring the connections. We bring the follow-through. And
+                        hopefully, we bring you some peace of mind knowing
+                        someone's actually looking out for your interests on the
+                        other side of the world. <br />
+                        <br /> At the end of the day, we want you to feel
+                        confident. Confident in your suppliers, confident in
+                        your products, and confident that when you need
+                        something handled, it'll get done right.
                       </p>
                     </Fade>
                   </span>
                   <Fade triggerOnce>
-                    <div className={styles.photo_duo}>
-                      {imageLoaded ? (
-                        <img src="/img/founder.webp" alt="founder img" />
-                      ) : (
-                        <img
-                          src="/img/founder-blur.webp"
-                          alt="blur img of founder"
-                        />
-                      )}
-                      <p className={styles.name}>
-                        Mr. Kayyush Thadani <br />
-                        <span>Founder @Thadani International Trading </span>
-                      </p>
+                    <div className={styles.founder_photos}>
+                      <div className={styles.photo_duo}>
+                        {imageLoaded ? (
+                          <img src="/img/founder.webp" alt="founder img" />
+                        ) : (
+                          <img
+                            src="/img/founder-blur.webp"
+                            alt="blur img of founder"
+                          />
+                        )}
+                        <p className={styles.name}>
+                          Mr. Kayyush Thadani <br />
+                          <span>Founder @Thadani International Trading </span>
+                        </p>
+                      </div>
+                      <div className={styles.photo_duo}>
+                        {imageLoaded ? (
+                          <img src="/img/cofounder.webp" alt="founder img" />
+                        ) : (
+                          <img
+                            src="/img/cofounder-blur.webp"
+                            alt="blur img of founder"
+                          />
+                        )}
+                        <p className={styles.name}>
+                          Mr. Kannak Thadani <br />
+                          <span>
+                            Co-Founder @Thadani International Trading{" "}
+                          </span>
+                        </p>
+                      </div>
                     </div>
                   </Fade>
                 </div>
