@@ -17,9 +17,9 @@ const ReelSection = () => {
 
       <div className={styles.reelsFeed}>
         <Fade cascade damping={0.3} triggerOnce>
-          <Reels postUrl={"https://www.instagram.com/reel/DLm9DDuMQhr"} />
-          <Reels postUrl={"https://www.instagram.com/reel/DLXge0hKBWX"} />
-          <Reels postUrl={"https://www.instagram.com/reel/DLAWKm4KvK0"} />
+          <Reels postUrl={"https://www.instagram.com/reel/DSDBogmjISP"} />
+          <Reels postUrl={"https://www.instagram.com/reel/DOd1fbkjJwf"} />
+          <Reels postUrl={"https://www.instagram.com/reel/DM-mkiSKeHp"} />
         </Fade>
       </div>
 
