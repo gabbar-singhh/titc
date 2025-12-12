@@ -13,7 +13,7 @@ const services = () => {
   const [imageLoaded4, setImageLoaded4] = useState(false);
 
   const openWhatsAppHandler = () => {
-    const phoneNumber = "8613538501419";
+    const phoneNumber = "918805523442";
     const message = encodeURIComponent(
       "Hello Kayyush, I visited your website and I'd be interested to know more!"
     );

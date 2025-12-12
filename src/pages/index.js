@@ -19,7 +19,7 @@ export default function Home() {
       "We source quality goods from China and ship them to your country.",
     contactPoint: {
       "@type": "ContactPoint",
-      telephone: "8613538501419",
+      telephone: "918805523442",
       contactType: "Customer Service",
     },
   };
