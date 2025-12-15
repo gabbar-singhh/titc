@@ -9,7 +9,7 @@ import Link from "next/link";
 import ContactUsSection from "@/Components/ContactUsSection/ContactUsSection";
 
 const product = () => {
-  const [imageSrc, setImageSrc] = useState("/img/hero-product-mobile.webp");
+  const [imageSrc, setImageSrc] = useState("/img/hero-product.webp");
 
   useEffect(() => {
     const updateImage = () => {

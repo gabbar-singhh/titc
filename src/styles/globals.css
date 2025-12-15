@@ -50,6 +50,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 0.5em;
 }
 
+/* Highlight Effect */
 .highlight_effect {
   position: relative;
   z-index: 1;
@@ -72,6 +73,37 @@ body::-webkit-scrollbar-thumb {
 .highlight_effect:hover::before {
   transform: scaleX(1);
   transform-origin: center left;
+}
+
+
+/* Underline Effect */
+.Underline_Eff {
+  position: relative;
+}
+
+.Underline_Eff::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: rgb(180, 130, 251);
+  background-image:
+    radial-gradient(at 47% 22%, hsla(300, 9%, 3%, 1) 0px, transparent 50%),
+    radial-gradient(at 23% 43%, hsla(239, 74%, 8%, 1) 0px, transparent 50%),
+    radial-gradient(at 66% 51%, hsla(266, 54%, 12%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(136, 100%, 4%, 1) 0px, transparent 50%),
+    radial-gradient(at 98% 98%, hsla(273, 100%, 1%, 1) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(0, 100%, 0%, 1) 0px, transparent 50%);
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.Underline_Eff:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
 }
 
 /* MEDIA QUERIES */

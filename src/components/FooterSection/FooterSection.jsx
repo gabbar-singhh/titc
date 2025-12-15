@@ -167,20 +167,23 @@ const FooterSection = () => {
 
       <div className={styles.lower_foot}>
         <p>@2025 Thadani International Trading Co. Ltd All Right Reserved</p>
-        <Link
-          href={"https://www.bimboo.co/"}
-          className={`${styles.bimboo}`}
-        >
+        <Link href={"https://www.bimboo.co/"} className={`Underline_Eff ${styles.bimboo}`}>
           Built & Maintained by{" "}
           <span
             style={{
               textDecoration: "underline",
               textUnderlineOffset: "1.5px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
             }}
           >
-            Bimboo
+            <img src="/bimboo.svg" className={styles.bimboo_img} alt="bimboo logo" />
           </span>{" "}
-          <img src="/icons/arrow-up-right.svg" alt="arrow up right icon" />
+          <img
+            src="/icons/arrow-up-right.svg"
+            alt="arrow up right icon"
+          />
         </Link>
       </div>
     </footer>

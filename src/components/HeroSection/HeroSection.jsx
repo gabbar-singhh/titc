@@ -4,7 +4,7 @@ import { Fade } from "react-awesome-reveal";
 import { TypeAnimation } from "react-type-animation";
 
 const HeroSection = () => {
-  const [imageSrc, setImageSrc] = useState("/img/hero-home-mobile.webp");
+  const [imageSrc, setImageSrc] = useState("/img/hero-home.webp");
 
   useEffect(() => {
     const updateImage = () => {
