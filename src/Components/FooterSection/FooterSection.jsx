@@ -21,7 +21,7 @@ const FooterSection = () => {
   };
 
   const openWhatsAppHandler = () => {
-    const phoneNumber = "918805523442";
+    const phoneNumber = "8613538501419";
     const message = encodeURIComponent(
       "Hello Kayyush, I visited your website and I'd be interested to know more!"
     );
@@ -117,7 +117,7 @@ const FooterSection = () => {
 
             <ul>
               <li>
-                <span className={styles.contact_flag}>🇮🇳</span> +91 8805523442
+                <span className={styles.contact_flag}>🇨🇳</span> +86 13538501419
               </li>
             </ul>
 

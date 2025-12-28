@@ -27,7 +27,7 @@ const product = () => {
   }, []);
 
   const openWhatsAppHandler = () => {
-    const phoneNumber = "918805523442";
+    const phoneNumber = "8613538501419";
     const message = encodeURIComponent(
       "Hello Kayyush, I visited your website and I'd be interested to know more!"
     );

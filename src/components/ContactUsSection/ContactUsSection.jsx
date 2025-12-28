@@ -124,7 +124,7 @@ const ContactUsSection = () => {
           <ul className={styles.contact_options}>
             <li className={styles.first_li}>
               <img src="/icons/call_icon.svg" alt="call icon" />
-              <p>+91 8805523442</p>
+              <p>+86 13538501419</p>
             </li>
             <li>
               <img src="/icons/mail_icon.svg" alt="mail icon" />

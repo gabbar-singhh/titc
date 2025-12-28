@@ -109,7 +109,7 @@ const contact = () => {
   };
 
   const openWhatsAppHandler = () => {
-    const phoneNumber = "918805523442";
+    const phoneNumber = "8613538501419";
     const message = encodeURIComponent(
       "Hello Kayyush, I visited your website and I'd be interested to know more!"
     );
@@ -210,7 +210,7 @@ const contact = () => {
             <ul className={styles.contact_options}>
               <li className={styles.first_li}>
                 <img src="/icons/call_blue.svg" alt="call icon" />
-                <p>+91 8805523442</p>
+                <p>+86 13538501419</p>
               </li>
               <li>
                 <img src="/icons/mail_blue.svg" alt="mail icon" />
