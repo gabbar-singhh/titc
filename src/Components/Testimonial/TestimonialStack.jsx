@@ -13,7 +13,7 @@ const TestimonialStack = () => {
          I recently used Thadani Intl. Trading for a shipment from China to India, and the experience was seamless. Before the main shipment, they provided samples for quality confirmation, which gave me great peace of mind. The final bulk order arrived safely, on time, and perfectly intact. Their professionalism and attention to detail in handling international logistics are top-notch. Highly recommended for any business looking for a trustworthy shipping partner & sourcing stuffs from China.
         </p>`,
       name: "Kunal Mishra",
-      bio: "",
+      bio: "Leading E-commerce brand owner | Mumbai",
       imgSrc:
         "https://ui-avatars.com/api/?name=Kunal+Mishra&background=f6f7f8&color=1d3557&size=128",
     },
@@ -41,10 +41,10 @@ From their warehouse to the doorstep everything is managed without any hassle fo
 
         </p>
       `,
-      name: "Sneha",
-      bio: "",
+      name: "Dr. Sneha",
+      bio: "Business Owner | New Delhi",
       imgSrc:
-        "https://ui-avatars.com/api/?name=Sneha&background=f6f7f8&color=1d3557&size=128",
+        "https://ui-avatars.com/api/?name=Dr+Sneha&background=f6f7f8&color=1d3557&size=128",
     },
     {
       testimonialText: `

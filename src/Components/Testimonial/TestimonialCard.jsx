@@ -17,7 +17,7 @@ const TestimonialCard = ({ testimonialText, name, bio, imgSrc }) => {
           />
           <div className={styles.content}>
             <h2>{name}</h2>
-            {/* <p>{bio}</p> */}
+            <p>{bio}</p>
           </div>
         </div>
       </div>
