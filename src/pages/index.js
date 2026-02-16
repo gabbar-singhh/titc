@@ -7,6 +7,7 @@ import Timeline from "@/Components/Timeline/Timeline";
 import ContactUsSection from "@/Components/ContactUsSection/ContactUsSection";
 import FooterSection from "@/Components/FooterSection/FooterSection";
 import ReelSection from "@/Components/Reels/ReelSection";
+import TestimonialStack from "@/Components/Testimonial/TestimonialStack";
 
 export default function Home() {
   const organizationSchema = {
@@ -53,6 +54,7 @@ export default function Home() {
         <CompareSection />
         <ServicesSection />
         <Timeline />
+        <TestimonialStack/>
         <ReelSection />
         <ContactUsSection />
         <FooterSection />

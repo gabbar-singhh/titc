@@ -1,0 +1,225 @@
+.main {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: var(--blue);
+}
+
+.wavyTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wavyTop svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 71px;
+}
+
+.wavyTop .shapeFill {
+    fill: #f8f5ed;
+}
+
+.wavyBottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wavyBottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 71px;
+}
+
+.wavyBottom .shapeFill {
+    fill: #f8f5ed;
+}
+
+.container {
+    padding: 84px 0 156px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 110%;
+}
+
+.container .header {}
+
+.container .testimonialHeading {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    line-height: 155%;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container .testimonialDesc {
+    color: #dfdfdf;
+    font-size: 1rem;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+    line-height: 150%;
+    font-weight: 400;
+    width: 556px;
+    text-align: center;
+}
+
+.container .carouselWrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carouselWrapper .scrollingTrack {
+    display: flex;
+    width: max-content;
+    gap: 1.25rem;
+    margin-top: 3.2rem;
+    animation: scrollLeft 50s linear infinite;
+}
+
+.carouselWrapper .card {
+    height: fit-content;
+}
+
+.scrollingTrack {
+    animation: scroll 30s linear infinite;
+    animation-play-state: running;
+}
+
+.pauseAnimation .scrollingTrack {
+    animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.ctaButton {
+    color: #fff;
+    font-size: 1.4rem;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+    line-height: 145%;
+    font-weight: normal;
+
+    border: 1px solid #282828;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 4rem;
+    padding: 1.4rem 2.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    transition: all 400ms ease-in-out;
+    background-color: #070509;
+    background-color: var(--primary);
+    margin-top: 4.8rem;
+}
+
+.ctaButton:hover {
+    background-color: #773bc1;
+    border: 1px solid #585858;
+}
+
+.ctaButton img {
+    transition: transform 400ms ease-in-out;
+}
+
+.ctaButton:hover img {
+    transform: rotate(35deg);
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 0) and (max-width: 359px) {
+    .container .testimonialHeading {
+        font-size: 1.2rem;
+    }
+
+    .container .testimonialDesc {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container {
+        padding: 84px 0 124px 0;
+    }
+}
+
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 360px) and (max-width: 480px) {
+    .container .testimonialHeading {
+        font-size: 1.4rem;
+    }
+
+    .container .testimonialDesc {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container {
+        padding: 84px 0 124px 0;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .container .testimonialHeading {
+        font-size: 1.6rem;
+    }
+
+
+    .container .testimonialDesc {
+        width: 456px;
+    }
+
+    .container {
+        padding: 96px 0 124px 0;
+    }
+
+}
+
+
+/* SMALL SCREEN */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .container {
+        padding: 84px 0 124px 0;
+    }
+}
+
+/* DESKTOP AND LARGE SCREEN */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+
+    .container {
+        padding: 84px 0 124px 0;
+    }
+}

@@ -1,0 +1,115 @@
+.main {
+    width: 504px;
+    height: fit-content;
+    background-color: #f8f5ed;
+    background-color: #fff;
+    padding: 2.8rem 2.8rem 2rem 2.8rem;
+    border-radius: 12px;
+    border: 1.5px solid rgb(234 234 229);
+    transition: 200ms ease-in-out;
+
+}
+
+.main:hover {
+    background-color: var(--creamy-white);
+    -webkit-box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);
+    -moz-box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);
+    box-shadow: 5px 5px 95px -46px rgba(163, 163, 163, 1);
+    transform: scale(1.01);
+    cursor: grabbing;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container p {
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    text-align: left;
+    font-size: 1rem;
+    line-height: 135%;
+    color: #727272;
+}
+
+.footer {
+    display: flex;
+    gap: 0.55rem;
+    margin-top: 1.8rem;
+    width: 100%;
+
+    /*  */
+    align-items: center;
+}
+
+.footer .profileImg {
+    border-radius: 50%;
+}
+
+.footer .content {
+    /* width: 100%; */
+}
+
+.footer .content h2 {
+    letter-spacing: .5px;
+    word-spacing: 1px;
+    font-weight: 700;
+    line-height: 150%;
+
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    color: var(--blue);
+}
+
+/* 
+.footer .content p {
+    color: #5e5e5e;
+    font-size: 15px;
+    letter-spacing: 0.4px;
+    word-spacing: 1px;
+    line-height: 150%;
+    font-weight: 400;
+    margin: 0;
+} */
+
+
+/* MEDIA QUERIES */
+/* AVERAGE MOBILE DEVICES  */
+@media screen and (min-width: 0) and (max-width: 480px) {
+    .main {
+        width: 280px;
+        height: fit-content;
+        padding: 1.8rem 1.8rem 1.2rem 1.8rem;
+    }
+
+    .container p {
+        font-size: 15px;
+    }
+
+    .footer .content h2 {
+        font-size: 1rem;
+    }
+}
+
+/* IPADS AND TABLETS  */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .main {
+        width: 400px;
+        height: fit-content;
+        padding: 2.2rem 1.4rem 1.4rem 1.4rem;
+    }
+
+    .container p {
+        font-size: 15px;
+    }
+
+    .footer .content h2 {
+        font-size: 1rem;
+    }
+}
