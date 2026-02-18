@@ -66,6 +66,19 @@ You guys having a warehouse in china helped us gain confidence and yours n team'
       imgSrc:
         "https://ui-avatars.com/api/?name=Jatin&background=f6f7f8&color=1d3557",
     },
+    {
+      testimonialText: `
+       <p>
+My order for jade stone heating mats was handled very professionally from start to finish. The sourcing process was smooth, communication was clear and transparent, and the shipping was managed efficiently. I truly appreciate your responsiveness, regular updates, and support throughout the entire process.
+        </p>
+        <p>The products met my expectations, and the overall experience was seamless. </p>
+        <p>Looking forward to continuing our partnership! 🤝</p>
+        `,
+      name: "Akash Saspara",
+      bio: "Wholesale Trader, Gujrat",
+      imgSrc:
+        "https://ui-avatars.com/api/?name=Akash+Saspara&background=f6f7f8&color=1d3557&size=128",
+    },
   ];
 
   const [isPaused, setIsPaused] = useState(false);
