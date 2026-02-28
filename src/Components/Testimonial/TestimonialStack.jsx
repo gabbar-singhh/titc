@@ -17,6 +17,16 @@ const TestimonialStack = () => {
       imgSrc:
         "https://ui-avatars.com/api/?name=Kunal+Mishra&background=f6f7f8&color=1d3557&size=128",
     },
+     {
+      testimonialText: `
+       <p>
+We have been working with Thadani Intl. Trading for the past few months, and the experience has been excellent. After shortlisting products from Taobao and Pinduoduo, their team handled everything seamlessly — from placing orders and managing payments to carefully repacking the goods and ensuring safe doorstep delivery. The entire process was smooth, professional, and reliable. We look forward to continuing our partnership!
+        </p>`,
+      name: "Rakhee Basumatary",
+      bio: "Assam",
+      imgSrc:
+        "https://ui-avatars.com/api/?name=Rakhee+Basumatary&background=f6f7f8&color=1d3557&size=128",
+    },
     {
       testimonialText: `
        <p>
