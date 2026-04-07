@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Reels from "./Reels";
 import styles from "./ReelSection.module.css";
 import Link from "next/link";
@@ -6,20 +6,86 @@ import { Fade } from "react-awesome-reveal";
 
 const ReelSection = () => {
   const INSTA_URL = "https://www.instagram.com/thadani.chinasourcing/";
+  const scrollRef = useRef(null);
+
+  useEffect(() => {
+    const container = scrollRef.current;
+    if (!container) return;
+
+    const scrollNext = () => {
+      const firstChild = container.querySelector(`.${styles.reelItem}`);
+      if (!firstChild) return;
+
+      const gap = 16; // 1rem ≈ 16px
+      const scrollAmount = firstChild.offsetWidth + gap;
+
+      container.scrollBy({
+        left: scrollAmount,
+        behavior: "smooth",
+      });
+
+      // loop back
+      if (
+        container.scrollLeft + container.clientWidth >=
+        container.scrollWidth - 5
+      ) {
+        container.scrollTo({ left: 0, behavior: "smooth" });
+      }
+    };
+
+    let interval;
+
+    const start = () => {
+      interval = setInterval(scrollNext, 5000);
+    };
+
+    const stop = () => clearInterval(interval);
+
+    container.addEventListener("mouseenter", stop);
+    container.addEventListener("mouseleave", start);
+
+    start();
+
+    return () => {
+      stop();
+      container.removeEventListener("mouseenter", stop);
+      container.removeEventListener("mouseleave", start);
+    };
+  }, []);
+
   return (
     <section className={styles.main}>
       <Fade direction="up" triggerOnce>
         <h2>Built On Trust.</h2>
       </Fade>
+
       <Fade direction="up" triggerOnce>
-        <h2 className={styles.headingTwo}>Join Our 100K+ Strong Instagram Community</h2>
+        <h2 className={styles.headingTwo}>
+          Join Our 100K+ Strong Instagram Community
+        </h2>
       </Fade>
 
-      <div className={styles.reelsFeed}>
-        <Fade cascade damping={0.3} triggerOnce>
-          <Reels postUrl={"https://www.instagram.com/reel/DTIiDJ_jP4Z"} />
-          <Reels postUrl={"https://www.instagram.com/reel/DSDBogmjISP"} />
-          <Reels postUrl={"https://www.instagram.com/reel/DPrHrgiDKsn"} />
+      {/* 👇 IMPORTANT: added ref */}
+      <div ref={scrollRef} className={styles.reelsFeed}>
+        <Fade cascade damping={0.05} triggerOnce>
+          <div className={styles.reelItem}>
+            <Reels postUrl={"https://www.instagram.com/reel/DWq3NwaBGZ2"} />
+          </div>
+          <div className={styles.reelItem}>
+            <Reels postUrl={"https://www.instagram.com/reel/DLm9DDuMQhr"} />
+          </div>
+          <div className={styles.reelItem}>
+            <Reels postUrl={"https://www.instagram.com/reel/DWbvinSsFR-"} />
+          </div>
+          <div className={styles.reelItem}>
+            <Reels postUrl={"https://www.instagram.com/reel/DV_Zg5KjHau"} />
+          </div>
+          <div className={styles.reelItem}>
+            <Reels postUrl={"https://www.instagram.com/reel/DLXge0hKBWX"} />
+          </div>
+          <div className={styles.reelItem}>
+            <Reels postUrl={"https://www.instagram.com/reel/DIgmSItJeF8"} />
+          </div>
         </Fade>
       </div>
 
@@ -31,14 +97,9 @@ const ReelSection = () => {
       </Fade>
 
       <div className={styles.bottomWave}>
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            d="M321.39,56.44c58-10.79..."
             className={styles.shapeFill}
           ></path>
         </svg>

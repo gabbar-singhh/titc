@@ -25,9 +25,28 @@
 .main .reelsFeed {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 1.8rem;
-    margin-top: 3.6rem;
+
+    padding-top: 3.6rem;
+    gap: 1rem;
+    width: 97%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.reelItem {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+}
+
+.main .reelsFeed::-webkit-scrollbar {
+    display: none;
 }
 
 .main .ctaInsta {
@@ -104,7 +123,8 @@
     }
 
     .main .reelsFeed {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        flex-wrap: nowrap;
         gap: 1rem;
     }
 
@@ -126,7 +146,8 @@
     }
 
     .main .reelsFeed {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        flex-wrap: nowrap;
         gap: 1rem;
     }
 
@@ -148,7 +169,8 @@
     }
 
     .main .reelsFeed {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        flex-wrap: nowrap;
         gap: 1rem;
     }
 
@@ -160,7 +182,8 @@
 /* SMALL SCREEN */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .main .reelsFeed {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+        flex-wrap: nowrap;
         gap: 1.2rem;
     }
 }
